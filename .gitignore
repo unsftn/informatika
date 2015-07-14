@@ -1,2 +1,6 @@
 .sass-cache
 *.css.map
+
+_site/
+.DS_Store
+Gemfile.lock
