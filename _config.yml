@@ -2,8 +2,8 @@
 title: Chair of Informatics
 email: ftninformatika@uns.ac.rs
 description: Chair of Informatics, Faculty of Technical Sciences, University of Novi Sad
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://informatika.ftn.uns.ac.rs" # the base hostname & protocol for your site
+baseurl: "/informatika/" # the subpath of your site, e.g. /blog/
+url: "http://unsftn.github.io" # the base hostname & protocol for your site
 twitter_username: ftninformatika
 github_username:  ftninformatika
 
