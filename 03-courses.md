@@ -9,50 +9,22 @@ The courses taught by our faculty are listed by the curriculum.
 Software Engineering and Information Technologies
 =================================================
 
-Introduction to Programming
+{% for course in site.courses %}
+  {% if course.curriculum contains "SIIT" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
 
-Object-oriented programming 1
-
-Algorithms and Data Structures
-
-Introduction to Software Engineering
-
-Internet Networks
-
-Numerical Algorithms and Numerical Software
-
-Software Specification and Modeling
-
-Web Programming
-
-Software Patterns and Components
-
-Internet Software Architectures
-
-Software Development Methodologies
-
-Computational Intelligence
-
-TODO: add more
+{% endfor %}
 
 Computing and Control
 =====================
 
-Numerical Algorithms and Numerical Software
-
-Software Specification and Modeling
-
-Web Programming
-
-Software Patterns and Components
-
-Internet Software Architectures
-
-Software Development Methodologies
-
-Computational Intelligence
-
-TODO: add more
+{% for course in site.courses %}
+  {% if course.curriculum contains "E2" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
+  
+{% endfor %}
 
 Graphical Engineering and Design
 ================================
@@ -73,5 +45,3 @@ Geodesy and Geomatics
 =====================
 
 The list of courses
-
-{{ site.courses }}

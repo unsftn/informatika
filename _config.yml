@@ -25,12 +25,12 @@ collections:
     permalink: /:path/
 
 
-defaults:
-  - scope:
-      path: "courses"
-      type: courses
-    values: 
-      layout: page
+# defaults:
+#  - scope:
+#      path: "courses"
+#      type: courses
+#    values: 
+#      layout: page
 
 # Build settings
 markdown: kramdown
