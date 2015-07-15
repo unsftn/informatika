@@ -30,7 +30,7 @@ defaults:
       path: "courses"
       type: courses
     values: 
-      layout: course
+      layout: page
 
 # Build settings
 markdown: kramdown
