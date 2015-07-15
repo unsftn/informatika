@@ -16,7 +16,7 @@ collections:
     permalink: /events/:path/
   courses:
     output: true
-    permalink: /:path/
+    permalink: :path/
   publications:
     output: true
     permalink: /publications/:path/
