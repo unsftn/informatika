@@ -29,7 +29,9 @@
                         {% endfor %}
                       </li>
                       <li class="icon fa-cloud-download"><a href="{{ page.canvas }}">{{ page.canvas }}</a></li>
+                      {% if page.info %}
                       <li class="icon fa-info-circle">{{ page.info }}</li>
+                      {% endif %}
                     </ul>
                   </section>
                 </div>
