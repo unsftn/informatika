@@ -29,19 +29,42 @@ Computing and Control
 Graphical Engineering and Design
 ================================
 
-The list of courses
+{% for course in site.courses %}
+  {% if course.curriculum contains "GRID" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
+
+{% endfor %}
+
 
 Civil Engineering
 =================
 
-The list of courses
+{% for course in site.courses %}
+  {% if course.curriculum contains "GRAD" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
+
+{% endfor %}
+
 
 Biomedical Engineering
 ======================
 
-The list of courses
+{% for course in site.courses %}
+  {% if course.curriculum contains "BIOMED" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
+
+{% endfor %}
+
 
 Geodesy and Geomatics
 =====================
 
-The list of courses
+{% for course in site.courses %}
+  {% if course.curriculum contains "GEO" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
+
+{% endfor %}

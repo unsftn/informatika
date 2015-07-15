@@ -4,6 +4,53 @@ title: Faculty
 permalink: /faculty/
 ---
 
-This page presents our faculty.
+Full Professors
+===============
 
-{{ site.faculty }}
+{% for fac in site.faculty %}
+  {% if fac.zvanje == "full" %}
+  [{{fac.title}}]({{site.baseurl}}{{fac.url}})
+  {% endif %}
+
+{% endfor %}
+
+Associate Professors
+====================
+
+{% for fac in site.faculty %}
+  {% if fac.zvanje == "associate" %}
+  [{{fac.title}}]({{site.baseurl}}{{fac.url}})
+  {% endif %}
+
+{% endfor %}
+
+Assistant Professors
+====================
+
+{% for fac in site.faculty %}
+  {% if fac.zvanje == "assistant" %}
+  [{{fac.title}}]({{site.baseurl}}{{fac.url}})
+  {% endif %}
+
+{% endfor %}
+
+Teaching Assistants
+===================
+
+{% for fac in site.faculty %}
+  {% if fac.zvanje == "TA" %}
+  [{{fac.title}}]({{site.baseurl}}{{fac.url}})
+  {% endif %}
+
+{% endfor %}
+
+Staff
+=====
+
+{% for fac in site.faculty %}
+  {% if fac.zvanje == "staff" %}
+  [{{fac.title}}]({{site.baseurl}}{{fac.url}})
+  {% endif %}
+
+{% endfor %}
+

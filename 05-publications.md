@@ -5,5 +5,3 @@ permalink: /publications/
 ---
 
 This page presents our publications.
-
-{{ site.faculty }}
