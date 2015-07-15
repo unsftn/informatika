@@ -4,8 +4,7 @@ title: Faculty
 permalink: /faculty/
 ---
 
-Full Professors
-===============
+### Full Professors
 
 {% for fac in site.faculty %}
   {% if fac.zvanje == "full" %}
@@ -14,8 +13,7 @@ Full Professors
 
 {% endfor %}
 
-Associate Professors
-====================
+### Associate Professors
 
 {% for fac in site.faculty %}
   {% if fac.zvanje == "associate" %}
@@ -24,8 +22,7 @@ Associate Professors
 
 {% endfor %}
 
-Assistant Professors
-====================
+### Assistant Professors
 
 {% for fac in site.faculty %}
   {% if fac.zvanje == "assistant" %}
@@ -34,8 +31,7 @@ Assistant Professors
 
 {% endfor %}
 
-Teaching Assistants
-===================
+### Teaching Assistants
 
 {% for fac in site.faculty %}
   {% if fac.zvanje == "TA" %}
@@ -44,8 +40,7 @@ Teaching Assistants
 
 {% endfor %}
 
-Staff
-=====
+### Staff
 
 {% for fac in site.faculty %}
   {% if fac.zvanje == "staff" %}

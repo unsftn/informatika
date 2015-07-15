@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="homepage" id="top">
+  <div id="page-wrapper">
+
+    {% include header.html %}
+
+      <!-- Main -->
+        <div id="main">
+          <div class="container">
+
+            <div class="row">
+
+              <!-- Sidebar -->
+                <div id="sidebar" class="4u 12u(mobile)">
+
+                  {% if page.photo %}
+                  <img src="{{ page.photo | prepend: "/img/faculty/" | prepend: site.baseurl }}" width="150"/>
+                  {% endif %}
+
+                  <section>
+                    <ul class="style2">
+                      <li class="icon fa-at">{{ page.email }}</li>
+                      <li class="icon fa-phone">{{ page.phone }}</li>
+                      <li class="icon fa-building-o">{{ page.office }}</li>
+                    </ul>
+                  </section>
+                </div>
+
+              <!-- Content -->
+                <div id="content" class="8u 12u(mobile) important(mobile)">
+                  <article>
+                    <header>
+                      <h2>{{ page.title }}</h2>
+                    </header>
+                    {{ content }}
+                  </article>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+    {% include copyright.html %}
+
+  </div>
+
+  {% include scripts.html %}
+
+</body>
+
+</html>

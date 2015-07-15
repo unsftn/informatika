@@ -1,0 +1,53 @@
+<!-- Header -->
+<div id="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <div id="logo">
+      <h1><a href="{{ site.baseurl }}/">Chair of Informatics</a></h1>
+    </div>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <ul>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <div id="banner">
+
+      <div id="slider">
+        <a href="#"><span class="previous-button icon fa-chevron-left"></span></a>
+        <a href="#"><span class="next-button icon fa-chevron-right"></span></a>
+        <div class="viewer">
+          <div class="reel">
+            <div class="slide">
+              <a class="link" href="#">Full story ...</a>
+              <img src="{{ "/img/slider/teaching.jpg" | prepend: site.baseurl }}" alt="" />
+            </div>
+            <div class="slide">
+              <a class="link" href="#">Full story ...</a>
+              <img src="{{ "/img/slider/research.jpg" | prepend: site.baseurl }}" alt="" />
+            </div>
+            <div class="slide">
+              <a class="link" href="#">Full story ...</a>
+              <img src="{{ "/img/slider/industry.jpg" | prepend: site.baseurl }}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header>
+        <!--<h2>Mucerat Leonros Cito Suere Nuctuset Ultrices Cosuere Aubilia Curae</h2>-->
+        <p>Chair of Informatics is a unit at <a href="http://www.uns.ac.rs" style="color:white">University of Novi Sad</a>, <a href="http://www.ftn.uns.ac.rs" style="color:white">Faculty of Technical Sciences</a>. We provide a number of courses in computer science, software engineering and information technology at the University of Novi Sad, as well as life-long learning courses and training activities for the general public. We conduct research in cooperation with domestic and international partners and implement various development projects with industry partners.</p>
+      </header>
+
+    </div>
+
+  </div>
+</div>

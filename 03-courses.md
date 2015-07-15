@@ -6,8 +6,8 @@ permalink: /courses/
 
 The courses taught by our faculty are listed by the curriculum.
 
-Software Engineering and Information Technologies
-=================================================
+
+### Software Engineering and Information Technologies
 
 {% for course in site.courses %}
   {% if course.curriculum contains "SIIT" %}
@@ -16,8 +16,7 @@ Software Engineering and Information Technologies
 
 {% endfor %}
 
-Computing and Control
-=====================
+### Computing and Control
 
 {% for course in site.courses %}
   {% if course.curriculum contains "E2" %}
@@ -26,8 +25,7 @@ Computing and Control
   
 {% endfor %}
 
-Graphical Engineering and Design
-================================
+### Graphical Engineering and Design
 
 {% for course in site.courses %}
   {% if course.curriculum contains "GRID" %}
@@ -36,9 +34,7 @@ Graphical Engineering and Design
 
 {% endfor %}
 
-
-Civil Engineering
-=================
+### Civil Engineering
 
 {% for course in site.courses %}
   {% if course.curriculum contains "GRAD" %}
@@ -47,9 +43,7 @@ Civil Engineering
 
 {% endfor %}
 
-
-Biomedical Engineering
-======================
+### Biomedical Engineering
 
 {% for course in site.courses %}
   {% if course.curriculum contains "BIOMED" %}
@@ -58,9 +52,7 @@ Biomedical Engineering
 
 {% endfor %}
 
-
-Geodesy and Geomatics
-=====================
+### Geodesy and Geomatics
 
 {% for course in site.courses %}
   {% if course.curriculum contains "GEO" %}
