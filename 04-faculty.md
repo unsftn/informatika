@@ -31,6 +31,15 @@ permalink: /faculty/
 
 {% endfor %}
 
+### Lecturers
+
+{% for fac in site.faculty %}
+  {% if fac.zvanje == "lecturer" %}
+  [{{fac.title}}]({{site.baseurl}}{{fac.url}})
+  {% endif %}
+
+{% endfor %}
+
 ### Teaching Assistants
 
 {% for fac in site.faculty %}
