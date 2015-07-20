@@ -1,7 +1,9 @@
 #content ul {
-    list-style: disc inside;
+    list-style: disc outside;
+    padding-left: 10px;
 }
 
 #content ol {
-    list-style: decimal inside;
+    list-style: decimal outside;
+    padding-left: 10px;
 }
