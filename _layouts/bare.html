@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="homepage" id="top">
+  <div id="page-wrapper">
+
+    {% include header.html %}
+
+      <!-- Main -->
+        <div id="main">
+          <div class="container">            
+            <!-- Content -->
+            {{ content }}
+          </div>
+        </div>
+
+    {% include copyright.html %}
+
+  </div>
+
+  {% include scripts.html %}
+
+</body>
+
+</html>

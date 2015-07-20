@@ -1,0 +1,98 @@
+---
+layout: bare
+title: Courses
+permalink: /courses/
+---
+
+{% assign courses = site.courses | sort: 'title' %}
+
+<div class="row">
+  <header>
+    <h2>Courses</h2>
+    <p>The courses taught by our faculty are listed by the curriculum at University of Novi Sad, Faculty of Technical Sciences.</p>
+  </header>
+</div>
+<div class="row">
+  <div class="6u 12u(mobile)">
+    <h3>Software Engineering and Information Technologies</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "SIIT" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Graphical Engineering and Design</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "GRID" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Biomedical Engineering</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "BIO" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Software and Information Technologies</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "SIT" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+  </div>
+  <div class="6u 12u(mobile)">
+    <h3>Computing and Control</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "E2" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}  
+    {% endfor %}
+    </p>
+
+    <h3>Civil Engineering</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "GI" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Geodesy and Geomatics</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "GEO" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Animation</h3>
+
+    <p>
+    {% for course in courses %}
+      {% if course.curriculum contains "ANI" %}
+      <a href="{{site.baseurl}}{{course.url}}">{{course.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+  </div>
+</div>
