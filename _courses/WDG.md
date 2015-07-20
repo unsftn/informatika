@@ -1,6 +1,6 @@
 ---
 layout: course
-title: Web Design (GRID)
+title: Web Design
 collection: courses
 path: WDG
 name: WDG
