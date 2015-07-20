@@ -1,4 +1,3 @@
-
 ---
 layout: faculty
 title: Vuk Malbaša

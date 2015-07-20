@@ -1,4 +1,3 @@
-
 ---
 layout: faculty
 title: Igor Cverdelj-Fogaraši
