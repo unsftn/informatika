@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: E-Learning Systems and Technologies

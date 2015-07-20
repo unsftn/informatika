@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Object Oriented Programming 1

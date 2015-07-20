@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Introduction to Computing

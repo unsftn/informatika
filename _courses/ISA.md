@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Internet Software Architectures

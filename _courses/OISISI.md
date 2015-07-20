@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Fundamentals of Information Systems and Software Engineering

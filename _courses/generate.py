@@ -41,8 +41,7 @@ kursevi = [
     {"title": u"E-Learning Systems and Technologies", "path": "TSEO", "curriculum": "SIT", "code": "SIT047", "people": u'"Milan Segedinac"', "canvas": "https://enastava.io/courses/123"},
 ]
 
-template = u"""
----
+template = u"""---
 layout: course
 title: %s
 collection: courses

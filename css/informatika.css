@@ -1,0 +1,7 @@
+#content ul {
+    list-style: disc inside;
+}
+
+#content ol {
+    list-style: decimal inside;
+}

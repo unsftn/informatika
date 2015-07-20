@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Introduction to Information Technologies in Geomatics

@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Security in E-Business Systems

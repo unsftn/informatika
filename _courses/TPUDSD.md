@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Technologies and Platforms for Managing Digital Contents and Documents

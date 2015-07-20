@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Numerical Algorithms and Numerical Software

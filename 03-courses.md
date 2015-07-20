@@ -37,7 +37,7 @@ The courses taught by our faculty are listed by the curriculum.
 ### Civil Engineering
 
 {% for course in site.courses %}
-  {% if course.curriculum contains "GRAD" %}
+  {% if course.curriculum contains "GI" %}
   [{{course.title}}]({{site.baseurl}}{{course.url}})
   {% endif %}
 
@@ -46,7 +46,7 @@ The courses taught by our faculty are listed by the curriculum.
 ### Biomedical Engineering
 
 {% for course in site.courses %}
-  {% if course.curriculum contains "BIOMED" %}
+  {% if course.curriculum contains "BIO" %}
   [{{course.title}}]({{site.baseurl}}{{course.url}})
   {% endif %}
 
@@ -56,6 +56,15 @@ The courses taught by our faculty are listed by the curriculum.
 
 {% for course in site.courses %}
   {% if course.curriculum contains "GEO" %}
+  [{{course.title}}]({{site.baseurl}}{{course.url}})
+  {% endif %}
+
+{% endfor %}
+
+### Animation
+
+{% for course in site.courses %}
+  {% if course.curriculum contains "ANI" %}
   [{{course.title}}]({{site.baseurl}}{{course.url}})
   {% endif %}
 

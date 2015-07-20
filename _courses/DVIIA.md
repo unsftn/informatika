@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Distributed Artificial Intelligence and Intelligent Agents

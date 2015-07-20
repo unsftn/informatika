@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Computing in Practice

@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Software Specification and Modeling

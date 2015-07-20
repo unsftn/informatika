@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: XML and Web Services

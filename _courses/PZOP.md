@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Platforms for Object Oriented Programming

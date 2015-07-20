@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: E-Payment Systems

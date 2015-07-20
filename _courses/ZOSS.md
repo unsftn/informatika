@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Protection and Recovery of Software Systems

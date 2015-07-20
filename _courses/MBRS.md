@@ -1,4 +1,3 @@
-
 ---
 layout: course
 title: Methodologies for Rapid Software Development
