@@ -1,6 +1,6 @@
 ---
 layout: course
-title: Web Design (ANI)
+title: Web Design
 collection: courses
 path: WDA
 name: WDA
