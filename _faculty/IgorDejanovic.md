@@ -90,3 +90,10 @@ Management.
  * Upravljanje softverskim projektom, FTN - Novi Sad
  * Metodologije brzog razvoja softvera, FTN - Novi Sad
  * Razvoj softvera i programiranje sistema, Računarski fakultet - Beograd
+
+### phD Dissertation
+  * [Prilog metodama brzog razvoja softvera na bazi proširivih jezičkih specifikacija](http://www.doiserbia.nb.rs/phd/university.aspx?theseid=NS20110103DEJANOVIC)
+
+### Magistar thesis
+  * [Metamodel, editor modela i generator poslovnih aplikacija](http://mobins.uns.ac.rs/sites/mobins.uns.ac.rs/files/IDejanovic_DOMMLite.pdf)
+
