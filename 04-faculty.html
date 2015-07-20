@@ -1,0 +1,71 @@
+---
+layout: bare
+title: Faculty
+permalink: /faculty/
+---
+
+{% assign faculty = site.faculty | sort: 'title' %}
+
+<div class="row">
+  <header>
+    <h2>Faculty</h2>
+  </header>
+</div>
+<div class="row">
+  <div class="6u 12u(mobile)">
+    <h3>Full Professors</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "full" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Associate Professors</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "associate" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Assistant Professors</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "assistant" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Lecturers</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "lecturer" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+  </div>
+  <div class="6u 12u(mobile)">
+    <h3>Teaching Assistants</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "TA" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+
+    <h3>Staff</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "staff" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
+  </div>
+</div>
