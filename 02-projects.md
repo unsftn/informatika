@@ -131,7 +131,7 @@ this project is to investigate the opportunities and benefits of applying
 semantic web technologies to document management and business process 
 management in an attempt to address those issues.
 
-### Legal Informatics
+### [Legal Informatics]({{ site.baseurl }}/legal)
 
 We engage in research on the application of computer science and information 
 technology in the field of law and develop legal information and software 

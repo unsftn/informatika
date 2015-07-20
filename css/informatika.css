@@ -15,3 +15,8 @@
 #content ol li {
     padding-left: 10px;
 }
+
+h3 a {
+    text-decoration: underline;
+    color: #68B065;
+}
