@@ -1,3 +1,4 @@
+
 ---
 layout: course
 title: Algorithms and Data Structures
@@ -7,11 +8,11 @@ name: ASP
 curriculum: [SIIT]
 code: SE0008
 people: ["Branko Milosavljević", "Dejan Mijić"]
-canvas: https://enastava.io/courses/135
+canvas: https://enastava.io/courses/123
 info:
 ---
 
 
-### Naslov
+### Podnaslov
 
 This page presents Algorithms and Data Structures.

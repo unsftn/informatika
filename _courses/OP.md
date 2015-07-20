@@ -1,3 +1,4 @@
+
 ---
 layout: course
 title: Introduction to Programming
@@ -6,9 +7,9 @@ path: OP
 name: OP
 curriculum: [SIIT]
 code: SE0001
-people: ["Branko Milosavljević", "Milan Segedinac", "Stevan Gostojić"]
-canvas: https://enastava.io/courses/87
-info: 
+people: ["Branko Milosavljević", "Milan Segedinac"]
+canvas: https://enastava.io/courses/123
+info:
 ---
 
 
