@@ -2,7 +2,7 @@
 
 ## Instalacija i podešavanje
 
-1. Instaliraj Ruby, Bundler i Jekyll kako piše ovde: https://help.github.com/articles/using-jekyll-with-pages/
+1. Instaliraj Ruby, Bundler i [Jekyll](http://jekyllrb.com) kako piše ovde: [https://help.github.com/articles/using-jekyll-with-pages/](https://help.github.com/articles/using-jekyll-with-pages/)
 
 2. Kloniraj sebi repozitorijum
   ```
@@ -28,3 +28,6 @@
 
 6. Fajlovi za članove katedre stoje u folderu `files/faculty/<ImePrezime>`.
 
+## Format fajlova
+
+Fajlovi mogu biti pisani u HTML ili [Markdown]() formatu, uz [Liquid](http://jekyllrb.com/docs/templates/) template engine. Bez obzira na format, obavezno se na početku fajla mora nalaziti [YAML frontmatter](http://jekyllrb.com/docs/frontmatter/).
