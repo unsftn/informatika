@@ -5,4 +5,4 @@ date: 2012-05-12
 files: []
 ---
 
-Odsek za primenjene računarske nauke i informatiku će imati radionicu na Festivalu nauke pod nazivom "Kad porastem biću programer". Vreme i mesto: 12. i 13. maj, Kampus Univerziteta u Novom Sadu (ispred FTN-a, kod fontane). Materijali koji će se koristiti na radionici: link
+Odsek za primenjene računarske nauke i informatiku će imati radionicu na [Festivalu nauke](http://www.festivalnauke.uns.ac.rs/index.html) pod nazivom [Kad porastem biću programer](http://www.festivalnauke.uns.ac.rs/2012/rs/program/022.html). Vreme i mesto: 12. i 13. maj, Kampus Univerziteta u Novom Sadu (ispred FTN-a, kod fontane). 

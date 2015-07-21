@@ -1,7 +1,60 @@
----
-layout: default
----
+<!DOCTYPE html>
+{% assign isodate = page.date | date: "%Y-%m-%d" %}
+{% assign humandate = page.date | date: "%b %-d, %Y" %}
+<html>
 
-<b>{{ page.date | date: "%b %-d, %Y" }}</b>
+{% include head.html %}
 
-{{ content }}
+<body class="homepage" id="top">
+  <div id="page-wrapper">
+
+    {% include header.html %}
+
+      <!-- Main -->
+        <div id="main">
+          <div class="container">
+
+            <div class="row">
+
+              <!-- Sidebar -->
+                <div id="sidebar" class="4u 12u(mobile)">
+
+                  <section>
+                    <ul class="style2">
+                      <li class="icon fa-calendar"><b>{{ humandate }}</b></li>
+                      {% if page.files.size > 0 %}
+                      <li class="icon fa-cloud-download">
+                        {% for file in page.files %}
+                          <a href="{{ "/files/events/" | append: isodate | append: "/" | append: file | prepend: site.baseurl }}">{{ file }}</a><br/>
+                        {% endfor %}
+                      </li>
+                      {% endif %}
+                    </ul>
+                  </section>
+                </div>
+
+              <!-- Content -->
+                <div id="content" class="8u 12u(mobile) important(mobile)">
+                  <article>
+                    <header>
+                      <h2>{{ page.title }}</h2>
+                    </header>
+                    {{ content }}
+                  </article>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+    {% include copyright.html %}
+
+  </div>
+
+  {% include scripts.html %}
+
+</body>
+
+</html>
+
