@@ -21,6 +21,12 @@ His research interests include information security, document management systems
 
 He is ACM member since 2007.
 
+### Courses
+
+[E-payment Systems]({{"/SEP" | prepend: site.baseurl}})
+[Security in E-business Systems ]({{"/BSEP" | prepend: site.baseurl}})
+[Information Security]({{"/IB" | prepend: site.baseurl}})
+
 ### Selected Publications
 
 TODO
