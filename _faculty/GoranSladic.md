@@ -5,13 +5,21 @@ collection: faculty
 path: Goran Sladic
 name: Goran Sladic
 zvanje: assistant
-email: xxx@uns.ac.rs
-phone: +381 21 485 xxxx
-office: TMD xxx
-photo: 
+email: s l a d i c g at uns.ac.rs
+phone: +381 21 485 2422
+office: TMD 120
+photo: GoranSladic.jpg
 ---
 
-Bio: TODO test
+Goran Sladić is an assistant professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2011.
+
+He received his B.Sc. (Dipl. Ing.) degree in 2002, M.Sc. (Magister) degree in 2006 and Ph.D. degree in 2011, all in Computer Science from the University of Novi Sad, Faculty of Technical Sciences.
+
+Since 2002 he is with the Faculty of Technical Science in Novi Sad.He published over 50 papers and participated in more than 20 projects. Goran Sladić serves or has served as a programme committee member for ICIST (International Conference on Information Society and Technology) and YU Info conference. He is also reviewer for several SCI journals.
+
+His research interests include information security, document management systems, semantic web, XML technologies and context-aware computing.
+
+He is ACM member since 2007.
 
 ### Selected Publications
 
