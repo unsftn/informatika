@@ -29,6 +29,18 @@ He is ACM member since 2007.
 
 Thesis (bachelor and master) guidelines for students can be found [here]("{{"/thesis/" | prepend: site.baseurl}})
 
+###Selected Projects
+
+[INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs]("{{"/projects#INCOMING" | prepend: site.baseurl}})  
+[REVLAB: Renewable Energy Virtual Laboratory]("{{"/projects#REVLAB" | prepend: site.baseurl}})  
+[4BRANE: Semantic-based Document and Workflow Management]("{{"/projects#4BRANE" | prepend: site.baseurl}})  
+[Legal Informatics]("{{"/projects#LegalInformatics" | prepend: site.baseurl}})  
+[INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs]("{{"/projects#INCOMING" | prepend: site.baseurl}})  
+[INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs]("{{"/projects#INCOMING" | prepend: site.baseurl}})  
+[INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs]("{{"/projects#INCOMING" | prepend: site.baseurl}})  
+[INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs]("{{"/projects#INCOMING" | prepend: site.baseurl}})  
+
+
 ### Selected Publications
 
 TODO
