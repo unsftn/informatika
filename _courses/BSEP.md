@@ -12,7 +12,7 @@ info:
 ---
 
 
-The course in Security in e-business systems is given in the first semester, 4th year of undergraduate studies.
+The course in Security in e-business systems is given in the 8th semester, 4th year of undergraduate studies.
 
 
 ### Goal 
