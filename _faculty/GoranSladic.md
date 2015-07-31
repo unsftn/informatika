@@ -27,7 +27,7 @@ He is ACM member since 2007.
 [Security in E-business Systems ]({{"/BSEP" | prepend: site.baseurl}})   
 [Information Security]({{"/IB" | prepend: site.baseurl}})   
 
-[Thesis (bachelor and master) guidelines for students]("{{"/thesis/" | prepend: site.baseurl}})
+Thesis (bachelor and master) guidelines for students can be found [here]("{{"/thesis/" | prepend: site.baseurl}})
 
 ### Selected Publications
 
