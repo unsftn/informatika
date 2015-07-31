@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-### INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs
+### <a name="INCOMING"></a> INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs
 
 [INCOMING](http://tempus-incoming.eu/) is a 3-year project (2012-2015) 
 funded by the TEMPUS IV programme of the European Union (project No. 
@@ -21,7 +21,7 @@ intends to enhance employment opportunities for graduates of the new
 programmes, targeting specifically Serbian labor market needs in 
 interdisciplinary computing.
 
-### ENGAGE: An Infrastructure for Open, Linked Governmental Data Provision towards Research Communities and Citizens
+### <a name="ENGAGE"></a> ENGAGE: An Infrastructure for Open, Linked Governmental Data Provision towards Research Communities and Citizens
 
 The main goal of [ENGAGE](http://www.engage-project.eu/) project is the 
 development and use of a data infrastructure, incorporating distributed and 
@@ -45,7 +45,7 @@ Union.
 ENGAGE is a combination of CP-CSA project funded under the European 
 Commission FP7 Programme.
 
-### KEYSTONE: Semantic Keyword-based Search on Structured Data Sources
+### <a name="KEYSTONE"></a> KEYSTONE: Semantic Keyword-based Search on Structured Data Sources
 
 [KEYSTONE](http://www.keystone-cost.eu/) is a 
 [COST Action](http://www.cost.eu/) IC1302 and the main objective of the 
@@ -62,7 +62,7 @@ documents. Furthermore, it will exploit the structured nature of data
 sources in defining complex query execution plans by combining partial 
 contributions from different sources.
 
-### REVLAB: Renewable Energy Virtual Laboratory
+### <a name="REVLAB"></a> REVLAB: Renewable Energy Virtual Laboratory
 
 The [REVLAB](http://www.revlab.uns.ac.rs/) project between the University of 
 Novi Sad, Faculty of Technical Sciences and the University of Szeged, 
@@ -110,7 +110,7 @@ laboratory as a new method for knowledge transfer between scientific
 institutions and economy actors, thus directly enhancing the innovative 
 capacity of the industry and SMEs in renewable energy sector.
 
-### Semantic-based Document and Workflow Management
+### <a name="4BRANE"></a> Semantic-based Document and Workflow Management
 
 Modern organizations aim to enhance the efficiency of business processes, 
 to improve the quality of their services and to reduce operational costs, 
@@ -131,7 +131,7 @@ this project is to investigate the opportunities and benefits of applying
 semantic web technologies to document management and business process 
 management in an attempt to address those issues.
 
-### [Legal Informatics]({{ site.baseurl }}/legal)
+### <a name="LegalInformatics"></a> [Legal Informatics]({{ site.baseurl }}/legal)
 
 We engage in research on the application of computer science and information 
 technology in the field of law and develop legal information and software 
@@ -148,7 +148,7 @@ Our past and current projects include legal document and business process
 management solutions, legal information retrieval and browsing systems and 
 text and data mining in the legal domain.
 
-### MDE Tools for Participative Development of Enterprise Applications
+### <a name="Kroki"></a> MDE Tools for Participative Development of Enterprise Applications
 
 [Kroki](http://www.kroki-mde.net/) (fr. croquis – sketch) is an open-source 
 tool for participatory development of business applications based on 
@@ -171,7 +171,7 @@ application tiers (the user interface, the business logic, and the database).
 
 Watch a demo at [YouTube](http://youtu.be/r2eQrl11bzA).
 
-### Tools for Domain-Specific Language Engineering
+### <a name="TDSLE"></a> Tools for Domain-Specific Language Engineering
 
 A set of FLOSS tools whose aim is to help in the creation and maintenance of 
 textual Domain-Specific Languages. Currently two tools are developed and used 
@@ -195,7 +195,7 @@ Language Workbench called [Textile](https://github.com/igordejanovic/Textile)
 is in conception phase. It it envisioned as an IDE built on top of Arpeggio 
 and textX that will enable easy DSL specification and evolution.
 
-### Platform-independent Code Generation for Controllers (Typhoon HIL)
+### <a name="PICGC"></a> Platform-independent Code Generation for Controllers (Typhoon HIL)
 
 Project description
 
@@ -235,7 +235,7 @@ Technological Development of Republic of Serbia.
 and Technological Development of Autonomous Province of Vojvodina and Ministry 
 of Education, Science and Technological Development of Republic of Serbia.
 
-### Automated summarization and sentiment mining in Serbian language
+### <a name="ASSMSL"></a> Automated summarization and sentiment mining in Serbian language
 
 Monitoring public opinions has its use in vast number of domains. For example, 
 consumers tend to decide on purchasing a product based on the recommendations 
@@ -259,7 +259,7 @@ English. The project encompasses many aspects of text mining and natural
 language processing, such as: text classification, summarization, topic 
 mining, subjectivity detection and sentiment mining.
 
-### Healthcare Text Mining
+### <a name="HTM"></a> Healthcare Text Mining
 
 Recent advances in the availability of electronic health records (EHRs) 
 provide an opportunity to improve the quality of clinical care and to 
@@ -278,7 +278,7 @@ clinical narratives. Our partner in this project is the team from the
 University of Manchester, School of Computer Science under the leadership of 
 prof. Goran Nenadic.
 
-### Software Performance Monitoring and Management
+### <a name="SPMM"></a> Software Performance Monitoring and Management
 
 This project deals with problems of software performance management. The main 
 focus of the project is the devlopment of techniques for efficient monitoring 
