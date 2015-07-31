@@ -110,7 +110,7 @@ laboratory as a new method for knowledge transfer between scientific
 institutions and economy actors, thus directly enhancing the innovative 
 capacity of the industry and SMEs in renewable energy sector.
 
-### <a name="4BRANE"></a> Semantic-based Document and Workflow Management
+### <a name="4BRANE"></a> 4BRANE: Semantic-based Document and Workflow Management
 
 Modern organizations aim to enhance the efficiency of business processes, 
 to improve the quality of their services and to reduce operational costs, 
