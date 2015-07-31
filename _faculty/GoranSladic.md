@@ -5,7 +5,7 @@ collection: faculty
 path: Goran Sladic
 name: Goran Sladic
 zvanje: assistant
-email: s l a d i c g at uns.ac.rs
+email: s l a d i c g   at   uns.ac.rs
 phone: +381 21 485 2422
 office: TMD 120
 photo: GoranSladic.jpg
