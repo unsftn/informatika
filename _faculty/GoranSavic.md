@@ -6,7 +6,7 @@ path: Goran Savic
 name: Goran Savic
 zvanje: assistant
 email: s a v i c g   at   uns.ac.rs
-phone: -
+phone: +381 21 485 2438
 office: PC-1
 photo: GoranSavic.jpg
 ---
