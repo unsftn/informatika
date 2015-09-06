@@ -64,8 +64,8 @@ This strategy consists of several phases:
 
 ELIDL was evaluated on the group of 16 participants. The following data collection instruments were used in the evaluation:
 
-+ [Background_questionnaire]({{ site.baseurl }}/files/other/elidl/Background_questionnaire.xml)
-+ [Test 1]({{ site.baseurl }}/files/other/elidl/Test_1.xml)
-+ [Test 2]({{ site.baseurl }}/files/other/elidl/Test_2.xml)
-+ [Test 3]({{ site.baseurl }}/files/other/elidl/Test_3.xml)
-+ [Characteristic questionnaire]({{ site.baseurl }}/files/other/elidl/Characteristic_questionnaire.xml)
++ [Background_questionnaire]({{ site.baseurl }}/files/other/elidl/Background_questionnaire.pdf)
++ [Test 1]({{ site.baseurl }}/files/other/elidl/Test_1.pdf)
++ [Test 2]({{ site.baseurl }}/files/other/elidl/Test_2.pdf)
++ [Test 3]({{ site.baseurl }}/files/other/elidl/Test_3.pdf)
++ [Characteristic questionnaire]({{ site.baseurl }}/files/other/elidl/Characteristic_questionnaire.pdf)
