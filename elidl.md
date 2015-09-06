@@ -16,6 +16,8 @@ Here you can find some representative instructional strategies described using E
 #### No-sequencing
 In this instructional strategy, the learner is free to choose learning activities at will, in any order and without any restrictions. No sequencing information is specified in this strategy (Chew and Hua, 2008). 
 
++ [no_sequencing.xml]({{ site.baseurl }}/files/other/elidl/no_sequencing.xml)
+
 #### Linear
 
 In this mode, the learner must progress through the contents in a pre-determined order.

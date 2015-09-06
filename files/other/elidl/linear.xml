@@ -1,0 +1,105 @@
+<instructional-design root = "course">
+	<uol-structure>
+		<!-- lessons -->
+		<sequence element = "lesson" element-id="LESSON_SEQUENCE" sequence-element-id="LESSON">
+			<!-- topics -->
+			<sequence element = "topic" element-id = "TOPIC_SEQUENCE" sequence-element-id="TOPIC">
+				<learning-object>
+					<selection-rule>
+						<include att-name="type" att-value="explanation-content" priority="1"/>  
+						<include att-name="type" att-value="examples" priority="2"/>  
+						<include att-name="type" att-value="*" priority="3"/>  
+					</selection-rule>					
+				</learning-object>
+			</sequence>
+		</sequence>		
+		
+		<!-- projects -->
+		<sequence element="course" element-id = "PROJECT_SEQUENCE" sequence-element-id="PROJECT">
+			<selection-rule>
+				<include att-name="type" att-value="project" priority="1"/>
+			</selection-rule>
+			<grading>
+				<type>number</type>
+				<min-value>0</min-value>
+				<max-value>50</max-value>
+				<threshold>25</threshold>
+			</grading>			
+		</sequence>
+		 		
+	</uol-structure>
+	
+	<element-relationships>
+		<!-- we create a relationship between 2 lessons -->
+		<element-relationship>
+			<element element-ref="LESSON" alias="l1"/>
+			<element element-ref="LESSON" alias="l2"/>
+			<join> 
+				<!-- join a lesson with its following lesson  -->
+				<less-than>
+					<index element="l1"/>
+					<index element="l2"/>
+				</less-than>						
+			</join>
+			<conditions>
+				<!-- a lesson is not available unless a student complete the previous lesson -->
+				<if> 
+					<not>
+						<completed element="l1"/>
+					</not>
+				</if>
+				<then>
+					<hide element="l2"/>
+				</then>
+				<else>
+					<show element="l2"/>
+				</else>
+			</conditions>
+		</element-relationship> 	 
+		
+		<!-- we create a relationship between lesson sequence and project sequence -->
+		<element-relationship> 
+			<element element-ref="LESSON_SEQUENCE" alias="ls"/>
+			<element element-ref="PROJECT_SEQUENCE" alias="ps"/>			
+			<conditions>
+				<!--  projects are not available until we complete all lessons -->
+				<if> 
+					<completed element="ls"/>
+				</if>
+				<then>
+					<show element="ps"/>
+				</then>
+				<else>
+					<hide element="ps"/>
+				</else>
+			</conditions>
+		</element-relationship>
+		
+		<!-- we create a relationship between 2 projects -->
+		<element-relationship>
+			<element element-ref="PROJECT" alias="p1"/>
+			<element element-ref="PROJECT" alias="p2"/>
+			<!-- we create a join between project and its following projects  -->
+			<join> 
+				<less-than>
+					<index element="p1"/>
+					<index element="p2"/>
+				</less-than>						
+			</join>
+			<conditions>
+				<!-- project is not available unless a student complete the previous project -->
+				<if> 
+					<not>
+						<completed element="p1"/>
+					</not>
+				</if>
+				<then>
+					<hide element="p2"/>
+				</then>
+				<else>
+					<show element="p2"/>
+				</else>
+			</conditions>
+		</element-relationship>		
+	</element-relationships>
+</instructional-design>
