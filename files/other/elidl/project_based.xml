@@ -21,7 +21,7 @@
 							<selection-rule>
 								<include att-name="type" att-value="*" priority="1"/> 
 							</selection-rule>					
-						</sequence>
+						</learning-object>
 					</sequence>
 				</sequence>
 
@@ -29,7 +29,7 @@
 					<selection-rule> 
 						<include att-name="label" att-value="milestone"/>
 					</selection-rule>	
-				</sequence>				
+				</learning-object>				
 			</element-group>
 		</element-group>
 		
