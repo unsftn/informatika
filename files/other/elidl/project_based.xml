@@ -1,0 +1,121 @@
+<instructional-design level="course">
+	<uol-structure>
+		<element-group element-id="MAIN_PHASE">
+			<learning-object element-id="INTRODUCTION"><!-- introduction first -->
+				<selection-rule>
+					<include att-name="label" att-value="introduction"/>
+				</selection-rule>
+			</learning-object>
+			
+			<learning-object element-id="PROJECT_LIST"> 
+				<selection-rule>
+					<include att-name="label" att-value="project_list"/>
+				</selection-rule>				
+			</learning-object>
+			
+			<element-group id="PROJECT_PHASE">			
+				<!-- Information gathering phase -->
+				<sequence element = "lesson">
+					<sequence element = "topic">
+						<learning-object>
+							<selection-rule>
+								<include att-name="type" att-value="*" priority="1"/> 
+							</selection-rule>					
+						</sequence>
+					</sequence>
+				</sequence>
+
+				<learning-object element-id="MILESTONE"> 
+					<selection-rule> 
+						<include att-name="label" att-value="milestone"/>
+					</selection-rule>	
+				</sequence>				
+			</element-group>
+		</element-group>
+		
+		<learning-object element-id="FINISH">
+			<selection-rule>
+				<include att-name="label" att-value="project_finish"/>
+			</selection-rule>	
+			<grading>
+				<type>grading</type>
+				<min-value>0</min-value>
+				<max-value>100</max-value>
+				<threshold>55</threshold>
+			</grading>
+		</learning-object>		
+	</uol-structure>
+	
+	<element-relationships>
+		<element-relationship> 
+			<element element-ref="MAIN_PHASE" alias="mp"/>
+			<element element-ref="FINISH" alias="f"/>			
+			<conditions>
+				<if> 
+					<completed element="mp"/>
+				</if>
+				<then>
+					<show element="f"/>
+				</then>
+				<else>
+					<hide element="f"/>
+				</else>
+			</conditions>
+		</element-relationship>				
+		
+		<element-relationship> 
+			<element element-ref="INTRODUCTION" alias="i"/>
+			<element element-ref="PROJECT_LIST" alias="pl"/>			
+			<conditions>
+				<if> 
+					<completed element="i"/>
+				</if>
+				<then>
+					<show element="pl"/>
+				</then>
+				<else>
+					<hide element="pl"/>
+				</else>
+			</conditions>
+		</element-relationship>				
+
+		<element-relationship> 
+			<element element-ref="PROJECT_LIST" alias="pl"/>
+			<element element-ref="PROJECT_PHASE"alias="pp"/>			
+			<conditions>
+				<if> 
+					<completed element="pl"/>
+				</if>
+				<then>
+					<show element="pp"/>
+				</then>
+				<else>
+					<hide element="pp"/>
+				</else>
+			</conditions>
+		</element-relationship>					
+
+		<element-relationship> 
+			<element element-ref="MILESTONE" alias="m1"/>
+			<element element-ref="MILESTONE" alias="m2"/>			
+			<join> 
+				<less-than>
+					<index element="m1"/>
+					<index element="m2"/>
+				</less-than>						
+			</join>			
+			<conditions>
+				<if>
+					<completed element="m1"/>
+				</if>
+				<then>
+					<show element="m2"/>
+				</then>
+				<else>
+					<hide element="m2"/>
+				</else>
+			</conditions>
+		</element-relationship>				
+	</element-relationships>	
+	
+</instructional-design>
