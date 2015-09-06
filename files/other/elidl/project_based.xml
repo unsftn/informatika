@@ -81,7 +81,7 @@
 
 		<element-relationship> 
 			<element element-ref="PROJECT_LIST" alias="pl"/>
-			<element element-ref="PROJECT_PHASE"alias="pp"/>			
+			<element element-ref="PROJECT_PHASE" alias="pp"/>			
 			<conditions>
 				<if> 
 					<completed element="pl"/>
