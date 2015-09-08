@@ -12,11 +12,12 @@ photo: IgorDejanovic.jpg
 ---
 
 Igor Dejanović received a PhD degree at University of Novi Sad in 2012.  He
-holds the assistant professor position at University of Novi Sad, Faculty of
-Technical Sciences. He has authored or co-authored many scientific papers. He
-is an active member of open-source community. His area of work and interest is
-Model-Driven Engineering, Domain-Specific Languages, Software Configuration
-Management.
+holds an assistant professor position at the Faculty of Technical Sciences,
+University of Novi Sad. He has authored or co-authored many scientific papers.
+He is an active member of open-source community.
+
+His areas of work and interest are Model-Driven Engineering, Domain-Specific
+Languages, Software Configuration Management.
 
 ### Selected Publications
 
