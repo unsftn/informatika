@@ -76,10 +76,10 @@
                 <ul class="style1">
                   {% for post in site.posts limit: 6 %}
                   <li>
-                    <p><a href="{{site.baseurl}}/{{post.url}}">{{ post.title }}</a></p>
+                    <p><a href="{{post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
                     <div class="meta">
                       <span class="icon fa-clock-o date">{{post.date}}</span>
-                      <a href="{{site.baseurl}}/{{post.url}}" class="more"><span>Read more</span></a>
+                      <a href="{{post.url | prepend: site.baseurl }}" class="more"><span>Read more</span></a>
                     </div>
                   </li>
                   {% endfor %}
