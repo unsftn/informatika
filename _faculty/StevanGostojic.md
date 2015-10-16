@@ -11,7 +11,7 @@ office: PC Lab
 photo: StevanGostojic.jpg
 ---
 
-Bio: Stevan Gostojić is assistant professor of applied computer science and informatics at Faculty of Technical Sciences, University of Novi Sad. He has a Ph.D. in electrical engineering and computer science from the same university. His research interests are legal informatics, e-government, document and business process management, WWW, XML and semantic web.
+Stevan Gostojić is assistant professor of applied computer science and informatics at Faculty of Technical Sciences, University of Novi Sad. He has a Ph.D. in electrical engineering and computer science from the same university. His research interests are legal informatics, e-government, document and business process management, WWW, XML and semantic web.
 
 ### Selected Publications
 
