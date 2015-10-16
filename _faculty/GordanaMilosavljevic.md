@@ -4,7 +4,7 @@ title: Gordana Milosavljević
 collection: faculty
 path: GordanaMilosavljevic
 name: GordanaMilosavljevic
-zvanje: assistant
+zvanje: associate
 email: grist@uns.ac.rs
 phone: +381 21 485 2447
 office: TMD 16A

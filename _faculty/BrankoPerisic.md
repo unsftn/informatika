@@ -4,7 +4,7 @@ title: Branko Perišić
 collection: faculty
 path: BrankoPerisic
 name: BrankoPerisic
-zvanje: associate
+zvanje: full
 email: perisic@uns.ac.rs
 phone: +381 21 485 2244
 office: FTN razvojni tim
