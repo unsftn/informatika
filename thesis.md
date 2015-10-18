@@ -67,6 +67,4 @@ Novi format stranice sa zadatkom rada dat je [ovde]({{"/files/thesis/zadatak.doc
 
 ### Predaja rada
 
-Odštampan i ukoričen tekst rada predaje se mentoru u odgovarajućem broju primeraka - po jedan primerak za svakog člana komisije, jedan primerak za Biblioteku FTN, i (bar) jedan primerak za kandidata. Primerak koji se predaje u Biblioteku FTN mora biti tvrdo ukoričen, dok ostali primerci mogu biti meko ukoričeni (broširan povez). Primerak za Biblioteku FTN mora da potpiše mentor rada pre njegove predaje na studentsku službu.
-
-Odbranu rada nije moguće zakazati pre nego što se tvrdo ukoričeni potpisani primerak preda na studentsku službu FTN.
+*NOVO:* Jedini primerak koji je potrebno odštampati na papiru je onaj koji se predaje u Biblioteku FTN. On mora biti tvrdo ukoričen i mora biti potpisan od strane mentora i rukovodioca studijskog programa (taj potpis se dobija kod sekretarice departmana). U biblioteku FTN se, osim ukoričenog rada, predaje i CD sa radom u PDF formatu. Odbranu rada nije moguće zakazati pre nego što se tvrdo ukoričeni potpisani primerak preda na studentsku službu FTN. Članovi komisije moraju dobiti konačnu verziju rada u PDF formatu na email.
