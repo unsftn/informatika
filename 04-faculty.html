@@ -12,7 +12,7 @@ permalink: /faculty/
   </header>
 </div>
 <div class="row">
-  <div class="6u 12u(mobile)">
+  <div class="4u 12u(mobile)">
     <h3>Full Professors</h3>
     <p>
     {% for fac in faculty %}
@@ -40,6 +40,16 @@ permalink: /faculty/
     {% endfor %}
     </p>
 
+  </div>
+  <div class="4u 12u(mobile)">
+    <h3>Visiting Professors</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "visiting" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
     <h3>Lecturers</h3>
     <p>
     {% for fac in faculty %}
@@ -49,7 +59,7 @@ permalink: /faculty/
     {% endfor %}
     </p>
   </div>
-  <div class="6u 12u(mobile)">
+  <div class="4u 12u(mobile)">
     <h3>Teaching Assistants</h3>
     <p>
     {% for fac in faculty %}
