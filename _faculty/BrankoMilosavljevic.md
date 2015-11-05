@@ -7,7 +7,7 @@ name: BrankoMilosavljevic
 zvanje: full
 email: mbranko@uns.ac.rs
 phone: +381 21 485 2422
-office: TMD 120
+office: Park City Lab
 photo: BrankoMilosavljevic.jpg
 ---
 

@@ -53,11 +53,17 @@
 
           <div class="6u 12u(mobile)">
             <section>
+              <!--
               <header>
                 <h2><span class="icon fa-child"></span> devHub.sh</h2>
               </header>
               <p>devHub.sh is a social hub for IT students, professionals, academics, and enthusiasts.</p>
               <a href="http://devhub.sh" class="icon fa-arrow-right button">More</a>
+              -->
+              <header>
+                <h2><span class="icon fa-building-o right"></span> Where is the building?</h2>
+              </header>
+              <p>Our old building at <a href="https://www.google.com/maps/place//@45.2445086,19.8477137,19z/data=!4m2!3m1!1s0x0000000000000000:0x4a4e31a14698c23b">Fruškogorska 11, Novi Sad</a> is being demolished to give space for a new one. In the meantime, we are at <a href="https://www.google.com/maps/place/%D0%A4%D0%A2%D0%9D-%D0%A1%D0%98%D0%98%D0%A2/@45.2397092,19.8376759,19.89z/data=!4m5!1m2!3m1!1s0x0000000000000000:0x4a4e31a14698c23b!3m1!1s0x0000000000000000:0x79940bd3b2cc0561">Narodnog Fronta 21a, Novi Sad</a>.</p>
             </section>
           </div>
 
@@ -76,10 +82,10 @@
                 <ul class="style1">
                   {% for post in site.posts limit: 6 %}
                   <li>
-                    <p><a href="{{site.baseurl}}/{{post.url}}">{{ post.title }}</a></p>
+                    <p><a href="{{post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
                     <div class="meta">
                       <span class="icon fa-clock-o date">{{post.date}}</span>
-                      <a href="{{site.baseurl}}/{{post.url}}" class="more"><span>Read more</span></a>
+                      <a href="{{post.url | prepend: site.baseurl }}" class="more"><span>Read more</span></a>
                     </div>
                   </li>
                   {% endfor %}

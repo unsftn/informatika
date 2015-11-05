@@ -4,7 +4,7 @@ title: Dragan Ivanović
 collection: faculty
 path: DraganIvanovic
 name: DraganIvanovic
-zvanje: assistant
+zvanje: associate
 email: xxx@uns.ac.rs
 phone: +381 21 485 xxxx
 office: TMD xxx
