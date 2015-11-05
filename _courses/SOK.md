@@ -6,12 +6,14 @@ path: SOK
 name: SOK
 curriculum: [E2, SIIT]
 code: SIxxxx
-people: ["Igor Dejanović"]
-canvas: https://enastava.io/courses/123
+people: ["Igor Dejanović", "Željko Ivković", "Miloš Simić"]
+canvas: https://enastava.io/courses/193
 info:
 ---
 
 
-### Podnaslov
+### Course Materials
 
-This page presents Software Patterns and Components
+Slides from the lectures can be found [here](http://igordejanovic.net/courses/sok/).
+
+Additional materials are on the canvas page.

@@ -7,11 +7,13 @@ name: UKS
 curriculum: [E2, SIIT]
 code: SIxxxx
 people: ["Igor Dejanović", "Željko Vuković"]
-canvas: https://enastava.io/courses/123
+canvas: https://enastava.io/courses/209
 info:
 ---
 
 
-### Podnaslov
+### Course Materials
 
-This page presents Software Configuration Management.
+Slides from the lectures can be found [here](http://igordejanovic.net/courses/uks/).
+
+Additional materials are on the canvas page.
