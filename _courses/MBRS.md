@@ -24,13 +24,13 @@ visual features of typical software systems and the design of software tools for
 
 # Tools used:
 
--No Magic MagicDraw 18
--Eclipse
--Dresden OCL
--AspectJ
--Freemarker
--RDBMS of choice
--Git
+- No Magic MagicDraw 18
+- Eclipse
+- Dresden OCL
+- AspectJ
+- Freemarker
+- RDBMS of choice
+- Git
 
 Use of alternative tools is also possible after consulting with the teaching staff. 
 
