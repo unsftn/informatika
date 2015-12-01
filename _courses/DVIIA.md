@@ -12,6 +12,6 @@ info:
 ---
 
 
-### Podnaslov
+### Introduction
 
-This page presents Distributed Artificial Intelligence and Intelligent Agents.
+This course is an introduction to Agent Technology and Agent Middleware design. It uses the Siebog multiagent middleware for both lectures and exercises.
