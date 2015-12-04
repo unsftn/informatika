@@ -8,7 +8,7 @@ zvanje: full
 email: minja@uns.ac.rs
 phone: +381 21 485 2422
 office: Park City Lab
-photo: 
+photo: MilanVidakovic.jpg
 ---
 
 Milan Vidaković received a PhD degree at University of Novi Sad in 2003. He holds the professor position at University of Novi Sad, Faculty of Technical Sciences. He has authored or co-authored more than 90 scientific papers. Most of these publications are related to intelligent agents, multiagent middlewares, distributed computing, software engineering, and internationalization.
