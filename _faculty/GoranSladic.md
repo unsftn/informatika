@@ -21,6 +21,9 @@ His research interests include information security, document management systems
 
 He is ACM member since 2007.
 
+ResearchGate: [https://www.researchgate.net/profile/Goran_Sladic](https://www.researchgate.net/profile/Goran_Sladic){:target="_blank"}  
+ORCID: [http://orcid.org/0000-0002-0691-7392](http://orcid.org/0000-0002-0691-7392){:target="_blank"}  
+
 ### Courses
 
 [E-payment Systems]({{"/SEP" | prepend: site.baseurl}})   
@@ -38,10 +41,7 @@ Thesis (bachelor and master) guidelines for students can be found [here]({{"/the
 
 
 
-### Links
 
-ResearchGate: [https://www.researchgate.net/profile/Goran_Sladic](https://www.researchgate.net/profile/Goran_Sladic)
-ORCID: [http://orcid.org/0000-0002-0691-7392](http://orcid.org/0000-0002-0691-7392)
  
 
 ### Selected Publications
