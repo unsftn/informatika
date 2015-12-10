@@ -38,6 +38,11 @@ Thesis (bachelor and master) guidelines for students can be found [here]({{"/the
 
 
 
+### Links
+ResearchGate: https://www.researchgate.net/profile/Goran_Sladic
+ORCID: http://orcid.org/0000-0002-0691-7392
+
+
 ### Selected Publications
 
 TODO
