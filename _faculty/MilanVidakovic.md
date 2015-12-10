@@ -13,7 +13,7 @@ photo: MilanVidakovic.jpg
 
 Milan Vidaković received a PhD degree at University of Novi Sad in 2003. He holds the professor position at University of Novi Sad, Faculty of Technical Sciences. He has authored or co-authored more than 90 scientific papers. Most of these publications are related to intelligent agents, multiagent middlewares, distributed computing, software engineering, and internationalization.
 
-Full professor since June 2'nd 2014. (field of applied computer science and informatics - primenjene računarske nauke i informatika).
+Full professor since July 2'nd 2014. (field of applied computer science and informatics - primenjene računarske nauke i informatika).
 
 ### Selected Publications
 
