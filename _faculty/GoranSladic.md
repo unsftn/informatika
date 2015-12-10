@@ -22,6 +22,7 @@ His research interests include information security, document management systems
 He is ACM member since 2007.
 
 ResearchGate: [https://www.researchgate.net/profile/Goran_Sladic](https://www.researchgate.net/profile/Goran_Sladic){:target="_blank"}  
+LinkedIn:  [https://rs.linkedin.com/in/goran](https://rs.linkedin.com/in/goran){:target="_blank"}  
 ORCID: [http://orcid.org/0000-0002-0691-7392](http://orcid.org/0000-0002-0691-7392){:target="_blank"}  
 
 ### Courses
