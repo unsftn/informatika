@@ -9,6 +9,12 @@ email: s l a d i c g   at   uns.ac.rs
 phone: +381 21 485 2422
 office: TMD 120
 photo: GoranSladic.jpg
+
+linkedin:  https://rs.linkedin.com/in/goran  
+researchgate: https://www.researchgate.net/profile/Goran_Sladic  
+orcid: http://orcid.org/0000-0002-0691-7392   
+scholar: https://scholar.google.com/citations?user=kB3y49oAAAAJ&hl=en&oi=ao  
+
 ---
 
 Goran Sladić is an assistant professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2011.
@@ -21,9 +27,7 @@ His research interests include information security, document management systems
 
 He is ACM member since 2007.
 
-ResearchGate: [https://www.researchgate.net/profile/Goran_Sladic](https://www.researchgate.net/profile/Goran_Sladic){:target="_blank"}  
-LinkedIn:  [https://rs.linkedin.com/in/goran](https://rs.linkedin.com/in/goran){:target="_blank"}  
-ORCID: [http://orcid.org/0000-0002-0691-7392](http://orcid.org/0000-0002-0691-7392){:target="_blank"}  
+
 
 ### Courses
 
