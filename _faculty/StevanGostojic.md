@@ -9,6 +9,10 @@ email: gostojic@uns.ac.rs
 phone: +381 21 485 2422
 office: PC Lab
 photo: StevanGostojic.jpg
+linkedin: https://www.linkedin.com/in/gostojic
+researchgate: https://www.researchgate.net/profile/Stevan_Gostojic
+scholar: https://scholar.google.com.br/citations?user=K2lVPowAAAAJ
+orcid: http://orcid.org/0000-0002-4458-3565
 ---
 
 Stevan Gostojić is assistant professor of applied computer science and informatics at Faculty of Technical Sciences, University of Novi Sad. He has a Ph.D. in electrical engineering and computer science from the same university. His research interests are legal informatics; e-government; document and business process management; and WWW, XML, and semantic web technologies.
