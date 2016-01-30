@@ -1,0 +1,116 @@
+<instructional-design level="Web_Programiranje">	
+	<uol-structure>
+		<learning-object element-id="INTRODUCTION"><!-- introduction first -->
+			<selection-rule>
+				<include att-name="type" att-value="explanation-content"/>
+				<include att-name="label" att-value="introduction"/>
+			</selection-rule>
+		</learning-object>		
+		
+		<sequence level = "lesson" element-id="LESSON_SEQUENCE" sequence-element-id="LESSON">		
+			<sequence level = "topic" element-id="TOPIC_SEQUENCE"> 
+				<learning-object>
+					<selection-rule>
+						<include att-name="type" att-value="explanation-content" priority="1"/>  
+						<include att-name="type" att-value="examples" priority="2"/>  
+						<include att-name="type" att-value="*" priority="3"/>  
+						<exclude att-name="type" att-value="exercise"/>
+					</selection-rule>					
+				</learning-object>
+			</sequence>
+		</sequence>
+		
+		<sequence element = "lesson" element-id="TEST_LESSON_SEQUENCE">
+			<learning-object element-id="TEST">
+				<selection-rule>
+					<include att-name="label" att-value="test"/>
+				</selection-rule>
+				<grading>
+					<type>boolean</type>
+				</grading>
+			</learning-object>
+		</sequence>				
+	</uol-structure>
+	
+	<element-relationships>	
+		<element-relationship>
+			<element element-ref="INTRODUCTION" alias="i"/><!-- before lesson_sequence, we have to finish introduction -->
+			<element element-ref="LESSON_SEQUENCE" alias="ls"/>	
+			<conditions>
+				<if> 
+					<completed element="i"/>
+				</if>
+				<then>
+					<show element="ls"/>
+				</then>
+				<else>
+					<hide element="ls"/>
+				</else>
+			</conditions>
+		</element-relationship>
+		
+		<element-relationship><!-- we create a relationship between 2 lessons -->
+			<element element-ref="LESSON" alias="l1"/>
+			<element element-ref="LESSON" alias="l2"/>
+			<join> 
+				<less-than><!-- we create a join between lesson and its following lesson  -->
+					<index element="l1"/>
+					<index element="l2"/>
+				</less-than>						
+			</join>
+			<conditions>
+				<if> 
+					<not>
+						<completed element="l1"/><!-- lesson is not available until we complete the previous one -->
+					</not>
+				</if>
+				<then>
+					<hide element="l2"/>
+				</then>
+				<else>
+					<show element="l2"/>
+				</else>
+			</conditions>
+		</element-relationship>		
+
+		<element-relationship>
+			<element element-ref="LESSON_SEQUENCE" alias="ls"/> <!-- before test_lesson_sequence, we have to finish lesson_sequence -->
+			<element element-ref="TEST_LESSON_SEQUENCE" alias="ts"/>			
+			<conditions>
+				<if> 
+					<completed element="ls"/>
+				</if>
+				<then>
+					<show element="ts"/>
+				</then>
+				<else>
+					<hide element="ts"/>
+				</else>
+			</conditions>
+		</element-relationship>		
+
+		<element-relationship>
+			<element element-ref="LESSON" alias="lesson"/>
+			<element element-ref="TEST" alias="test"/>			
+			<join> 
+				<equals> <!-- relation between test and its lesson -->
+					<name element="lesson"/> 
+					<parent-name element="test"/>
+				</equals>						
+			</join>				
+			<conditions>			
+				<if> 
+					<completed element="test"/><!-- if student pass lesson test, we shouldn't show that lesson -->
+				</if>
+				<then>
+					<hide element="lesson"/>
+				</then>
+				<else>
+					<show element="lesson"/>
+				</else>
+			</conditions>
+		</element-relationship>				
+		
+	</element-relationships>	
+</instructional-design>
+

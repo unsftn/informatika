@@ -1,0 +1,107 @@
+<instructional-design level="course">	
+	<uol-structure>
+		<learning-object element-id="INTRODUCTION"> <!-- introduction first -->
+			<selection-rule>
+				<include att-name="type" att-value="explanation-content"/>
+				<include att-name="label" att-value="introduction"/>
+			</selection-rule>
+		</learning-object>
+		
+		<sequence level = "lesson" element-id="LESSON_SEQUENCE">						
+			<learning-object element-id="PRE-TEST"> <!-- pre-test -->
+				<selection-rule>
+					<include att-name="label" att-value="pre-test"/>
+				</selection-rule>			
+				<grading>
+					<type>boolean</type>
+				</grading>
+			</learning-object>
+		
+			<sequence level = "topic" element-id="TOPIC_SEQUENCE"> 
+				<learning-object>
+					<selection-rule>
+						<include att-name="type" att-value="explanation-content" priority="1"/>  
+						<include att-name="type" att-value="examples" priority="2"/>  
+						<include att-name="type" att-value="*" priority="3"/>  
+						<exclude att-name="type" att-value="exercise"/>
+					</selection-rule>					
+				</learning-object>
+			</sequence>
+			
+			<learning-object element-id = "POST_TEST"> <!-- post-test -->
+				<selection-rule>
+					<include att-name="label" att-value="post-test"/>
+				</selection-rule>						
+				<grading>
+					<type>boolean</type>
+				</grading>											
+			</learning-object>
+		</sequence>
+	</uol-structure>
+	
+	<element-relationships>	
+		<element-relationship>
+			<element element-ref="INTRODUCTION" alias="i"/> <!-- before lesson_sequence  we have to finish introduction -->
+			<element element-ref="LESSON_SEQUENCE" alias="ls"/>	
+			<conditions>
+				<if> 
+					<completed element="i"/>
+				</if>
+				<then>
+					<show element="ls"/>
+				</then>
+				<else>
+					<hide element="ls"/>
+				</else>
+			</conditions>
+		</element-relationship>
+		<element-relationship>
+			<element element-ref="TOPIC_SEQUENCE" alias="ts"/> <!-- post-test is available after finishing lesson (all topics in the lesson) -->
+			<element element-ref="POST_TEST" alias="pt"/>
+			<join> 
+				<equals>
+					<parent-name element="ts"/>
+					<parent-name element="pt"/> <!-- relation is created only between a post-test and a topic that belongs to the same lesson -->
+				</equals>						
+			</join>			
+			<conditions>
+				<if> 
+					<completed element="ts"/>
+				</if>
+				<then>
+					<show element="pt"/>
+				</then>
+				<else>
+					<hide element="pt"/>
+				</else>
+			</conditions>
+		</element-relationship>
+		<element-relationship> <!-- relation between post-test and pre-test -->
+			<element element-ref="PRE_TEST" alias="pre"/>
+			<element element-ref="POST_TEST" alias="post"/>	
+			<join> 
+				<equals>
+					<parent-name element="pre"/>
+					<parent-name element="post"/>
+				</equals>						
+			</join>				
+			<conditions>
+				<if> 
+					<or> <!-- if a student complete pre-test or post-test, we should disable both post-test and pre-test -->
+						<completed element="pre"/>
+						<completed element="post"/>
+					</or>		
+				</if>
+				<then>
+					<hide element="pre"/>
+					<hide element="post"/>
+				</then>
+				<else>
+					<show element="pre"/>
+					<show element="post"/>
+				</else>					
+			</conditions>
+		</element-relationship>		
+	</element-relationships>	
+</instructional-design>
+

@@ -1,0 +1,44 @@
+<instructional-design root = "course">
+	<uol-structure>
+		<!--  lessons -->
+		<sequence element = "lesson" element-id = "LESSON_SEQUENCE">
+			<!-- topics --> 
+			<sequence element = "topic" element-id = "TOPIC_SEQUENCE"> 
+				<learning-object>
+					<selection-rule>
+						<include att-name="type" att-value="explanation-content" priority="1"/>  
+						<include att-name="type" att-value="examples" priority="2"/>  
+						<include att-name="type" att-value="*" priority="3"/>  
+						<exclude att-name="type" att-value="exercise"/>
+					</selection-rule>					
+				</learning-object>
+			</sequence>
+			
+			<!-- exercises -->
+			<learning-object element-id = "LESSON_EXERCISE">
+				<selection-rule>
+					<include att-name="type" att-value="exercise"/>
+				</selection-rule>
+			</learning-object>			
+		</sequence>
+		
+		<!--  projects -->
+		<sequence element="course" element-id = "PROJECT_SEQUENCE" sequence-element-id="PROJECT">
+			<selection-rule>
+				<include att-name="type" att-value="project" priority="1"/>
+			</selection-rule>									
+			<grading>
+				<type>number</type>
+				<min-value>0</min-value>
+				<max-value>50</max-value>
+				<threshold>25</threshold>
+			</grading>			
+		</sequence> 			
+
+	</uol-structure>
+	
+	<element-relationships>
+		<!--  There is no any relationship - all resources are available. -->
+	</element-relationships>	
+	
+</instructional-design>

@@ -1,0 +1,131 @@
+<instructional-design root = "course">	
+	<uol-structure>	
+		<sequence element = "lesson" element-id="PRETEST_LESSON_SEQUENCE">
+			<learning-object element-id="PRE_TEST">
+				<selection-rule>
+					<include att-name="label" att-value="pre-test"/>
+				</selection-rule>
+				<grading>
+					<type>boolean</type>
+				</grading>
+			</learning-object>
+		</sequence>			
+		
+		<sequence element = "lesson" element-id="LESSON_SEQUENCE" sequence-element-id="LESSON">			
+			<sequence element = "topic" element-id="TOPIC_SEQUENCE"> 
+				<learning-object>
+					<selection-rule>
+						<include att-name="type" att-value="explanation-content" priority="1"/>  
+						<include att-name="type" att-value="example" priority="2"/>  
+						<include att-name="type" att-value="*" priority="3"/>  
+						<exclude att-name="type" att-value="exercise"/>
+					</selection-rule>					
+				</learning-object>
+			</sequence>			
+		</sequence>
+		
+		<sequence element = "lesson" element-id="POSTTEST_LESSON_SEQUENCE">
+			<learning-object element-id="POST_TEST">
+				<selection-rule>
+					<include att-name="label" att-value="post-test"/>
+				</selection-rule>
+				<grading>
+					<type>boolean</type>
+				</grading>
+			</learning-object>
+		</sequence>		
+		
+	</uol-structure>
+	
+	<element-relationships>	
+		<!-- before lesson_sequence, we have to finish pre tests -->				
+		<element-relationship>
+			<element element-ref="PRETEST_LESSON_SEQUENCE" alias="ptls"/>	
+			<element element-ref="LESSON_SEQUENCE" alias="ls"/>			
+			<conditions>
+				<if> 
+					<completed element="ptls"/>
+				</if>
+				<then>
+					<show element="ls"/>
+				</then>
+				<else>
+					<hide element="ls"/>
+				</else>
+			</conditions>
+		</element-relationship>		
+
+		<!-- we don't show lessons related to the passed pre-tests or passed post-tests --> 
+		<element-relationship>
+			<element element-ref="LESSON" alias="lesson"/>
+			<element element-ref="PRE_TEST" alias="pretest"/>
+			<element element-ref="POST_TEST" alias="posttest"/>						
+			<join> 
+				<and>
+					<equals> 
+						<name element="lesson"/> 
+						<parent-name element="pretest"/>
+					</equals>
+					<equals> 
+						<name element="lesson"/> 
+						<parent-name element="posttest"/>
+					</equals>						
+				</and>
+			</join>							
+			<conditions>
+				<if> 
+					<or>
+						<passed element="pretest"/>
+						<passed element="posttest"/>
+					</or>
+				</if>
+				<then>
+					<hide element="lesson"/>
+				</then>
+				<else>
+					<show element="lesson"/>
+				</else>
+			</conditions>
+		</element-relationship> 	
+
+		<!-- post-tests are available after we complete the lesson sequence -->
+		<!--  if we pass pretest, the lesson won't be shown, so we don't have to complete it -->
+		<element-relationship> 
+			<element element-ref="LESSON" alias="l"/>
+			<element element-ref="PRE_TEST" alias="pretest"/>	
+			<element element-ref="POST_TEST" alias="posttest"/>
+			<join> 
+				<and>
+					<equals>
+						<name element="l"/>
+						<parent-name element="pretest"/>
+					</equals>
+					<equals>
+						<name element="l"/>
+						<parent-name element="posttest"/>
+					</equals>
+					<equals>
+						<parent-name element="pretest"/>
+						<parent-name element="posttest"/>
+					</equals>					
+				</and>				
+			</join>
+			<conditions>
+				<if> 
+					<or>
+						<not>
+							<completed element="l"/>
+						</not>
+						<passed element="pretest"/>
+					</or>
+				</if>
+				<then>
+					<hide element="posttest"/>
+				</then>
+				<else>
+					<show element="posttest"/>
+				</else>
+			</conditions>
+		</element-relationship>		
+	</element-relationships>	
+</instructional-design>

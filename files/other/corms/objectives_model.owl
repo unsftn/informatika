@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:corms="http://informatika.ftn.uns.ac.rs/corms/objectives.owl#"
+  xml:base="http://informatika.ftn.uns.ac.rs/corms/objectives.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="LearningObjective">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:onProperty>
+          <owl:FunctionalProperty rdf:ID="objectiveId"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="LearningObjectiveSpecificity"/>
+  <owl:Class rdf:ID="LearningObjectiveCategoryProcess"/>
+  <owl:Class rdf:ID="LearningObjectiveCategoryKnowledge"/>
+  <owl:ObjectProperty rdf:ID="hasCategoryProcess">
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+    <rdfs:range rdf:resource="#LearningObjectiveCategoryProcess"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCategoryKnowledge">
+    <rdfs:range rdf:resource="#LearningObjectiveCategoryKnowledge"/>
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+  </owl:ObjectProperty>
+  <owl:TransitiveProperty rdf:ID="hasPrecondition">
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+    <rdfs:range rdf:resource="#LearningObjective"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:TransitiveProperty>
+  <owl:FunctionalProperty rdf:ID="objectiveName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#LearningObjective"/>
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasNext">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#LearningObjective"/>
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="objectiveDescription">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasSpecificity">
+    <rdfs:range rdf:resource="#LearningObjectiveSpecificity"/>
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="#objectiveId">
+    <rdfs:domain rdf:resource="#LearningObjective"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 536)  http://protege.stanford.edu -->
