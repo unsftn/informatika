@@ -46,7 +46,7 @@ The course management system has been evaluated on the Web programming course ta
 
 + [Web programming - learning objectives]({{ site.baseurl }}/files/other/corms/wp_objectives.owl)
 + [Web programming - learning resources](https://dl.dropboxusercontent.com/u/33159784/corms/wp_resources.zip)
-+ [Instructional strategy - no-sequencing]({{ site.baseurl }}/files/other/corms/is_no-sequencing.xml)
++ [Instructional strategy - no-sequencing]({{ site.baseurl }}/files/other/corms/is_no_sequencing.xml)
 + [Instructional strategy - linear]({{ site.baseurl }}/files/other/corms/is_linear.xml)
 + [Instructional strategy - knowledge-paced]({{ site.baseurl }}/files/other/corms/is_knowledge_paced.xml)
 + [Instructional strategy - remediation]({{ site.baseurl }}/files/other/corms/is_remediation.xml)
