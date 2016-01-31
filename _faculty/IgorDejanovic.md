@@ -9,6 +9,11 @@ email: igord@uns.ac.rs
 phone: +381 21 485 xxxx
 office: ---
 photo: IgorDejanovic.jpg
+
+linkedin:  https://www.linkedin.com/in/igor-dejanovic-62bb921
+researchgate: https://www.researchgate.net/profile/Igor_Dejanovic
+orcid: http://orcid.org/0000-0002-0414-1455
+scholar: https://scholar.google.com/citations?user=SqLKTIkAAAAJ&hl=en
 ---
 
 Igor Dejanović received a PhD degree at University of Novi Sad in 2012.  He
@@ -20,6 +25,8 @@ His areas of work and interest are Model-Driven Engineering, Domain-Specific
 Languages, Software Configuration Management.
 
 ### Selected Publications
+
+ * **I. Dejanović**, G. Milosavljević, R. Vaderna: [Arpeggio: A flexible PEG parser for Python](http://www.sciencedirect.com/science/article/pii/S0950705115004761), Knowledge-Based Systems, Volume 95, 1 March 2016, pp. 71–74, doi:10.1016/j.knosys.2015.12.004
 
  * **Dejanović, I.** & Milosavljević, G.: *Performance Evaluation of the Arpeggio Parser*, 4rd International Conference on Information Society Technology and Management (ICIST 2014), 2014, 1, 229-234
 
