@@ -1,0 +1,3115 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/2006/time</Import>
+    <Import>http://www.w3.org/ns/prov-o-20130430</Import>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isFormatOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DeletionPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#EstablishmentPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#InitiationPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#PreparationPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#RevisionPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UsePhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#WithdrawalPhase"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#reference"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+                    <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+                </ObjectAllValuesFrom>
+                <DataExactCardinality cardinality="0">
+                    <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                    <DataUnionOf>
+                        <Datatype abbreviatedIRI="rdfs:Literal"/>
+                        <Datatype abbreviatedIRI="xsd:string"/>
+                    </DataUnionOf>
+                </DataExactCardinality>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="0">
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+                </ObjectExactCardinality>
+                <DataMaxCardinality cardinality="1">
+                    <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                    <DataUnionOf>
+                        <Datatype abbreviatedIRI="rdfs:Literal"/>
+                        <Datatype abbreviatedIRI="xsd:string"/>
+                    </DataUnionOf>
+                </DataMaxCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+                    <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+                </ObjectSomeValuesFrom>
+                <DataExactCardinality cardinality="0">
+                    <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                    <DataUnionOf>
+                        <Datatype abbreviatedIRI="rdfs:Literal"/>
+                        <Datatype abbreviatedIRI="xsd:string"/>
+                    </DataUnionOf>
+                </DataExactCardinality>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="0">
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+                </ObjectExactCardinality>
+                <DataExactCardinality cardinality="1">
+                    <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                    <DataUnionOf>
+                        <Datatype abbreviatedIRI="rdfs:Literal"/>
+                        <Datatype abbreviatedIRI="xsd:string"/>
+                    </DataUnionOf>
+                </DataExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="0">
+                <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+            </ObjectExactCardinality>
+            <DataExactCardinality cardinality="0">
+                <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                <DataUnionOf>
+                    <Datatype abbreviatedIRI="rdfs:Literal"/>
+                    <Datatype abbreviatedIRI="xsd:string"/>
+                </DataUnionOf>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+                    <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+                    <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+                </ObjectSomeValuesFrom>
+                <DataExactCardinality cardinality="0">
+                    <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                    <DataUnionOf>
+                        <Datatype abbreviatedIRI="rdfs:Literal"/>
+                        <Datatype abbreviatedIRI="xsd:string"/>
+                    </DataUnionOf>
+                </DataExactCardinality>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectExactCardinality cardinality="0">
+                    <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+                </ObjectExactCardinality>
+                <DataExactCardinality cardinality="1">
+                    <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+                    <DataUnionOf>
+                        <Datatype abbreviatedIRI="rdfs:Literal"/>
+                        <Datatype abbreviatedIRI="xsd:string"/>
+                    </DataUnionOf>
+                </DataExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+        <ObjectExactCardinality cardinality="0">
+            <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument"/>
+    </DisjointUnion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DeletionPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#EstablishmentPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#InitiationPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#PreparationPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#RevisionPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UsePhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#WithdrawalPhase"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#EstablishmentPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UsePhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#InitiationPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#PreparationPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#PreparationPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#EstablishmentPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#RevisionPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#WithdrawalPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UsePhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#RevisionPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#WithdrawalPhase"/>
+        <NamedIndividual IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DeletionPhase"/>
+    </ObjectPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasFormat"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isFormatOf"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasVersion"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isVersionOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate"/>
+        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument"/>
+            <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose"/>
+        <Class IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AggregatedDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AggregatedDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document which contains separately identified and managed documents (parts) that are logically dependent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: A scientific paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#AggregatedDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aggregated Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassificationSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ClassificationSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents an entity which defines document classes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ClassificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Classification System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompoundDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CompoundDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document which has some other files embedded into content and is associated with metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: A report with a table or graph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#CompoundDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Compound Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ContentFragments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ContentFragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a fragment of a structured document content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#ContentFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Content Fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DeletionPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DeletionPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DeletionPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deletion phase stands for the last phase in document life-cycle. As proposed by ISO 82045-1, when document reaches deletion phase, it is being completely removed from the archive together with all associated metadata. There are some exceptions when only the metadata is preserved</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Documents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Class which represents a document (FRBR Work)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentClasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a class used to classify documents as proposed by classification system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One document class can be introduced/defined by more than one classification system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentFormats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Class which represents document format (FRBR Manifestation)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Individuals of this class represent FRBR Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentIDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a unique identificator of a document within the system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentRevisions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentRevision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Formally approved document version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document Revision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentSets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Collection of documents that are managed together as a unit for a specific purpose
+The metadata of the document set describes which document it consists of. The set has it&apos;s own metadata, but not it&apos;s own content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: Folder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentVersions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DocumentVersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Class which represents a version of the document (FRBR Expression)
+ISO 82045-1: identified state of a document in its life cycle, recorded so that it can be retrieved as a record or for distribution purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#DocumentVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#EstablishmentPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">EstablishmentPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#EstablishmentPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Establishement phase stand for a phase in which the document undergoes a various set of approval processes for quality assurance reasons
+Once when document enters the approval process, all changes in the document are traceable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IdentificationSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IdentificationSystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents an identification subsystem which generates unique IDs for each document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#IdentificationSystem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Identification System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#InitiationPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">InitiationPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#InitiationPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Initiation phase is a phase in which the document is uniquely identified and properly classified within the context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LifeCyclePhases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LifeCyclePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A class which represents a state of the document
+ISO 82045-1: period from the conceptual idea to the logical and physical deletion of a document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#LifeCyclePhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document Life Cycle Phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Metadatas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#Metadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A class which represents document metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#PreparationPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PreparationPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#PreparationPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Preparation phase is a phase in which the document content is being developed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#RevisionPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RevisionPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#RevisionPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Revision phase is a phase in which the document content or metadata associated to document purpose are being changed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SingleDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SingleDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document which contains only one type of media, has no other parts and is associated with metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Example: Letter, memo, picture,...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#SingleDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Single Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StructuredDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">StructuredDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a document with known content structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#StructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Structured Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnstructuredDocuments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UnstructuredDocument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a document without a defined content structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UnstructuredDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unstructured Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UsePhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">UsePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#UsePhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Use phase is a phase in which the document is being used for it&apos;s intended purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#WithdrawalPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WithdrawalPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#WithdrawalPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Withdrawal phase is a phase in which the document is kept as an archive (due it&apos;s unusability) for the minimum legally required period which might be extended due to various obligations and needs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">beginsAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">beginsAts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">beginsAted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specifies the date when the Document Version the validity period starts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#beginsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">begins at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classDescriptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classDescriptioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a description of a document class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">class description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">className</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classNames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classNamed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a name of a document class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#className</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">class name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classificationSystemName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classificationSystemNames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classificationSystemNamed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Name of the classification system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#classificationSystemName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">classification system name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">containsFragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">containsFragments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#containsFragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">containsFragmented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">contented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#content</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Container of a part of the structured content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">defines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">defineses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">definesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#defines</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specifies the relation between Classification System and Document Class entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">embodiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">embodiments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">embodimented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#reference"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://archive.ifla.org/VII/s13/frbr/frbr_current5.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodiment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FRBR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">embodimentOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">embodimentOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">embodimentOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#reference"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://archive.ifla.org/VII/s13/frbr/frbr_current5.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#embodimentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">FRBR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsAts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">endsAted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specifies the date after which the Document Version is no longer valid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#endsAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ends at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">formatDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">formatDescriptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">formatDescriptioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Textual description of a document format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatDescription</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">format description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">formatURI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">formatURIs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">formatURIed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#formatURI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">format URI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">generates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">generateses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#generates</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">generatesed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasClasses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasClassed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Provides the relation between Document and Document Class entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasClass</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFormats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasFormated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasFormat</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasIDs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasIDed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a relation between a Document and Document ID entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Document Id provides information about the document identification used by the managing organization being entrusted with the management of the document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasID</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMetadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMetadatas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasMetadataed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Document and Metadata entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasMetadata</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasNextPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasNextPhases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasNextPhased</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Life Cycle Phase entities in which the domain phase comes before range phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasNextPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has next Phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasParts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasParted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represent a whole-part relation between Documents in which the range Document is part of the domain Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPartOfSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPartOfSets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPartOfSeted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between the Document Set and any other Document in which the Document is part of the Document Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has part of Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPhased</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between a Document and a Document Life Cycle phase entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPreviousPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPreviousPhases</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasPreviousPhased</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Life Cycle Phase entities in which the domain phase comes after range phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasPreviousPhase</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has previous Phase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasReleaseDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasReleaseDates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasReleaseDated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has release date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasReleaseDate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specifies an exact moment in time when the Document Version has been release</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRevision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRevisions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasRevisioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between a Document and Document Revision entites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasRevision</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Revision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubfragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubfragments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasSubfragmented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasSubfragment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Content Fragment entities in which the domain fragment contains the range fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasVersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasVersions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hasVersioned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#hasVersion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAfter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAfters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAftered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAfter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Content Fragment entities in which the domain phase comes after the range phase in document content structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAggregatedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAggregatedIns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAggregatedIned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Document and Aggregated Document where the Document is aggregated into Aggregated Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is aggregated in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAggregatedOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAggregatedOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isAggregatedOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Aggregated Document and another Document which is aggregated into Aggregated Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isAggregatedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is aggregated of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isBefore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isBefores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isBefored</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isBefore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Content Fragment entities in which the domain phase comes before the range phase in document content structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isClassOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isClassOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isClassOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Provides the relation between Document Class and Document entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is Class of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#inverse"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isClassOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has Class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedIns</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedIned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Document and Compound Document where the Document is embedded into Compound Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedIn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is composed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isComposedOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Compund Document and another Document which is embedded into Compound Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isComposedOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is composed of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContainedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContainedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isContainedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines the affiliation of a fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isContainedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is contained by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDefinedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDefinedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isDefinedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Document Class and Classification System entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isDefinedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is defined by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isFormatOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFormatOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isFormatOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFormatOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isFormatOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isFormatOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isFormatOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is Format of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isGeneratedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isGeneratedBies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isGeneratedBied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isGeneratedBy</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is generated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isIDOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isIDOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isIDOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isIDOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is ID of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isMetadataOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isMetadataOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isMetadataOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isMetadataOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is Metadata of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represent a whole-part relation between Documents in which the domain Document is part of the range Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfSets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPartOfSeted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between the Document and a Document Set where the Document is part of the Document Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPartOfSet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is part of Set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPhaseOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPhaseOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPhaseOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between Document Life Cycle Phase and Document entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPhaseOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is Phase of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPredecessorOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPredecessorOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isPredecessorOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Document Version entities where the domain version is predecessor of range version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property should be transitive. Transitive and (inverse) functional property is beyond the scope of OWL DL and therefore it is non-transitive.
+However, use of the OWL Full features means that one loses some guarantees that OWL DL and OWL Lite can provide for reasoning systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isPredecessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is predecessor of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRelatedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRelatedToes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRelatedToed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two different documents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRelatedTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is related to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRevisionOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRevisionOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isRevisionOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between a Document and Document Revision entites</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isRevisionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is Revision of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSubfragmentOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSubfragmentOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSubfragmentOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSubfragmentOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Content Fragment entities in which the domain fragment is contained by the range fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSuccessorOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSuccessorOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isSuccessorOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a relation between two Document Version entities where the domain version is successor of range version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This property should be transitive. Transitive and (inverse) functional property is beyond the scope of OWL DL and therefore it is non-transitive.
+However, use of the OWL Full features means that one loses some guarantees that OWL DL and OWL Lite can provide for reasoning systems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isSuccessorOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is successor of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isVersionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isVersionOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isVersionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isVersionOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isVersionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">isVersionOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#isVersionOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is Version of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">metadataSource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">metadataSources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">metadataSourced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents an identifier of the metadata source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#metadataSource</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">metadata source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">realization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">realizations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">realizationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#reference"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realization</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://archive.ifla.org/VII/s13/frbr/frbr_current5.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">realizationOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">realizationOfs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">realizationOfed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#reference"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#realizationOf</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://archive.ifla.org/VII/s13/frbr/frbr_current5.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">revisionIndex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">revisionIndexes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">revisionIndexed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ordinal number of the revision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#revisionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">revision index</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sourceOfInformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sourceOfInformations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">sourceOfInformationed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Original source of the content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">if the presented content is a citation from another work...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#sourceOfInformation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">source of information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstructuredContent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstructuredContents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstructuredContented</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Container of unstructured document content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#unstructuredContent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">unstructured content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionIndex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionIndexes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionIndexed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ordinal number of the version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionIndex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">version index</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionLanguage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionLanguages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionLanguaged</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specifies the language in which is written the most of the document content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionLanguage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">version language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionPurpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionPurposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">versionPurposed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.informatika.ftn.uns.ac.rs/dms/82045-1#definition"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Specifies one purpose of the document version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.informatika.ftn.uns.ac.rs/dms/82045-1#versionPurpose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">version purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.w3.org/2006/time#Instant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Instants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.w3.org/2006/time#Instant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
+        <IRI>http://www.w3.org/ns/prov#Entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
+        <IRI>http://www.w3.org/ns/prov#Entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Entity</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

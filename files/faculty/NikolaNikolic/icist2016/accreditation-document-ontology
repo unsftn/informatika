@@ -1,0 +1,2566 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY prov "http://www.w3.org/ns/prov#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY dms "http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#" >
+    <!ENTITY ftn "http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#" >
+]>
+
+
+<rdf:RDF xmlns="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#"
+     xml:base="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:ftn="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dms="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology">
+        <rdfs:label>Domain-Specific Ontology: Accreditation in High Education</rdfs:label>
+        <rdfs:comment>Domain-Specific Ontology for Document Management System
+Case Study: Accreditation in High Education</rdfs:comment>
+        <dms:definition>Accreditation ontology</dms:definition>
+        <owl:imports rdf:resource="http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#containsFragment -->
+
+    <rdf:Description rdf:about="&dms;containsFragment">
+        <ace_lexicon:TV_sg>containsFragments</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>containsFragment</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>containsFragmented</ace_lexicon:TV_vbg>
+    </rdf:Description>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#content -->
+
+    <owl:AnnotationProperty rdf:about="&dms;content"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#definition -->
+
+    <owl:AnnotationProperty rdf:about="&dms;definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#containsFragment -->
+
+    <rdf:Description rdf:about="&dms;containsFragment">
+        <ace_lexicon:TV_sg>containsFragments</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>containsFragment</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>containsFragmented</ace_lexicon:TV_vbg>
+    </rdf:Description>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#embodiment -->
+
+    <owl:ObjectProperty rdf:about="&dms;embodiment"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#embodimentOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;embodimentOf"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#hasClass -->
+
+    <owl:ObjectProperty rdf:about="&dms;hasClass"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#hasMetadata -->
+
+    <owl:ObjectProperty rdf:about="&dms;hasMetadata"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&dms;hasPart">
+        <ace_lexicon:TV_sg>hasParts</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasParted</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasPart</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#hasRevision -->
+
+    <owl:ObjectProperty rdf:about="&dms;hasRevision"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#hasSubfragment -->
+
+    <rdf:Description rdf:about="&dms;hasSubfragment">
+        <ace_lexicon:TV_pl>hasSubfragment</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasSubfragments</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasSubfragmented</ace_lexicon:TV_vbg>
+    </rdf:Description>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#hasVersion -->
+
+    <owl:ObjectProperty rdf:about="&dms;hasVersion"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isAfter -->
+
+    <owl:ObjectProperty rdf:about="&dms;isAfter"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isBefore -->
+
+    <owl:ObjectProperty rdf:about="&dms;isBefore"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isClassOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;isClassOf"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isMetadataOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;isMetadataOf"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;isPartOf">
+        <ace_lexicon:TV_vbg>isPartOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>isPartOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>isPartOf</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isRevisionOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;isRevisionOf"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isSubfragmentOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;isSubfragmentOf"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#isVersionOf -->
+
+    <owl:ObjectProperty rdf:about="&dms;isVersionOf"/>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasCourse -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasCourse">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>hasCourse</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasCoursed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasCourses</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;curriculumStandard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasCourseContent -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasCourseContent">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>hasCourseContent</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasCourseContented</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasCourseContents</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range rdf:resource="&ftn;courseContent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasCourseMethod -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasCourseMethod">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>hasCourseMethods</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasCourseMethod</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasCourseMethoded</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range rdf:resource="&ftn;courseMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasEvaluation -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasEvaluation">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>hasEvaluationed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasEvaluations</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasEvaluation</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <owl:inverseOf rdf:resource="&ftn;isEvaluationOf"/>
+        <rdfs:range rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasLiterature -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasLiterature">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>hasLiteratured</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasLiteratures</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasLiterature</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="&ftn;book"/>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasQualification -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasQualification">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>hasQualification</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>hasQualificationed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasQualifications</ace_lexicon:TV_sg>
+        <owl:inverseOf rdf:resource="&ftn;isQualificationOf"/>
+        <rdfs:range rdf:resource="&ftn;qualification"/>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasRepresentativeReference -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasRepresentativeReference">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>hasRepresentativeReferences</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasRepresentativeReferenced</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasRepresentativeReference</ace_lexicon:TV_pl>
+        <owl:inverseOf rdf:resource="&ftn;isRepresentativeReferenceOf"/>
+        <rdfs:range rdf:resource="&ftn;reference"/>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasStandard -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasStandard">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&ftn;accreditationDocument"/>
+        <rdfs:range rdf:resource="&ftn;standard"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasTeachingStaff -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasTeachingStaff">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>hasTeachingStaffed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasTeachingStaffs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasTeachingStaff</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="&ftn;teacher"/>
+        <rdfs:domain rdf:resource="&ftn;teachingStaffStandard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasToBeAttendedFor -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasToBeAttendedFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <prov:component>postcondition</prov:component>
+        <ace_lexicon:TV_vbg>hasToBeAttendedFored</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasToBeAttendedFors</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasToBeAttendedFor</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <owl:propertyDisjointWith rdf:resource="&ftn;hasToBePassedFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#hasToBePassedFor -->
+
+    <owl:ObjectProperty rdf:about="&ftn;hasToBePassedFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>hasToBePassedFored</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasToBePassedFors</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasToBePassedFor</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <owl:inverseOf rdf:resource="&ftn;mandatoryPassedCourse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isAccreditationFor -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isAccreditationFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>isAccreditationFor</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>isAccreditationFored</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>isAccreditationFors</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;accreditationDocument"/>
+        <owl:inverseOf rdf:resource="&ftn;isAccreditedBy"/>
+        <rdfs:range rdf:resource="&ftn;studyProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isAccreditedBy -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isAccreditedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>isAccreditedBied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isAccreditedBy</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isAccreditedBies</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="&ftn;accreditationDocument"/>
+        <rdfs:domain rdf:resource="&ftn;studyProgram"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isCourseContentOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isCourseContentOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>isCourseContentOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isCourseContentOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isCourseContentOfs</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;courseContent"/>
+        <owl:inverseOf rdf:resource="&ftn;hasCourseContent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isCourseMethodOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isCourseMethodOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>isCourseMethodOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>isCourseMethodOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>isCourseMethodOfs</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;courseMethod"/>
+        <owl:inverseOf rdf:resource="&ftn;hasCourseMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isCourseOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isCourseOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>isCourseOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>isCourseOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>isCourseOfed</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range rdf:resource="&ftn;curriculumStandard"/>
+        <owl:inverseOf rdf:resource="&ftn;hasCourse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isEvaluationOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isEvaluationOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>isEvaluationOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isEvaluationOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>isEvaluationOfed</ace_lexicon:TV_vbg>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isLiteratureFor -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isLiteratureFor">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>isLiteratureFors</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>isLiteratureFored</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isLiteratureFor</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;book"/>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <owl:inverseOf rdf:resource="&ftn;hasLiterature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isQualificationOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isQualificationOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>isQualificationOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isQualificationOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>isQualificationOfs</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;qualification"/>
+        <rdfs:range rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isRepresentativeReferenceOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isRepresentativeReferenceOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>isRepresentativeReferenceOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>isRepresentativeReferenceOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>isRepresentativeReferenceOfed</ace_lexicon:TV_vbg>
+        <rdfs:subPropertyOf rdf:resource="&ftn;isWrittenBy"/>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+        <rdfs:range rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isStandardOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isStandardOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&ftn;accreditationDocument"/>
+        <owl:inverseOf rdf:resource="&ftn;hasStandard"/>
+        <rdfs:domain rdf:resource="&ftn;standard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isTeachedBy -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isTeachedBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>isTeachedBies</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>isTeachedBied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isTeachedBy</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isTeachingStaffOf -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isTeachingStaffOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>isTeachingStaffOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>isTeachingStaffOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>isTeachingStaffOf</ace_lexicon:TV_pl>
+        <owl:inverseOf rdf:resource="&ftn;hasTeachingStaff"/>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+        <rdfs:range rdf:resource="&ftn;teachingStaffStandard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#isWrittenBy -->
+
+    <owl:ObjectProperty rdf:about="&ftn;isWrittenBy">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>isWrittenBied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>isWrittenBies</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>isWrittenBy</ace_lexicon:TV_pl>
+        <rdfs:comment>The teacher can wrote book or paper which are representative references. Also, can wrote course scripts and another kind of paper which do not belong to references.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+        <rdfs:range rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#mandatoryAttendedCourse -->
+
+    <owl:ObjectProperty rdf:about="&ftn;mandatoryAttendedCourse">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_pl>mandatoryAttendedCourse</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>mandatoryAttendedCoursed</ace_lexicon:TV_vbg>
+        <prov:component>precondition</prov:component>
+        <ace_lexicon:TV_sg>mandatoryAttendedCourses</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <owl:inverseOf rdf:resource="&ftn;hasToBeAttendedFor"/>
+        <owl:propertyDisjointWith rdf:resource="&ftn;mandatoryPassedCourse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#mandatoryPassedCourse -->
+
+    <owl:ObjectProperty rdf:about="&ftn;mandatoryPassedCourse">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>mandatoryPassedCoursed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>mandatoryPassedCourse</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>mandatoryPassedCourses</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#teaches -->
+
+    <owl:ObjectProperty rdf:about="&ftn;teaches">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_sg>teacheses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>teaches</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>teachesed</ace_lexicon:TV_vbg>
+        <rdfs:range rdf:resource="&ftn;course"/>
+        <owl:inverseOf rdf:resource="&ftn;isTeachedBy"/>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#wrote -->
+
+    <owl:ObjectProperty rdf:about="&ftn;wrote">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <ace_lexicon:TV_vbg>wroted</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>wrote</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>wrotes</ace_lexicon:TV_sg>
+        <owl:inverseOf rdf:resource="&ftn;isWrittenBy"/>
+        <rdfs:range rdf:resource="&ftn;reference"/>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseCode -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseCode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>courseCode</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>courseCodes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>courseCoded</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseContentValue -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseContentValue">
+        <ace_lexicon:TV_pl>courseContentValue</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>courseContentValued</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>courseContentValues</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;courseContent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseECTS -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseECTS">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>courseECTSes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>courseECTS</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>courseECTSed</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="&xsd;int">30</xsd:maxInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="&xsd;int">0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseGoal -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseGoal">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>courseGoaled</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>courseGoal</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>courseGoals</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseMethodValue -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseMethodValue">
+        <ace_lexicon:TV_sg>courseMethodValues</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>courseMethodValued</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>courseMethodValue</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;courseMethod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseOutcome -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseOutcome">
+        <ace_lexicon:TV_pl>courseOutcome</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>courseOutcomes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>courseOutcomed</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseSemester -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseSemester">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>courseSemesters</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>courseSemestered</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>courseSemester</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="&xsd;int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="&xsd;int">8</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseStatus -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseStatus">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>courseStatus</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>courseStatused</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>courseStatuses</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>I</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>O</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>courseTitled</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>courseTitles</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>courseTitle</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseType -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;courseType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>courseType</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>courseTypes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>courseTyped</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>AO</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>DH</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>MD</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first>NS</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>SA</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first>SS</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                        <rdf:first>TM</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                                <rdf:first>TU</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                                                        <rdf:first>UM</rdf:first>
+                                                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#evaluationPoints -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;evaluationPoints">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>evaluationPointsed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>evaluationPoints</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>evaluationPointses</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#evaluationType -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;evaluationType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>evaluationTypes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>evaluationTyped</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>evaluationType</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>Ispitne</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>Predispitne</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#mandatory -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;mandatory">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>mandatories</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>mandatory</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>mandatoried</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#narrowerScientificOrArtisticField -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;narrowerScientificOrArtisticField">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>narrowerScientificOrArtisticFielded</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>narrowerScientificOrArtisticFields</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>narrowerScientificOrArtisticField</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#qualificationField -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;qualificationField">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>qualificationFields</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>qualificationField</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>qualificationFielded</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;qualification"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#qualificationInstitution -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;qualificationInstitution">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>qualificationInstitutions</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>qualificationInstitution</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>qualificationInstitutioned</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;qualification"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#qualificationTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;qualificationTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>qualificationTitle</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>qualificationTitles</ace_lexicon:TV_sg>
+        <rdfs:comment>There is a limited set of qualification titles.</rdfs:comment>
+        <ace_lexicon:TV_vbg>qualificationTitled</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;qualification"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>Diploma</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>Doktorat</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>Magistarska teza</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first>Specijalizacija</rdf:first>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#qualificationYear -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;qualificationYear">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>qualificationYears</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>qualificationYear</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>qualificationYeared</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;qualification"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#referenceAuthor -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;referenceAuthor">
+        <ace_lexicon:TV_sg>referenceAuthors</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>referenceAuthored</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>referenceAuthor</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#referenceISBN -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;referenceISBN">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>referenceISBN</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>referenceISBNs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>referenceISBNed</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#referencePages -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;referencePages">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>referencePageses</ace_lexicon:TV_sg>
+        <rdfs:comment>example: 123-128</rdfs:comment>
+        <ace_lexicon:TV_pl>referencePages</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>referencePagesed</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#referencePublisher -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;referencePublisher">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>referencePublisher</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>referencePublishers</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>referencePublishered</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#referenceTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;referenceTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>referenceTitled</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>referenceTitles</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>referenceTitle</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#referenceYear -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;referenceYear">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>referenceYeared</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>referenceYear</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>referenceYears</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;reference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#standardDescription -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;standardDescription">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>standardDescriptions</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>standardDescription</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>standardDescriptioned</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;standard"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#standardNumber -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;standardNumber">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>standardNumbers</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>standardNumber</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>standardNumbered</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;standard"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#standardTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;standardTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>standardTitle</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>standardTitles</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>standardTitled</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;standard"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#studyProgramCode -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;studyProgramCode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>studyProgramCoded</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>studyProgramCodes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>studyProgramCode</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;studyProgram"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#studyProgramTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;studyProgramTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>studyProgramTitled</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>studyProgramTitle</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>studyProgramTitles</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;studyProgram"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#studyProgramType -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;studyProgramType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>studyProgramTyped</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>studyProgramType</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>studyProgramTypes</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;studyProgram"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>Doktorske akademske</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>Master akademske</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>Osnovne akademske</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                <rdf:first>Osnovne strukovne</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&rdf;List"/>
+                                                        <rdf:first>Specijalističke akademske</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&rdf;List"/>
+                                                                <rdf:first>Specijalističke strukovne</rdf:first>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#teacherName -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;teacherName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>teacherNames</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>teacherNamed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>teacherName</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#teacherTitle -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;teacherTitle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>teacherTitles</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>teacherTitle</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>teacherTitled</ace_lexicon:TV_vbg>
+        <rdfs:comment>Teacher in accreditation document is only person who has PhD deegre qualification</rdfs:comment>
+        <rdfs:domain rdf:resource="&ftn;teacher"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first>Docent</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first>Redovni profesor</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&rdf;List"/>
+                                        <rdf:first>Vanredni profesor</rdf:first>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#weeklyAdditionalLessonsFund -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;weeklyAdditionalLessonsFund">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>weeklyAdditionalLessonsFunded</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>weeklyAdditionalLessonsFund</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>weeklyAdditionalLessonsFunds</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#weeklyExercisesFund -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;weeklyExercisesFund">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>weeklyExercisesFund</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>weeklyExercisesFunds</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>weeklyExercisesFunded</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#weeklyLectureFund -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;weeklyLectureFund">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>weeklyLectureFund</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>weeklyLectureFunds</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>weeklyLectureFunded</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#weeklyOtherClassesFund -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;weeklyOtherClassesFund">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>weeklyOtherClassesFund</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>weeklyOtherClassesFunds</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>weeklyOtherClassesFunded</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#weeklyResearchWorkFund -->
+
+    <owl:DatatypeProperty rdf:about="&ftn;weeklyResearchWorkFund">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>weeklyResearchWorkFunded</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>weeklyResearchWorkFund</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>weeklyResearchWorkFunds</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="&ftn;course"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#ContentFragment -->
+
+    <owl:Class rdf:about="&dms;ContentFragment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isAfter"/>
+                <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isBefore"/>
+                <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;hasSubfragment"/>
+                <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isSubfragmentOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>ContentFragments</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ContentFragment</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#Document -->
+
+    <owl:Class rdf:about="&dms;Document">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;hasMetadata"/>
+                <owl:someValuesFrom rdf:resource="&dms;Metadata"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;hasVersion"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentVersion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;hasRevision"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentRevision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;hasClass"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>Documents</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Document</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#DocumentClass -->
+
+    <owl:Class rdf:about="&dms;DocumentClass">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isClassOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#DocumentFormat -->
+
+    <owl:Class rdf:about="&dms;DocumentFormat">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;embodimentOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentVersion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#DocumentRevision -->
+
+    <owl:Class rdf:about="&dms;DocumentRevision">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isRevisionOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#DocumentVersion -->
+
+    <owl:Class rdf:about="&dms;DocumentVersion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;embodiment"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentFormat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isVersionOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#Metadata -->
+
+    <owl:Class rdf:about="&dms;Metadata">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;isMetadataOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;Document"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/82045-1#StructuredDocument -->
+
+    <owl:Class rdf:about="&dms;StructuredDocument">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;containsFragment"/>
+                <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Paper -->
+
+    <owl:Class rdf:about="&ftn;Paper">
+        <rdfs:subClassOf rdf:resource="&ftn;reference"/>
+        <owl:disjointWith rdf:resource="&ftn;book"/>
+        <ace_lexicon:CN_sg>Paper</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Papers</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#accreditationDocument -->
+
+    <owl:Class rdf:about="&ftn;accreditationDocument">
+        <rdfs:label>Accreditation Document</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dms;Document"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isAccreditationFor"/>
+                <owl:someValuesFrom rdf:resource="&ftn;studyProgram"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasStandard"/>
+                <owl:someValuesFrom rdf:resource="&ftn;standard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>accreditationDocument</ace_lexicon:CN_sg>
+        <dms:definition>Structured document which contains standards describing accreditation plan of specific high education study program</dms:definition>
+        <ace_lexicon:CN_pl>accreditationDocuments</ace_lexicon:CN_pl>
+        <rdfs:comment>Documents for accreditation in high education</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#book -->
+
+    <owl:Class rdf:about="&ftn;book">
+        <rdfs:label>Book</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ftn;reference"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isLiteratureFor"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>books</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>book</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#course -->
+
+    <owl:Class rdf:about="&ftn;course">
+        <rdfs:label>Course</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseCode"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasCourseContent"/>
+                <owl:someValuesFrom rdf:resource="&ftn;courseContent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseGoal"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;weeklyResearchWorkFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseSemester"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;weeklyLectureFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseType"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;weeklyOtherClassesFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseStatus"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;weeklyAdditionalLessonsFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasLiterature"/>
+                <owl:someValuesFrom rdf:resource="&ftn;book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasEvaluation"/>
+                <owl:someValuesFrom rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isTeachedBy"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isCourseOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;curriculumStandard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseECTS"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;weeklyExercisesFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasCourseMethod"/>
+                <owl:someValuesFrom rdf:resource="&ftn;courseMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>course</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>courses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseContent -->
+
+    <owl:Class rdf:about="&ftn;courseContent">
+        <rdfs:label>Course Content</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseContentValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isCourseContentOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>courseContents</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>courseContent</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#courseMethod -->
+
+    <owl:Class rdf:about="&ftn;courseMethod">
+        <rdfs:label>Course Method</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseMethodValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isCourseMethodOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>courseMethods</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>courseMethod</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#curriculumStandard -->
+
+    <owl:Class rdf:about="&ftn;curriculumStandard">
+        <rdfs:label>Curriculum Standard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ftn;standard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasCourse"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Curriculum Standard for defining subjects description</rdfs:comment>
+        <ace_lexicon:CN_sg>curriculumStandard</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>curriculumStandards</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#knowledgeEvaluationMethod -->
+
+    <owl:Class rdf:about="&ftn;knowledgeEvaluationMethod">
+        <rdfs:label>Knowledge Evaluation Method</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;evaluationPoints"/>
+                <owl:someValuesFrom rdf:resource="&xsd;int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;mandatory"/>
+                <owl:someValuesFrom rdf:resource="&xsd;boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isEvaluationOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;evaluationType"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>knowledgeEvaluationMethods</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>knowledgeEvaluationMethod</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#qualification -->
+
+    <owl:Class rdf:about="&ftn;qualification">
+        <rdfs:label>Qualification</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isQualificationOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;qualificationTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;qualificationField"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;qualificationInstitution"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;qualificationYear"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>qualifications</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>qualification</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#reference -->
+
+    <owl:Class rdf:about="&ftn;reference">
+        <rdfs:label>Reference</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referencePublisher"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referenceYear"/>
+                <owl:someValuesFrom rdf:resource="&xsd;int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referencePages"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referenceTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isWrittenBy"/>
+                <owl:allValuesFrom rdf:resource="&ftn;teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referenceAuthor"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isRepresentativeReferenceOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referenceISBN"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>reference</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>references</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#standard -->
+
+    <owl:Class rdf:about="&ftn;standard">
+        <rdfs:label>Standard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&dms;ContentFragment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&dms;hasSubfragment"/>
+                        <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&dms;hasSubfragment"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="&ftn;standard"/>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;standardDescription"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;standardNumber"/>
+                <owl:someValuesFrom rdf:resource="&xsd;int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;standardTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isStandardOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;accreditationDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>standards</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>standard</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#studyProgram -->
+
+    <owl:Class rdf:about="&ftn;studyProgram">
+        <rdfs:label>Study Program</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isAccreditedBy"/>
+                <owl:someValuesFrom rdf:resource="&ftn;accreditationDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;studyProgramTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;studyProgramCode"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;studyProgramType"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>studyProgram</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>studyPrograms</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#teacher -->
+
+    <owl:Class rdf:about="&ftn;teacher">
+        <rdfs:label>Teacher</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;teaches"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;wrote"/>
+                <owl:someValuesFrom rdf:resource="&ftn;reference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isTeachingStaffOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teachingStaffStandard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasQualification"/>
+                <owl:onClass rdf:resource="&ftn;qualification"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;narrowerScientificOrArtisticField"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;teacherTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;teacherName"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>teachers</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>teacher</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#teachingStaffStandard -->
+
+    <owl:Class rdf:about="&ftn;teachingStaffStandard">
+        <rdfs:label>Teaching Staff Standard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ftn;standard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasTeachingStaff"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>teachingStaffStandard</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>teachingStaffStandards</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Akreditacija_smera_SIIT -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Akreditacija_smera_SIIT">
+        <rdf:type rdf:resource="&ftn;accreditationDocument"/>
+        <rdfs:label>SIIT accreditation</rdfs:label>
+        <ace_lexicon:PN_sg>Akreditacija_smera_SIIT</ace_lexicon:PN_sg>
+        <hasStandard rdf:resource="&ftn;Kurikulum"/>
+        <hasStandard rdf:resource="&ftn;Nastavno_osoblje"/>
+        <isAccreditationFor rdf:resource="&ftn;SIIT"/>
+        <hasStandard rdf:resource="&ftn;standard_N"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Brojni_redovi -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Brojni_redovi">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Order theory</rdfs:label>
+        <courseContentValue>Brojni redovi</courseContentValue>
+        <ace_lexicon:PN_sg>Brojni_redovi</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Diploma_IK -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Diploma_IK">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>BSc</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1971</qualificationYear>
+        <qualificationTitle>Diploma</qualificationTitle>
+        <ace_lexicon:PN_sg>bsc_ik</ace_lexicon:PN_sg>
+        <qualificationField>Matematika</qualificationField>
+        <qualificationInstitution>PMF u Novom Sadu</qualificationInstitution>
+        <isQualificationOf rdf:resource="&ftn;Ilija_Kovačević"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Diskretna_matematika -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Diskretna_matematika">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Discrete mathematics</rdfs:label>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">3</weeklyLectureFund>
+        <courseSemester rdf:datatype="&xsd;integer">3</courseSemester>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">3</weeklyExercisesFund>
+        <courseECTS rdf:datatype="&xsd;integer">7</courseECTS>
+        <courseTitle>Diskretna matematika</courseTitle>
+        <courseGoal>Osposobljavanje studenata na apstraktno mišljenje...</courseGoal>
+        <courseOutcome>Stečena znanja koriste se dalje u obrazovanju...</courseOutcome>
+        <courseStatus>O</courseStatus>
+        <courseCode>E213</courseCode>
+        <ace_lexicon:PN_sg>diskretna_matematika</ace_lexicon:PN_sg>
+        <courseType>TM</courseType>
+        <hasCourseContent rdf:resource="&ftn;Kombinatorika"/>
+        <hasLiterature rdf:resource="&ftn;Kombinatorika_na_rečima"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <hasCourseContent rdf:resource="&ftn;Osnovi_logike"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseContent rdf:resource="&ftn;Teorija_grafova"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Dokazi_diferencijalnih_jednačina -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Dokazi_diferencijalnih_jednačina">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Dokazi diferencijalnih jednačina</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2012</referenceYear>
+        <ace_lexicon:PN_sg>Dokazi_diferencijalnih_jednačina</ace_lexicon:PN_sg>
+        <referencePublisher>ESDF</referencePublisher>
+        <referenceAuthor>Marko Marković</referenceAuthor>
+        <referenceISBN>456-789654-215</referenceISBN>
+        <referencePages>123 - 456</referencePages>
+        <referenceTitle>Dokaži diferencijalnih jednačina</referenceTitle>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Ilija_Kovačević"/>
+        <isWrittenBy rdf:resource="&ftn;Ilija_Kovačević"/>
+        <isWrittenBy rdf:resource="&ftn;Lidija_Čomić"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Lidija_Čomić"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Slavica_Medić"/>
+        <isWrittenBy rdf:resource="&ftn;Slavica_Medić"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Dokazi_teorije_grafova -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Dokazi_teorije_grafova">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Dokazi teorije grafova</rdfs:label>
+        <ace_lexicon:PN_sg>Dokazi_teorije_grafova</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Doktorat_1983 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Doktorat_1983">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1983</qualificationYear>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationField>Matematika</qualificationField>
+        <qualificationInstitution>FTN</qualificationInstitution>
+        <ace_lexicon:PN_sg>Doktorat_1983</ace_lexicon:PN_sg>
+        <isQualificationOf rdf:resource="&ftn;Rade_Doroslovački"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Doktorat_1990 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Doktorat_1990">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1990</qualificationYear>
+        <qualificationInstitution>FTN</qualificationInstitution>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <ace_lexicon:PN_sg>Doktorat_1990</ace_lexicon:PN_sg>
+        <qualificationField>Matematika</qualificationField>
+        <isQualificationOf rdf:resource="&ftn;Lidija_Čomić"/>
+        <isQualificationOf rdf:resource="&ftn;Slavica_Medić"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Doktorat_IK -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Doktorat_IK">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1979</qualificationYear>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationInstitution>PMF u Beogradu</qualificationInstitution>
+        <qualificationField>Matematika</qualificationField>
+        <ace_lexicon:PN_sg>phd_ik</ace_lexicon:PN_sg>
+        <isQualificationOf rdf:resource="&ftn;Ilija_Kovačević"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Ilija_Kovačević -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Ilija_Kovačević">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>prof. dr Ilija Kovačević</rdfs:label>
+        <teacherName>Ilija Kovačević</teacherName>
+        <ace_lexicon:PN_sg>Ilija_Kovačević</ace_lexicon:PN_sg>
+        <teacherTitle>Redovni profesor</teacherTitle>
+        <narrowerScientificOrArtisticField>Matematika</narrowerScientificOrArtisticField>
+        <teaches rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Kombinatorika -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Kombinatorika">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Combinatorics</rdfs:label>
+        <courseContentValue>Kombinatorika</courseContentValue>
+        <ace_lexicon:PN_sg>Kombinatorika</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Kombinatorika_na_rečima -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Kombinatorika_na_rečima">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Kombinatorika na rečima</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2000</referenceYear>
+        <referencePublisher>Feljton</referencePublisher>
+        <ace_lexicon:PN_sg>Kombinatorika_na_rečima</ace_lexicon:PN_sg>
+        <referenceTitle>Kombinatorika na rečima</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;Diskretna_matematika"/>
+        <isWrittenBy rdf:resource="&ftn;Rade_Doroslovački"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Konsultacije -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Konsultacije">
+        <rdf:type rdf:resource="&ftn;courseMethod"/>
+        <rdfs:label>Consultation</rdfs:label>
+        <courseMethodValue>Konsultacije</courseMethodValue>
+        <ace_lexicon:PN_sg>Konsultacije</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Kurikulum -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Kurikulum">
+        <rdf:type rdf:resource="&ftn;curriculumStandard"/>
+        <rdfs:label>Curriculum Standard</rdfs:label>
+        <standardNumber rdf:datatype="&xsd;integer">5</standardNumber>
+        <standardDescription>Kurikulum osnovnih akademskih studija Softversko inženjerstvo i informacione tehnologije je formiran tako da zadovolji sve postavljene ciljeve. Struktura studijskog programa je obezbedila oko 15% akademsko-opšteobrazovnih, oko 20% teorijsko-metodoloških, oko 35% naučno-stručnih i oko 30% stručno-aplikativnih predmeta. Takođe je ispunjeno da izborni predmeti budu zastupljeni sa 20% ESPB bodova.</standardDescription>
+        <standardTitle>Kurikulum</standardTitle>
+        <hasCourse rdf:resource="&ftn;Diskretna_matematika"/>
+        <hasCourse rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Lidija_Čomić -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Lidija_Čomić">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Lidija Čomić</rdfs:label>
+        <ace_lexicon:PN_sg>Lidija_Čomić</ace_lexicon:PN_sg>
+        <teacherName>Lidija Čomić</teacherName>
+        <narrowerScientificOrArtisticField>Matematika</narrowerScientificOrArtisticField>
+        <teaches rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MA1_ODJ -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MA1_ODJ">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Matematička analiza 1 - ODJ</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2012</referenceYear>
+        <referencePublisher>FTN</referencePublisher>
+        <referenceAuthor>Biljana Carić</referenceAuthor>
+        <referenceAuthor>Nebojša Ralević</referenceAuthor>
+        <ace_lexicon:PN_sg>MA1_ODJ</ace_lexicon:PN_sg>
+        <referenceTitle>Matematička analiza 1 - ODJ, diferencijalni i integralni račun</referenceTitle>
+        <isWrittenBy rdf:resource="&ftn;Ilija_Kovačević"/>
+        <isWrittenBy rdf:resource="&ftn;Slavica_Medić"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MA1_Uvodni_pojmovi -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MA1_Uvodni_pojmovi">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Matematička analiza 1 - Uvodni pojmovi</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2012</referenceYear>
+        <ace_lexicon:PN_sg>MA1_Uvodni_pojmovi</ace_lexicon:PN_sg>
+        <referenceTitle>Matematička analiza 1 - Uvodni pojmovi i granični procesi</referenceTitle>
+        <referenceAuthor>Biljana Carić</referenceAuthor>
+        <referencePublisher>FTN</referencePublisher>
+        <referenceAuthor>Nebojša Ralević</referenceAuthor>
+        <isWrittenBy rdf:resource="&ftn;Ilija_Kovačević"/>
+        <isWrittenBy rdf:resource="&ftn;Slavica_Medić"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MA1_pismeni -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MA1_pismeni">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>MA1 test paper</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">70</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>MA1_pismeni</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MA1_završni_ispit_1 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MA1_završni_ispit_1">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>MA1 final test 1</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">50</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">false</mandatory>
+        <ace_lexicon:PN_sg>MA1_završni_ispit_1</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MA1_završni_ispit_2 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MA1_završni_ispit_2">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>MA1 final test 2</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">50</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">false</mandatory>
+        <ace_lexicon:PN_sg>MA1_završni_ispit_2</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Magistratura_IK -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Magistratura_IK">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>MSc</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1972</qualificationYear>
+        <qualificationInstitution>PMF u Beogradu</qualificationInstitution>
+        <ace_lexicon:PN_sg>msc_ik</ace_lexicon:PN_sg>
+        <qualificationTitle>Magistarska teza</qualificationTitle>
+        <qualificationField>Matematika</qualificationField>
+        <isQualificationOf rdf:resource="&ftn;Ilija_Kovačević"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Matematička_analiza_1 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Matematička_analiza_1">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Mathematical analysis 1</rdfs:label>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">1</weeklyAdditionalLessonsFund>
+        <courseSemester rdf:datatype="&xsd;integer">2</courseSemester>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">3</weeklyExercisesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">9</courseECTS>
+        <courseGoal>Osposobljavanje studenata na apstraktno mišljenje...</courseGoal>
+        <courseType>AO</courseType>
+        <courseTitle>Matematička analiza 1</courseTitle>
+        <courseCode>E212S</courseCode>
+        <courseOutcome>Stečena znanja koristi u daljem obrazovanju...</courseOutcome>
+        <ace_lexicon:PN_sg>matematicka_analiza_1</ace_lexicon:PN_sg>
+        <courseStatus>O</courseStatus>
+        <hasCourseContent rdf:resource="&ftn;Brojni_redovi"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <hasLiterature rdf:resource="&ftn;MA1_ODJ"/>
+        <hasLiterature rdf:resource="&ftn;MA1_Uvodni_pojmovi"/>
+        <hasCourseContent rdf:resource="&ftn;Metrički_prostori"/>
+        <hasCourseContent rdf:resource="&ftn;Polje_realnih_kompleksnih_brojeva"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <isTeachedBy rdf:resource="&ftn;Slavica_Medić"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Metrički_prostori -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Metrički_prostori">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Metric fields</rdfs:label>
+        <ace_lexicon:PN_sg>Metrički_prostori</ace_lexicon:PN_sg>
+        <courseContentValue>Metrički prostori</courseContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Nastavno_osoblje -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Nastavno_osoblje">
+        <rdf:type rdf:resource="&ftn;teachingStaffStandard"/>
+        <rdfs:label>Teaching Staff Standard</rdfs:label>
+        <standardNumber rdf:datatype="&xsd;integer">9</standardNumber>
+        <standardDescription>Za realizaciju studijskog programa Softversko inženjerstvo i informacione tehnologije obezbeđeno je nastavno osoblje sa potrebnim stručnim i naučnim kvalifikacijama.Broj nastavnika odgovara potrebama studijskog programa i zavisi od broja predmeta i broja časova na tim predmetima. Ukupan broj nastavnika je dovoljan da pokrije ukupan broj časova nastave na studijskom programu, tako da nastavnik ostvaruje prosečno 180 časova aktivne nastave (predavanja, konsultacije, vežbe, praktičan rad, ...) godišnje, odnosno 6 časova nedeljno.</standardDescription>
+        <standardTitle>Nastavno osoblje</standardTitle>
+        <hasTeachingStaff rdf:resource="&ftn;Ilija_Kovačević"/>
+        <hasTeachingStaff rdf:resource="&ftn;Lidija_Čomić"/>
+        <hasTeachingStaff rdf:resource="&ftn;Rade_Doroslovački"/>
+        <hasTeachingStaff rdf:resource="&ftn;Slavica_Medić"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezan_domaći_zadatak_5b -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezan_domaći_zadatak_5b">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory homework 5 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">5</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>Obavezan_domaći_zadatak_5b</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezan_test_10b -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezan_test_10b">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory test 10 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">10</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>Obavezan_test_10b</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezan_test_15b -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezan_test_15b">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory test 15 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">15</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>Obavezan_test_15b</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezan_usmeni_40b -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezan_usmeni_40b">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory oral exam 40 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">40</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>Obavezan_usmeni_40b</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezno_prisustvo_na_predavanjima_2b -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezno_prisustvo_na_predavanjima_2b">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory attendance at lectures 2 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">2</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>Obavezno_prisustvo_na_predavanjima_2b</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezno_prisustvo_na_vežbama_3b -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezno_prisustvo_na_vežbama_3b">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory exercise attendance 3 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">3</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <ace_lexicon:PN_sg>Obavezno_prisustvo_na_vežbama_3b</ace_lexicon:PN_sg>
+        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
+        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Osnovi_logike -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Osnovi_logike">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Basic logic</rdfs:label>
+        <courseContentValue>Osnovi logike</courseContentValue>
+        <ace_lexicon:PN_sg>Osnovi_logike</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Polje_realnih_kompleksnih_brojeva -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Polje_realnih_kompleksnih_brojeva">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>The field of real and complex numbers</rdfs:label>
+        <ace_lexicon:PN_sg>Polje_realnih_kompleksnih_brojeva</ace_lexicon:PN_sg>
+        <courseContentValue>Polje realnih kompleksnih brojeva</courseContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Predavanja -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Predavanja">
+        <rdf:type rdf:resource="&ftn;courseMethod"/>
+        <rdfs:label>Lectures</rdfs:label>
+        <courseMethodValue>Predavanja</courseMethodValue>
+        <ace_lexicon:PN_sg>Predavanja</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Quality_details -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Quality_details">
+        <rdf:type rdf:resource="&dms;ContentFragment"/>
+        <rdfs:label>Quality details</rdfs:label>
+        <dms:content>Quality details....</dms:content>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Rade_Doroslovački -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Rade_Doroslovački">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>prof. dr Rade Doroslovački</rdfs:label>
+        <teacherName>Rade Doroslovački</teacherName>
+        <ace_lexicon:PN_sg>Rade_Doroslovački</ace_lexicon:PN_sg>
+        <teaches rdf:resource="&ftn;Diskretna_matematika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT">
+        <rdf:type rdf:resource="&ftn;studyProgram"/>
+        <rdfs:label>SIIT</rdfs:label>
+        <studyProgramType rdf:datatype="&xsd;string">Osnovne akademske</studyProgramType>
+        <studyProgramCode rdf:datatype="&xsd;string">SIIT1</studyProgramCode>
+        <studyProgramTitle>Softversko inženjerstvo i informacione tehnologije</studyProgramTitle>
+        <ace_lexicon:PN_sg>SIIT</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Slavica_Medić -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Slavica_Medić">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Slavica Medić</rdfs:label>
+        <ace_lexicon:PN_sg>Slavica_Medić</ace_lexicon:PN_sg>
+        <teacherName>Slavica Medić</teacherName>
+        <teaches rdf:resource="&ftn;Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Teorija_grafova -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Teorija_grafova">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Graph theory</rdfs:label>
+        <ace_lexicon:PN_sg>Teorija_grafova</ace_lexicon:PN_sg>
+        <courseContentValue>Teorija grafova</courseContentValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Vežbe -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Vežbe">
+        <rdf:type rdf:resource="&ftn;courseMethod"/>
+        <rdfs:label>Exercises</rdfs:label>
+        <ace_lexicon:PN_sg>Vežbe</ace_lexicon:PN_sg>
+        <courseMethodValue>Konsultacije</courseMethodValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#standard_N -->
+
+    <owl:NamedIndividual rdf:about="&ftn;standard_N">
+        <rdf:type rdf:resource="&ftn;standard"/>
+        <rdfs:label>Quality control  Standard</rdfs:label>
+        <standardNumber rdf:datatype="&xsd;integer">11</standardNumber>
+        <standardDescription>Provera kvaliteta studijskog programa se sprovodi redovno i sistematično putem samovrednovanja
+i spoljašnjom proverom kvaliteta. Treba istaći višedecenijsku praksu anketiranja studenata.</standardDescription>
+        <standardTitle>Kontrola kvaliteta</standardTitle>
+        <dms:containsFragment rdf:resource="&ftn;Quality_details"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&dms;isComposedOf">
+        <ace_lexicon:TV_vbg>isComposedOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>isComposedOfs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>isComposedOf</ace_lexicon:TV_pl>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dms;CompoundDocument">
+        <ace_lexicon:CN_sg>CompoundDocument</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>CompoundDocuments</ace_lexicon:CN_pl>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
