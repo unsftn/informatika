@@ -6,7 +6,7 @@ path: DraganIvanovic
 name: DraganIvanovic
 zvanje: associate professor
 email: dragan.ivanovic@uns.ac.rs
-phone: -
+phone: +381 xxx
 office: Jugodrvo 212
 photo: DraganIvanovic.jpg
 ---
