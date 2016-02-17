@@ -14,7 +14,7 @@ photo:
 Dragan Ivanović received a PhD degree at University of Novi Sad in 2010. 
 He holds the associate professor position at University of Novi Sad, Faculty of 
 Technical Sciences. He has authored or co-authored more than 40 scientific 
-papers. Most of these publications are related to software engineering, document management, digital libraries and research information systems. He is a member of the DOSIRD (http://dosird.uns.ac.rs) project team. Also, he was involved in development of Open source Digital Library of theses and dissertations (http://opendlt.uns.ac.rs).
+papers. Most of these publications are related to software engineering, document management, digital libraries and research information systems. He is a member of the DOSIRD [http://dosird.uns.ac.rs](http://dosird.uns.ac.rs) project team. Also, he was involved in development of Open source Digital Library of theses and dissertations [http://opendlt.uns.ac.rs](http://opendlt.uns.ac.rs).
 
 ### Selected Publications
 
