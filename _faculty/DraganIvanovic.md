@@ -6,9 +6,9 @@ path: DraganIvanovic
 name: DraganIvanovic
 zvanje: associate professor
 email: dragan.ivanovic@uns.ac.rs
-phone: +381 xxx
+phone: +381 21 485 2447
 office: Jugodrvo 212
-photo: DraganIvanovic.jpg
+photo: 
 ---
 
 Dragan Ivanović received a PhD degree at University of Novi Sad in 2010. 
@@ -20,5 +20,4 @@ papers. Most of these publications are related to software engineering, document
 
 1. Dragan Ivanović, Gordana Milosavljević, Branko Milosavljević, and Dušan Surla. A CERIF-compatible research management system based on the MARC 21 format. *Program: electronic library and information systems*, 44(3):229-251, 2010. ISSN: 0033-0337, DOI: 10.1108/00330331011064249.
 2. Gordana Milosavljević, Dragan Ivanović, Dušan Surla, and Branko Milosavljević. Automated construction of the user interface for a CERIF-compliant research management system. *The Electronic Library*, 29(5):565-588, 2011. ISSN: 0264-0473, DOI: 10.1108/02640471111177035.
-
 
