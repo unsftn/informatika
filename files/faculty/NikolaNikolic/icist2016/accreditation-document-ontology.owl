@@ -537,8 +537,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <ace_lexicon:TV_vbg>isWrittenBied</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>isWrittenBies</ace_lexicon:TV_sg>
+        <rdfs:comment>The teacher can write book or paper which are representative references. Also, can wrote course scripts and another kind of paper which do not belong to references.</rdfs:comment>
         <ace_lexicon:TV_pl>isWrittenBy</ace_lexicon:TV_pl>
-        <rdfs:comment>The teacher can wrote book or paper which are representative references. Also, can wrote course scripts and another kind of paper which do not belong to references.</rdfs:comment>
         <rdfs:domain rdf:resource="&ftn;reference"/>
         <rdfs:range rdf:resource="&ftn;teacher"/>
     </owl:ObjectProperty>
@@ -653,10 +653,10 @@ Case Study: Accreditation in High Education</rdfs:comment>
                 <owl:onDatatype rdf:resource="&xsd;int"/>
                 <owl:withRestrictions rdf:parseType="Collection">
                     <rdf:Description>
-                        <xsd:maxInclusive rdf:datatype="&xsd;int">30</xsd:maxInclusive>
+                        <xsd:minInclusive rdf:datatype="&xsd;int">0</xsd:minInclusive>
                     </rdf:Description>
                     <rdf:Description>
-                        <xsd:minInclusive rdf:datatype="&xsd;int">0</xsd:minInclusive>
+                        <xsd:maxInclusive rdf:datatype="&xsd;int">30</xsd:maxInclusive>
                     </rdf:Description>
                 </owl:withRestrictions>
             </rdfs:Datatype>
@@ -1291,7 +1291,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;isBefore"/>
+                <owl:onProperty rdf:resource="&dms;isSubfragmentOf"/>
                 <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1303,7 +1303,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;isSubfragmentOf"/>
+                <owl:onProperty rdf:resource="&dms;isBefore"/>
                 <owl:someValuesFrom rdf:resource="&dms;ContentFragment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1318,8 +1318,14 @@ Case Study: Accreditation in High Education</rdfs:comment>
     <owl:Class rdf:about="&dms;Document">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;hasMetadata"/>
-                <owl:someValuesFrom rdf:resource="&dms;Metadata"/>
+                <owl:onProperty rdf:resource="&dms;hasRevision"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentRevision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&dms;hasClass"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentClass"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1330,14 +1336,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;hasRevision"/>
-                <owl:someValuesFrom rdf:resource="&dms;DocumentRevision"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;hasClass"/>
-                <owl:someValuesFrom rdf:resource="&dms;DocumentClass"/>
+                <owl:onProperty rdf:resource="&dms;hasMetadata"/>
+                <owl:someValuesFrom rdf:resource="&dms;Metadata"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_pl>Documents</ace_lexicon:CN_pl>
@@ -1390,14 +1390,14 @@ Case Study: Accreditation in High Education</rdfs:comment>
     <owl:Class rdf:about="&dms;DocumentVersion">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;embodiment"/>
-                <owl:someValuesFrom rdf:resource="&dms;DocumentFormat"/>
+                <owl:onProperty rdf:resource="&dms;isVersionOf"/>
+                <owl:someValuesFrom rdf:resource="&dms;Document"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&dms;isVersionOf"/>
-                <owl:someValuesFrom rdf:resource="&dms;Document"/>
+                <owl:onProperty rdf:resource="&dms;embodiment"/>
+                <owl:someValuesFrom rdf:resource="&dms;DocumentFormat"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1448,14 +1448,14 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&dms;Document"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isAccreditationFor"/>
-                <owl:someValuesFrom rdf:resource="&ftn;studyProgram"/>
+                <owl:onProperty rdf:resource="&ftn;hasStandard"/>
+                <owl:someValuesFrom rdf:resource="&ftn;standard"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;hasStandard"/>
-                <owl:someValuesFrom rdf:resource="&ftn;standard"/>
+                <owl:onProperty rdf:resource="&ftn;isAccreditationFor"/>
+                <owl:someValuesFrom rdf:resource="&ftn;studyProgram"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_sg>accreditationDocument</ace_lexicon:CN_sg>
@@ -1489,19 +1489,25 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Course</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseCode"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&ftn;hasLiterature"/>
+                <owl:someValuesFrom rdf:resource="&ftn;book"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;hasCourseContent"/>
-                <owl:someValuesFrom rdf:resource="&ftn;courseContent"/>
+                <owl:onProperty rdf:resource="&ftn;weeklyOtherClassesFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseGoal"/>
+                <owl:onProperty rdf:resource="&ftn;weeklyAdditionalLessonsFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseTitle"/>
                 <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1513,68 +1519,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseSemester"/>
-                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;weeklyLectureFund"/>
-                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseType"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;weeklyOtherClassesFund"/>
-                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseStatus"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;weeklyAdditionalLessonsFund"/>
-                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;hasLiterature"/>
-                <owl:someValuesFrom rdf:resource="&ftn;book"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;hasEvaluation"/>
-                <owl:someValuesFrom rdf:resource="&ftn;knowledgeEvaluationMethod"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseTitle"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isTeachedBy"/>
-                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isCourseOf"/>
-                <owl:someValuesFrom rdf:resource="&ftn;curriculumStandard"/>
+                <owl:onProperty rdf:resource="&ftn;hasCourseContent"/>
+                <owl:someValuesFrom rdf:resource="&ftn;courseContent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1591,8 +1537,62 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseCode"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;weeklyLectureFund"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseGoal"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isCourseOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;curriculumStandard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ftn;hasCourseMethod"/>
                 <owl:someValuesFrom rdf:resource="&ftn;courseMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseType"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;hasEvaluation"/>
+                <owl:someValuesFrom rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isTeachedBy"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseStatus"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;courseSemester"/>
+                <owl:someValuesFrom rdf:resource="&xsd;unsignedInt"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_sg>course</ace_lexicon:CN_sg>
@@ -1607,14 +1607,14 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Course Content</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;courseContentValue"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&ftn;isCourseContentOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isCourseContentOf"/>
-                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+                <owl:onProperty rdf:resource="&ftn;courseContentValue"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_pl>courseContents</ace_lexicon:CN_pl>
@@ -1675,8 +1675,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;mandatory"/>
-                <owl:someValuesFrom rdf:resource="&xsd;boolean"/>
+                <owl:onProperty rdf:resource="&ftn;evaluationType"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1687,8 +1687,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;evaluationType"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&ftn;mandatory"/>
+                <owl:someValuesFrom rdf:resource="&xsd;boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_pl>knowledgeEvaluationMethods</ace_lexicon:CN_pl>
@@ -1703,14 +1703,14 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Qualification</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isQualificationOf"/>
-                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
+                <owl:onProperty rdf:resource="&ftn;qualificationTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;qualificationTitle"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&ftn;isQualificationOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teacher"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1743,26 +1743,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Reference</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;referencePublisher"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ftn;referenceYear"/>
                 <owl:someValuesFrom rdf:resource="&xsd;int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;referencePages"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;referenceTitle"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1773,7 +1755,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;referenceAuthor"/>
+                <owl:onProperty rdf:resource="&ftn;referencePublisher"/>
                 <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1785,8 +1767,26 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referenceAuthor"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ftn;referenceISBN"/>
                 <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referenceTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;referencePages"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_sg>reference</ace_lexicon:CN_sg>
@@ -1800,6 +1800,12 @@ Case Study: Accreditation in High Education</rdfs:comment>
     <owl:Class rdf:about="&ftn;standard">
         <rdfs:label>Standard</rdfs:label>
         <rdfs:subClassOf rdf:resource="&dms;ContentFragment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;standardTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1826,20 +1832,14 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;standardNumber"/>
-                <owl:someValuesFrom rdf:resource="&xsd;int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;standardTitle"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ftn;isStandardOf"/>
                 <owl:someValuesFrom rdf:resource="&ftn;accreditationDocument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;standardNumber"/>
+                <owl:someValuesFrom rdf:resource="&xsd;int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_pl>standards</ace_lexicon:CN_pl>
@@ -1854,13 +1854,13 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Study Program</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isAccreditedBy"/>
-                <owl:someValuesFrom rdf:resource="&ftn;accreditationDocument"/>
+                <owl:onProperty rdf:resource="&ftn;studyProgramTitle"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;studyProgramTitle"/>
+                <owl:onProperty rdf:resource="&ftn;studyProgramType"/>
                 <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1872,8 +1872,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;studyProgramType"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&ftn;isAccreditedBy"/>
+                <owl:someValuesFrom rdf:resource="&ftn;accreditationDocument"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ace_lexicon:CN_sg>studyProgram</ace_lexicon:CN_sg>
@@ -1888,24 +1888,6 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Teacher</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;teaches"/>
-                <owl:someValuesFrom rdf:resource="&ftn;course"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;wrote"/>
-                <owl:someValuesFrom rdf:resource="&ftn;reference"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;isTeachingStaffOf"/>
-                <owl:someValuesFrom rdf:resource="&ftn;teachingStaffStandard"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&ftn;hasQualification"/>
                 <owl:onClass rdf:resource="&ftn;qualification"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
@@ -1913,8 +1895,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ftn;narrowerScientificOrArtisticField"/>
-                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                <owl:onProperty rdf:resource="&ftn;wrote"/>
+                <owl:someValuesFrom rdf:resource="&ftn;reference"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1926,6 +1908,24 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ftn;teacherName"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;teaches"/>
+                <owl:someValuesFrom rdf:resource="&ftn;course"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;isTeachingStaffOf"/>
+                <owl:someValuesFrom rdf:resource="&ftn;teachingStaffStandard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ftn;narrowerScientificOrArtisticField"/>
                 <owl:someValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1963,6 +1963,85 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#AR_-_pregled_principa_i_evolucije -->
+
+    <owl:NamedIndividual rdf:about="&ftn;AR_-_pregled_principa_i_evolucije">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Computer architecture - an overview of principles and evolution</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referenceTitle>Arhitektura racunara - pregled principa i evolucije</referenceTitle>
+        <referencePublisher>FTN</referencePublisher>
+        <isLiteratureFor rdf:resource="&ftn;E2_AR"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Miroslav_Hajdukovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Adaptive_content-based_music_retrieval_system -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Adaptive_content-based_music_retrieval_system">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Adaptive content-based music retrieval system</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2010</referenceYear>
+        <referenceTitle>Adaptive content-based music retrieval system</referenceTitle>
+        <referencePublisher>Multimedia Tools and Applications,</referencePublisher>
+        <referencePages>525-544</referencePages>
+        <referenceISBN>ISSN: 1380-7501</referenceISBN>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Aleksandar_Kovacevic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Milan_Vidakovic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Agent_IDEs_and_software_agents -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Agent_IDEs_and_software_agents">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Agent Developing environments and software agents</rdfs:label>
+        <courseContentValue>Agent Developing environments and software agents</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Agent_Life_Cycle -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Agent_Life_Cycle">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Agent Life Cycle</rdfs:label>
+        <courseContentValue>Agent Life Cycle</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Agent_autonomy_communication_and_reaction -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Agent_autonomy_communication_and_reaction">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Agent autonomy, communication and reaction</rdfs:label>
+        <courseContentValue>Agent autonomy, communication and reaction</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Agentska_Okruzenja -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Agentska_Okruzenja">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Agentska Okruženja</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2007</referenceYear>
+        <referenceTitle>Agentska Okruženja</referenceTitle>
+        <referencePublisher>Zadužbina Andrejević</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Milan_Vidakovic"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Akreditacija_smera_SIIT -->
 
     <owl:NamedIndividual rdf:about="&ftn;Akreditacija_smera_SIIT">
@@ -1973,6 +2052,85 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <hasStandard rdf:resource="&ftn;Nastavno_osoblje"/>
         <isAccreditationFor rdf:resource="&ftn;SIIT"/>
         <hasStandard rdf:resource="&ftn;standard_N"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Aleksandar_Kovacevic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Aleksandar_Kovacevic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Aleksandar Kovacevic</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Aleksandar Kovacevic</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Algorithmic_Structure_for_Representation_of_the_Various_Neural_Network_Models -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Algorithmic_Structure_for_Representation_of_the_Various_Neural_Network_Models">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Algorithmic Structure for Representation of the Various Neural Network Models</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">1996</referenceYear>
+        <referencePublisher>XI Conference on Applied Mathermatics PRIM &apos;96</referencePublisher>
+        <referenceAuthor>Milos Rackovic</referenceAuthor>
+        <referenceTitle>Algorithmic Structure for Representation of the Various Neural Network Models</referenceTitle>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Djordje_Obradovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Algoritmi -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Algoritmi">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Algorithms</rdfs:label>
+        <courseContentValue>Algoritmi</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Arhiviranje_u_ALFRESCO -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Arhiviranje_u_ALFRESCO">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Document archiving in ALFRESCO System</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2009</referenceYear>
+        <referenceAuthor>Goran Sladic</referenceAuthor>
+        <referenceTitle>Arhiviranje dokumenata u ALFRESCO sistemu</referenceTitle>
+        <referencePublisher>Zbornik radova YUInfo 2009</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Milan_Vidakovic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Stevan_Gostojic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Automatic_Generation_of_E-Courses_Based_on_Explicit_Representation_of_Instructional_Design -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Automatic_Generation_of_E-Courses_Based_on_Explicit_Representation_of_Instructional_Design">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <referenceYear rdf:datatype="&xsd;integer">2012</referenceYear>
+        <referencePages>839-869</referencePages>
+        <referenceTitle>Automatic Generation of E-Courses Based on Explicit Representation of Instructional Design</referenceTitle>
+        <referenceAuthor>Milan Segedinac</referenceAuthor>
+        <referencePublisher>Computer Science and Information Systems</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Goran_Savic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Branko_Milosavljevic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Branko_Milosavljevic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Branko Milosavljevic</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Branko Milosavljevic</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
     </owl:NamedIndividual>
     
 
@@ -1988,11 +2146,106 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#CLAS-a_Formal_Aid_to_Data_Elements_Identification -->
+
+    <owl:NamedIndividual rdf:about="&ftn;CLAS-a_Formal_Aid_to_Data_Elements_Identification">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <referenceYear rdf:datatype="&xsd;integer">1994</referenceYear>
+        <referenceTitle>CLAS-a Formal Aid to Data Elements Identification</referenceTitle>
+        <referencePublisher>YUЈОR</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Djordje_Obradovic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Dusan_Malbaski"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Communication_devices -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Communication_devices">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Communication devices</rdfs:label>
+        <courseContentValue>Communication devices</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Core_Java_2V -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Core_Java_2V">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Core Java2V</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2005</referenceYear>
+        <referencePublisher>Sun Microsystems Press, Santa Clara</referencePublisher>
+        <referenceAuthor>C. Horstmann</referenceAuthor>
+        <referenceAuthor>G. Cornell</referenceAuthor>
+        <referenceTitle>Core Java2V</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;E2_WP"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Data_and_Computer_Communications -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Data_and_Computer_Communications">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Data and Computer Communication</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referenceTitle>Data and Computer Communication</referenceTitle>
+        <referenceISBN>0-13-100681-9</referenceISBN>
+        <referencePublisher>Prentice Hall</referencePublisher>
+        <referenceAuthor>William Stallings</referenceAuthor>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Developing_Intelligent_Agents_for_Distributed_Systems -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Developing_Intelligent_Agents_for_Distributed_Systems">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Developing Intelligent Agents for Distributed Systems</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">1998</referenceYear>
+        <referencePublisher>McGraw-Hill</referencePublisher>
+        <referenceAuthor>Jay Johnson</referenceAuthor>
+        <referenceTitle>Developing Intelligent Agents for Distributed Systems</referenceTitle>
+        <referenceAuthor>Michael Knapi</referenceAuthor>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Dictionary_of_XML_Technologies_and_the_Semantic_Web -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Dictionary_of_XML_Technologies_and_the_Semantic_Web">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Dictionary of XML Technologies and the Semantic Web</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referenceTitle>Dictionary of XML Technologies and the Semantic Web</referenceTitle>
+        <referenceAuthor>V. Geroimenko</referenceAuthor>
+        <referencePublisher>Springer-Verlag, Berlin</referencePublisher>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_ISA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Dijagrami -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Dijagrami">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Diagrams</rdfs:label>
+        <courseContentValue>Dijagrami</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Diploma_IK -->
 
     <owl:NamedIndividual rdf:about="&ftn;Diploma_IK">
         <rdf:type rdf:resource="&ftn;qualification"/>
-        <rdfs:label>BSc</rdfs:label>
+        <rdfs:label>BSc IK</rdfs:label>
         <qualificationYear rdf:datatype="&xsd;integer">1971</qualificationYear>
         <qualificationTitle>Diploma</qualificationTitle>
         <ace_lexicon:PN_sg>bsc_ik</ace_lexicon:PN_sg>
@@ -2003,32 +2256,25 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
-    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Diskretna_matematika -->
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Distributed_objects_technologies -->
 
-    <owl:NamedIndividual rdf:about="&ftn;Diskretna_matematika">
-        <rdf:type rdf:resource="&ftn;course"/>
-        <rdfs:label>Discrete mathematics</rdfs:label>
-        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
-        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
-        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
-        <weeklyLectureFund rdf:datatype="&xsd;integer">3</weeklyLectureFund>
-        <courseSemester rdf:datatype="&xsd;integer">3</courseSemester>
-        <weeklyExercisesFund rdf:datatype="&xsd;integer">3</weeklyExercisesFund>
-        <courseECTS rdf:datatype="&xsd;integer">7</courseECTS>
-        <courseTitle>Diskretna matematika</courseTitle>
-        <courseGoal>Osposobljavanje studenata na apstraktno mišljenje...</courseGoal>
-        <courseOutcome>Stečena znanja koriste se dalje u obrazovanju...</courseOutcome>
-        <courseStatus>O</courseStatus>
-        <courseCode>E213</courseCode>
-        <ace_lexicon:PN_sg>diskretna_matematika</ace_lexicon:PN_sg>
-        <courseType>TM</courseType>
-        <hasCourseContent rdf:resource="&ftn;Kombinatorika"/>
-        <hasLiterature rdf:resource="&ftn;Kombinatorika_na_rečima"/>
-        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
-        <hasCourseContent rdf:resource="&ftn;Osnovi_logike"/>
-        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
-        <hasCourseContent rdf:resource="&ftn;Teorija_grafova"/>
-        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    <owl:NamedIndividual rdf:about="&ftn;Distributed_objects_technologies">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Distributed objects technologies</rdfs:label>
+        <courseContentValue>Distributed objects technologies</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_ISA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Djordje_Obradovic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Djordje_Obradovic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Djordje Obradovic</rdfs:label>
+        <teacherName>Djordje Obradovic</teacherName>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
     </owl:NamedIndividual>
     
 
@@ -2055,21 +2301,11 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
-    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Dokazi_teorije_grafova -->
-
-    <owl:NamedIndividual rdf:about="&ftn;Dokazi_teorije_grafova">
-        <rdf:type rdf:resource="&ftn;Paper"/>
-        <rdfs:label>Dokazi teorije grafova</rdfs:label>
-        <ace_lexicon:PN_sg>Dokazi_teorije_grafova</ace_lexicon:PN_sg>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Doktorat_1983 -->
 
     <owl:NamedIndividual rdf:about="&ftn;Doktorat_1983">
         <rdf:type rdf:resource="&ftn;qualification"/>
-        <rdfs:label>PhD</rdfs:label>
+        <rdfs:label>PhD 1983 Math</rdfs:label>
         <qualificationYear rdf:datatype="&xsd;integer">1983</qualificationYear>
         <qualificationTitle>Doktorat</qualificationTitle>
         <qualificationField>Matematika</qualificationField>
@@ -2084,7 +2320,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&ftn;Doktorat_1990">
         <rdf:type rdf:resource="&ftn;qualification"/>
-        <rdfs:label>PhD</rdfs:label>
+        <rdfs:label>PhD 2009 Math</rdfs:label>
         <qualificationYear rdf:datatype="&xsd;integer">1990</qualificationYear>
         <qualificationInstitution>FTN</qualificationInstitution>
         <qualificationTitle>Doktorat</qualificationTitle>
@@ -2100,13 +2336,285 @@ Case Study: Accreditation in High Education</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&ftn;Doktorat_IK">
         <rdf:type rdf:resource="&ftn;qualification"/>
-        <rdfs:label>PhD</rdfs:label>
+        <rdfs:label>PhD IK</rdfs:label>
         <qualificationYear rdf:datatype="&xsd;integer">1979</qualificationYear>
         <qualificationTitle>Doktorat</qualificationTitle>
         <qualificationInstitution>PMF u Beogradu</qualificationInstitution>
         <qualificationField>Matematika</qualificationField>
         <ace_lexicon:PN_sg>phd_ik</ace_lexicon:PN_sg>
         <isQualificationOf rdf:resource="&ftn;Ilija_Kovačević"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Domaci_obavezan_50 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Domaci_obavezan_50">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory homework 50 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">50</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">false</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Dusan_Malbaski -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Dusan_Malbaski">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Dusan T. Malbaski</rdfs:label>
+        <teacherName>Dusan Malbaski</teacherName>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <isTeachingStaffOf rdf:resource="&ftn;E2_Teaching_Staff_Standard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2">
+        <rdf:type rdf:resource="&ftn;studyProgram"/>
+        <rdfs:label>E2</rdfs:label>
+        <studyProgramCode rdf:datatype="&xsd;string">E2</studyProgramCode>
+        <studyProgramType rdf:datatype="&xsd;string">Osnovne akademske</studyProgramType>
+        <studyProgramTitle rdf:datatype="&xsd;string">Racunarstvo i automatika</studyProgramTitle>
+        <isAccreditedBy rdf:resource="&ftn;E2_accreditation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_AR -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_AR">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Computer Architecture</rdfs:label>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <courseSemester rdf:datatype="&xsd;integer">2</courseSemester>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">4</weeklyOtherClassesFund>
+        <courseECTS rdf:datatype="&xsd;integer">9</courseECTS>
+        <courseTitle>Arhitektura racunara</courseTitle>
+        <courseType>SA</courseType>
+        <courseGoal>Ovladavanje principima rada racunara</courseGoal>
+        <courseStatus>O</courseStatus>
+        <courseCode>E217</courseCode>
+        <courseOutcome>Stecena znanja su osnova za pracenje nastave na strucnim predmetima koji slede</courseOutcome>
+        <mandatoryPassedCourse rdf:resource="&ftn;E2_PJSP"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <isTeachedBy rdf:resource="&ftn;Miroslav_Hajdukovic"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_Curriculum_Standard -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_Curriculum_Standard">
+        <rdf:type rdf:resource="&ftn;curriculumStandard"/>
+        <rdfs:label>E2 Curriculum Standard</rdfs:label>
+        <standardNumber rdf:datatype="&xsd;integer">5</standardNumber>
+        <standardTitle>Kurikulum</standardTitle>
+        <standardDescription>E2 kurikulum</standardDescription>
+        <hasCourse rdf:resource="&ftn;E2_AR"/>
+        <hasCourse rdf:resource="&ftn;E2_OP"/>
+        <hasCourse rdf:resource="&ftn;E2_PJSP"/>
+        <hasCourse rdf:resource="&ftn;E2_WP"/>
+        <isStandardOf rdf:resource="&ftn;E2_accreditation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_OP -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_OP">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Object oriented programming</rdfs:label>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <courseSemester rdf:datatype="&xsd;integer">3</courseSemester>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">4</weeklyOtherClassesFund>
+        <courseECTS rdf:datatype="&xsd;integer">9</courseECTS>
+        <courseType>SA</courseType>
+        <courseOutcome>Studenti su obuceni za upotrebu objektnog pristupa za neposrednu izradu programa na konkretnom ojektnom programskom jeziku</courseOutcome>
+        <courseStatus>O</courseStatus>
+        <courseTitle>Objektno Programiranje</courseTitle>
+        <courseCode>E223</courseCode>
+        <courseGoal>Ovladavanje principima objektne metodologije i tehnologije</courseGoal>
+        <isTeachedBy rdf:resource="&ftn;Dusan_Malbaski"/>
+        <mandatoryPassedCourse rdf:resource="&ftn;E2_AR"/>
+        <mandatoryPassedCourse rdf:resource="&ftn;E2_PJSP"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_PJSP -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_PJSP">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Programming languages and Data Structures</rdfs:label>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <courseSemester rdf:datatype="&xsd;integer">1</courseSemester>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">4</weeklyOtherClassesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">9</courseECTS>
+        <courseGoal>Ovladavanje principima i tehnikama izrade proceduralnih programa</courseGoal>
+        <courseCode>E214</courseCode>
+        <courseStatus>O</courseStatus>
+        <courseTitle>Programski jezici i stukture podataka</courseTitle>
+        <courseType>TM</courseType>
+        <courseOutcome>Studenti su obuceni za izradu programa na konkretnom programskom jeziku</courseOutcome>
+        <isTeachedBy rdf:resource="&ftn;Dusan_Malbaski"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_Quality_control_Standard -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_Quality_control_Standard">
+        <rdf:type rdf:resource="&ftn;standard"/>
+        <rdfs:label>E2 Quality control Standard</rdfs:label>
+        <standardNumber rdf:datatype="&xsd;integer">11</standardNumber>
+        <standardDescription>Provera kvaliteta studijskog programa se sprovodi redovno i sistematično putem samovrednovanja
+i spoljašnjom proverom kvaliteta. Treba istaći višedecenijsku praksu anketiranja studenata.</standardDescription>
+        <standardTitle>Kontrola kvaliteta</standardTitle>
+        <isStandardOf rdf:resource="&ftn;E2_accreditation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_Quality_details -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_Quality_details">
+        <rdf:type rdf:resource="&dms;ContentFragment"/>
+        <rdfs:label>E2 Quality details</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_Teaching_Staff_Standard -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_Teaching_Staff_Standard">
+        <rdf:type rdf:resource="&ftn;teachingStaffStandard"/>
+        <rdfs:label>E2 Teaching Staff Standard</rdfs:label>
+        <standardNumber rdf:datatype="&xsd;integer">9</standardNumber>
+        <standardTitle>Nastavno osoblje</standardTitle>
+        <standardDescription>Description missing...</standardDescription>
+        <isStandardOf rdf:resource="&ftn;E2_accreditation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_WP -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_WP">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Web Programming - E2</rdfs:label>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">2</weeklyOtherClassesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">2</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">4</courseECTS>
+        <courseSemester rdf:datatype="&xsd;integer">6</courseSemester>
+        <courseStatus>I</courseStatus>
+        <courseCode>E239</courseCode>
+        <courseOutcome>Stecena znanja su osnova za pracenje nastave na strucnim predmetima koji slede</courseOutcome>
+        <courseType>NS</courseType>
+        <courseTitle>Web Programiranje</courseTitle>
+        <courseGoal>Osposobljavanje studeata za resavanje problema iz oblasti Web programiranja</courseGoal>
+        <mandatoryPassedCourse rdf:resource="&ftn;E2_OP"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <isTeachedBy rdf:resource="&ftn;Milan_Vidakovic"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#E2_accreditation -->
+
+    <owl:NamedIndividual rdf:about="&ftn;E2_accreditation">
+        <rdf:type rdf:resource="&ftn;accreditationDocument"/>
+        <rdfs:label>E2 accreditation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#EJB_Design_Patterns -->
+
+    <owl:NamedIndividual rdf:about="&ftn;EJB_Design_Patterns">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>EJB Design Patterns</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2003</referenceYear>
+        <referenceTitle>EJB Design Patterns</referenceTitle>
+        <referenceAuthor>Floyd Marinescu</referenceAuthor>
+        <referencePublisher>Wiley and Sons</referencePublisher>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_ISA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Final_test_30 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Final_test_30">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Final test 30 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">30</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_NANS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Goran_Savic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Goran_Savic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Goran Savic</rdfs:label>
+        <teacherName>Goran Savic</teacherName>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#HTML_basics -->
+
+    <owl:NamedIndividual rdf:about="&ftn;HTML_basics">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>HTML Basics</rdfs:label>
+        <courseContentValue>HTML Basics</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_WP"/>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Homework -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Homework">
+        <rdf:type rdf:resource="&ftn;courseMethod"/>
+        <courseMethodValue>Homework</courseMethodValue>
+        <isCourseMethodOf rdf:resource="&ftn;E2_WP"/>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_NANS"/>
     </owl:NamedIndividual>
     
 
@@ -2120,7 +2628,60 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <ace_lexicon:PN_sg>Ilija_Kovačević</ace_lexicon:PN_sg>
         <teacherTitle>Redovni profesor</teacherTitle>
         <narrowerScientificOrArtisticField>Matematika</narrowerScientificOrArtisticField>
-        <teaches rdf:resource="&ftn;Matematička_analiza_1"/>
+        <teaches rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Internet_programiranje_-_Java -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Internet_programiranje_-_Java">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Internet programming, part 1 - Java</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2007</referenceYear>
+        <referenceTitle>Internet programiranje, deo 1: Programski jezik Java</referenceTitle>
+        <referencePublisher>UNS</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Dusan_Malbaski"/>
+        <isLiteratureFor rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#JSP -->
+
+    <owl:NamedIndividual rdf:about="&ftn;JSP">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <courseContentValue>JSP</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_WP"/>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#JavaBeans -->
+
+    <owl:NamedIndividual rdf:about="&ftn;JavaBeans">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <courseContentValue>JavaBeans</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_WP"/>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Java_i_Internet_Programiranje -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Java_i_Internet_Programiranje">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Java i Internet Programiranje</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2002</referenceYear>
+        <referenceTitle>Java i Internet Programiranje</referenceTitle>
+        <referencePublisher>GInT</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <isLiteratureFor rdf:resource="&ftn;E2_WP"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Milan_Vidakovic"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_ISA"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_WP"/>
     </owl:NamedIndividual>
     
 
@@ -2145,8 +2706,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <referencePublisher>Feljton</referencePublisher>
         <ace_lexicon:PN_sg>Kombinatorika_na_rečima</ace_lexicon:PN_sg>
         <referenceTitle>Kombinatorika na rečima</referenceTitle>
-        <isLiteratureFor rdf:resource="&ftn;Diskretna_matematika"/>
-        <isWrittenBy rdf:resource="&ftn;Rade_Doroslovački"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Rade_Doroslovački"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
     </owl:NamedIndividual>
     
 
@@ -2158,6 +2719,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Consultation</rdfs:label>
         <courseMethodValue>Konsultacije</courseMethodValue>
         <ace_lexicon:PN_sg>Konsultacije</ace_lexicon:PN_sg>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_NANS"/>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_XWS"/>
     </owl:NamedIndividual>
     
 
@@ -2166,12 +2729,12 @@ Case Study: Accreditation in High Education</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&ftn;Kurikulum">
         <rdf:type rdf:resource="&ftn;curriculumStandard"/>
-        <rdfs:label>Curriculum Standard</rdfs:label>
+        <rdfs:label>SIIT Curriculum Standard</rdfs:label>
         <standardNumber rdf:datatype="&xsd;integer">5</standardNumber>
         <standardDescription>Kurikulum osnovnih akademskih studija Softversko inženjerstvo i informacione tehnologije je formiran tako da zadovolji sve postavljene ciljeve. Struktura studijskog programa je obezbedila oko 15% akademsko-opšteobrazovnih, oko 20% teorijsko-metodoloških, oko 35% naučno-stručnih i oko 30% stručno-aplikativnih predmeta. Takođe je ispunjeno da izborni predmeti budu zastupljeni sa 20% ESPB bodova.</standardDescription>
         <standardTitle>Kurikulum</standardTitle>
-        <hasCourse rdf:resource="&ftn;Diskretna_matematika"/>
-        <hasCourse rdf:resource="&ftn;Matematička_analiza_1"/>
+        <hasCourse rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+        <hasCourse rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
     </owl:NamedIndividual>
     
 
@@ -2184,7 +2747,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <ace_lexicon:PN_sg>Lidija_Čomić</ace_lexicon:PN_sg>
         <teacherName>Lidija Čomić</teacherName>
         <narrowerScientificOrArtisticField>Matematika</narrowerScientificOrArtisticField>
-        <teaches rdf:resource="&ftn;Matematička_analiza_1"/>
+        <teaches rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
     </owl:NamedIndividual>
     
 
@@ -2200,8 +2763,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <referenceAuthor>Nebojša Ralević</referenceAuthor>
         <ace_lexicon:PN_sg>MA1_ODJ</ace_lexicon:PN_sg>
         <referenceTitle>Matematička analiza 1 - ODJ, diferencijalni i integralni račun</referenceTitle>
-        <isWrittenBy rdf:resource="&ftn;Ilija_Kovačević"/>
-        <isWrittenBy rdf:resource="&ftn;Slavica_Medić"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Ilija_Kovačević"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Slavica_Medić"/>
     </owl:NamedIndividual>
     
 
@@ -2217,8 +2780,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <referenceAuthor>Biljana Carić</referenceAuthor>
         <referencePublisher>FTN</referencePublisher>
         <referenceAuthor>Nebojša Ralević</referenceAuthor>
-        <isWrittenBy rdf:resource="&ftn;Ilija_Kovačević"/>
-        <isWrittenBy rdf:resource="&ftn;Slavica_Medić"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Ilija_Kovačević"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Slavica_Medić"/>
     </owl:NamedIndividual>
     
 
@@ -2232,7 +2795,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>MA1_pismeni</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
     </owl:NamedIndividual>
     
 
@@ -2246,7 +2809,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">false</mandatory>
         <ace_lexicon:PN_sg>MA1_završni_ispit_1</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
     </owl:NamedIndividual>
     
 
@@ -2260,7 +2823,35 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">false</mandatory>
         <ace_lexicon:PN_sg>MA1_završni_ispit_2</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MBS_1_-_prirucnik_za_vezbe -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MBS_1_-_prirucnik_za_vezbe">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Mrezno Bazirani Sistemi 1 - Prirucnik za vezbe</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referencePublisher>FTN</referencePublisher>
+        <referenceTitle>Mrezno Bazirani Sistemi 1 - Prirucnik za vezbe</referenceTitle>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Milan_Kerac"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#MSc_2010_inf -->
+
+    <owl:NamedIndividual rdf:about="&ftn;MSc_2010_inf">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>Msc 2010 INF</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">2010</qualificationYear>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationField>Informatika</qualificationField>
+        <isQualificationOf rdf:resource="&ftn;Milan_Kerac"/>
     </owl:NamedIndividual>
     
 
@@ -2269,45 +2860,13 @@ Case Study: Accreditation in High Education</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&ftn;Magistratura_IK">
         <rdf:type rdf:resource="&ftn;qualification"/>
-        <rdfs:label>MSc</rdfs:label>
+        <rdfs:label>MSc IK</rdfs:label>
         <qualificationYear rdf:datatype="&xsd;integer">1972</qualificationYear>
         <qualificationInstitution>PMF u Beogradu</qualificationInstitution>
         <ace_lexicon:PN_sg>msc_ik</ace_lexicon:PN_sg>
         <qualificationTitle>Magistarska teza</qualificationTitle>
         <qualificationField>Matematika</qualificationField>
         <isQualificationOf rdf:resource="&ftn;Ilija_Kovačević"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Matematička_analiza_1 -->
-
-    <owl:NamedIndividual rdf:about="&ftn;Matematička_analiza_1">
-        <rdf:type rdf:resource="&ftn;course"/>
-        <rdfs:label>Mathematical analysis 1</rdfs:label>
-        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
-        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
-        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">1</weeklyAdditionalLessonsFund>
-        <courseSemester rdf:datatype="&xsd;integer">2</courseSemester>
-        <weeklyExercisesFund rdf:datatype="&xsd;integer">3</weeklyExercisesFund>
-        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
-        <courseECTS rdf:datatype="&xsd;integer">9</courseECTS>
-        <courseGoal>Osposobljavanje studenata na apstraktno mišljenje...</courseGoal>
-        <courseType>AO</courseType>
-        <courseTitle>Matematička analiza 1</courseTitle>
-        <courseCode>E212S</courseCode>
-        <courseOutcome>Stečena znanja koristi u daljem obrazovanju...</courseOutcome>
-        <ace_lexicon:PN_sg>matematicka_analiza_1</ace_lexicon:PN_sg>
-        <courseStatus>O</courseStatus>
-        <hasCourseContent rdf:resource="&ftn;Brojni_redovi"/>
-        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
-        <hasLiterature rdf:resource="&ftn;MA1_ODJ"/>
-        <hasLiterature rdf:resource="&ftn;MA1_Uvodni_pojmovi"/>
-        <hasCourseContent rdf:resource="&ftn;Metrički_prostori"/>
-        <hasCourseContent rdf:resource="&ftn;Polje_realnih_kompleksnih_brojeva"/>
-        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
-        <isTeachedBy rdf:resource="&ftn;Slavica_Medić"/>
-        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
     </owl:NamedIndividual>
     
 
@@ -2323,11 +2882,74 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Milan_Kerac -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Milan_Kerac">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Milan Kerac</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Milan Kerac</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Milan_Vidakovic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Milan_Vidakovic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Milan Vidakovic</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Milan Vidakovic</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;E2_Teaching_Staff_Standard"/>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Miroslav_Hajdukovic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Miroslav_Hajdukovic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Miroslav P. Hajdukovic</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Miroslav Hajdukovic</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;E2_Teaching_Staff_Standard"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Misliti_na_Javi -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Misliti_na_Javi">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Thinking in Java</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2002</referenceYear>
+        <referenceAuthor>Bruce Eckel</referenceAuthor>
+        <referencePublisher>Mikro knjiga, Beograd</referencePublisher>
+        <referenceTitle>Misliti na Javi</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;E2_WP"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Multilayer_client-server_systems -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Multilayer_client-server_systems">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Multilayer client-server systems</rdfs:label>
+        <courseContentValue>Multilayer client-server systems</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_ISA"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Nastavno_osoblje -->
 
     <owl:NamedIndividual rdf:about="&ftn;Nastavno_osoblje">
         <rdf:type rdf:resource="&ftn;teachingStaffStandard"/>
-        <rdfs:label>Teaching Staff Standard</rdfs:label>
+        <rdfs:label>SIIT Teaching Staff Standard</rdfs:label>
         <standardNumber rdf:datatype="&xsd;integer">9</standardNumber>
         <standardDescription>Za realizaciju studijskog programa Softversko inženjerstvo i informacione tehnologije obezbeđeno je nastavno osoblje sa potrebnim stručnim i naučnim kvalifikacijama.Broj nastavnika odgovara potrebama studijskog programa i zavisi od broja predmeta i broja časova na tim predmetima. Ukupan broj nastavnika je dovoljan da pokrije ukupan broj časova nastave na studijskom programu, tako da nastavnik ostvaruje prosečno 180 časova aktivne nastave (predavanja, konsultacije, vežbe, praktičan rad, ...) godišnje, odnosno 6 časova nedeljno.</standardDescription>
         <standardTitle>Nastavno osoblje</standardTitle>
@@ -2335,6 +2957,72 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <hasTeachingStaff rdf:resource="&ftn;Lidija_Čomić"/>
         <hasTeachingStaff rdf:resource="&ftn;Rade_Doroslovački"/>
         <hasTeachingStaff rdf:resource="&ftn;Slavica_Medić"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Net_Programming -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Net_Programming">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Client-Server Programming</rdfs:label>
+        <courseContentValue>Client-Server Programming</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_WP"/>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Network_infrastructure -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Network_infrastructure">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Network Infrastructure Design for BISIS System in an Inter-Library Scenario</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referenceTitle>Network Infrastructure Design for BISIS System in an Inter-Library Scenario</referenceTitle>
+        <referencePublisher>International Conference on Distributed Library Information Systems</referencePublisher>
+        <referenceAuthor>Ivan Nejgebauer</referenceAuthor>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Milan_Kerac"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Numericki_Algoritmi_i_Numericki_Softver -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Numericki_Algoritmi_i_Numericki_Softver">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Numericki algoritmi i numericki softver - knijga</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2005</referenceYear>
+        <referencePublisher>autorski rukopis</referencePublisher>
+        <referenceTitle>Numericki algoritmi i numericki softver</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_NANS"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Numericki_Algoritmi_i_Numericki_Softver_-_praktikum -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Numericki_Algoritmi_i_Numericki_Softver_-_praktikum">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Numericki algoritmi i numericki softver - praktikum</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referenceTitle>Numericki algoritmi i numericki softver - racunarski praktikum</referenceTitle>
+        <referencePublisher>autorski rukopis</referencePublisher>
+        <isWrittenBy rdf:resource="&ftn;Djordje_Obradovic"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_NANS"/>
+        <isWrittenBy rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Numericko_resavanje_problema -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Numericko_resavanje_problema">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Numerical solving of problems</rdfs:label>
+        <courseContentValue>Numericko resavanje problema</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_NANS"/>
     </owl:NamedIndividual>
     
 
@@ -2348,8 +3036,16 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>Obavezan_domaći_zadatak_5b</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_NANS"/>
     </owl:NamedIndividual>
+    <owl:Axiom>
+        <rdfs:comment>4 times</rdfs:comment>
+        <owl:annotatedSource rdf:resource="&ftn;Obavezan_domaći_zadatak_5b"/>
+        <owl:annotatedTarget rdf:resource="&ftn;SIIT_NANS"/>
+        <owl:annotatedProperty rdf:resource="&ftn;isEvaluationOf"/>
+    </owl:Axiom>
     
 
 
@@ -2362,7 +3058,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>Obavezan_test_10b</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
     </owl:NamedIndividual>
     
 
@@ -2376,7 +3072,24 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>Obavezan_test_15b</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezan_usmeni_30 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezan_usmeni_30">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory oral exam 30 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">30</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;E2_AR"/>
+        <isEvaluationOf rdf:resource="&ftn;E2_OP"/>
+        <isEvaluationOf rdf:resource="&ftn;E2_PJSP"/>
+        <isEvaluationOf rdf:resource="&ftn;E2_WP"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
     </owl:NamedIndividual>
     
 
@@ -2390,7 +3103,22 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>Obavezan_usmeni_40b</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Obavezan_usmeni_50 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Obavezan_usmeni_50">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory oral exam 50 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">50</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Ispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Agentske_Tehnologije"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_ISA"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_XWS"/>
     </owl:NamedIndividual>
     
 
@@ -2404,8 +3132,8 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>Obavezno_prisustvo_na_predavanjima_2b</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
     </owl:NamedIndividual>
     
 
@@ -2419,8 +3147,23 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
         <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
         <ace_lexicon:PN_sg>Obavezno_prisustvo_na_vežbama_3b</ace_lexicon:PN_sg>
-        <isEvaluationOf rdf:resource="&ftn;Diskretna_matematika"/>
-        <isEvaluationOf rdf:resource="&ftn;Matematička_analiza_1"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Osnovi_Racunarstva -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Osnovi_Racunarstva">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Osnovi Racunarstva</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2003</referenceYear>
+        <referenceTitle>Osnovi Racunarstva</referenceTitle>
+        <referencePublisher>Stylos</referencePublisher>
+        <referenceAuthor>Danilo Obradovic</referenceAuthor>
+        <isLiteratureFor rdf:resource="&ftn;E2_WP"/>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_WP"/>
     </owl:NamedIndividual>
     
 
@@ -2432,6 +3175,49 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Basic logic</rdfs:label>
         <courseContentValue>Osnovi logike</courseContentValue>
         <ace_lexicon:PN_sg>Osnovi_logike</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Osnovne_strukture_podataka -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Osnovne_strukture_podataka">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Basic data structures</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">1995</referenceYear>
+        <referenceTitle>Osnovne strukture podataka</referenceTitle>
+        <referencePublisher>UNS</referencePublisher>
+        <referenceAuthor>Danilo Obradovic</referenceAuthor>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Dusan_Malbaski"/>
+        <isLiteratureFor rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#PhD_1992_Robot -->
+
+    <owl:NamedIndividual rdf:about="&ftn;PhD_1992_Robot">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD 1992 Robot</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1992</qualificationYear>
+        <qualificationField>Robotika</qualificationField>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <isQualificationOf rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#PhD_2012_INF -->
+
+    <owl:NamedIndividual rdf:about="&ftn;PhD_2012_INF">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD 2012 INF</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">2012</qualificationYear>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <qualificationField>Informatika</qualificationField>
+        <isQualificationOf rdf:resource="&ftn;Stevan_Gostojic"/>
     </owl:NamedIndividual>
     
 
@@ -2454,6 +3240,22 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>Lectures</rdfs:label>
         <courseMethodValue>Predavanja</courseMethodValue>
         <ace_lexicon:PN_sg>Predavanja</ace_lexicon:PN_sg>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_NANS"/>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_XWS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Prisustvo_5 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Prisustvo_5">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory attendance at lectures 5 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">5</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_NANS"/>
     </owl:NamedIndividual>
     
 
@@ -2462,7 +3264,7 @@ Case Study: Accreditation in High Education</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&ftn;Quality_details">
         <rdf:type rdf:resource="&dms;ContentFragment"/>
-        <rdfs:label>Quality details</rdfs:label>
+        <rdfs:label>SIIT Quality details</rdfs:label>
         <dms:content>Quality details....</dms:content>
     </owl:NamedIndividual>
     
@@ -2475,7 +3277,32 @@ Case Study: Accreditation in High Education</rdfs:comment>
         <rdfs:label>prof. dr Rade Doroslovački</rdfs:label>
         <teacherName>Rade Doroslovački</teacherName>
         <ace_lexicon:PN_sg>Rade_Doroslovački</ace_lexicon:PN_sg>
-        <teaches rdf:resource="&ftn;Diskretna_matematika"/>
+        <teaches rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Rekurzije -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Rekurzije">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Recursions</rdfs:label>
+        <courseContentValue>Rekurzije</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SCIENTIFIC_COMPUTING -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SCIENTIFIC_COMPUTING">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Scientific Computing</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">1997</referenceYear>
+        <referenceTitle>Scientific Computing</referenceTitle>
+        <referencePublisher>McGraw-Hill</referencePublisher>
+        <referenceAuthor>Michael Health</referenceAuthor>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_NANS"/>
     </owl:NamedIndividual>
     
 
@@ -2493,14 +3320,306 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_Agentske_Tehnologije -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_Agentske_Tehnologije">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Agent Technologies</rdfs:label>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">3</weeklyOtherClassesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">3</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">4</courseECTS>
+        <courseSemester rdf:datatype="&xsd;integer">8</courseSemester>
+        <courseCode>E2K41</courseCode>
+        <courseStatus>I</courseStatus>
+        <courseTitle>Agentske Tehnologije</courseTitle>
+        <courseType>TM</courseType>
+        <courseOutcome>Student je kompetentan da koristi tehnologije distribuiranih softverskih komponenti da izgradi agentsko okruzenje i softverske agente</courseOutcome>
+        <courseGoal>Osposobljavanje studenata za resavanje problema iz oblasti agentskih tehnologija</courseGoal>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <isCourseOf rdf:resource="&ftn;Kurikulum"/>
+        <isTeachedBy rdf:resource="&ftn;Milan_Vidakovic"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+        <isTeachedBy rdf:resource="&ftn;Zaric_Miroslav"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_Diskretna_matematika -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_Diskretna_matematika">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Discrete mathematics</rdfs:label>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <courseSemester rdf:datatype="&xsd;integer">3</courseSemester>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">3</weeklyExercisesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">3</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">7</courseECTS>
+        <courseType>TM</courseType>
+        <courseCode>E213</courseCode>
+        <courseGoal>Osposobljavanje studenata na apstraktno mišljenje...</courseGoal>
+        <ace_lexicon:PN_sg>diskretna_matematika</ace_lexicon:PN_sg>
+        <courseTitle>Diskretna matematika</courseTitle>
+        <courseStatus>O</courseStatus>
+        <courseOutcome>Stečena znanja koriste se dalje u obrazovanju...</courseOutcome>
+        <hasCourseContent rdf:resource="&ftn;Kombinatorika"/>
+        <hasLiterature rdf:resource="&ftn;Kombinatorika_na_rečima"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <hasCourseContent rdf:resource="&ftn;Osnovi_logike"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseContent rdf:resource="&ftn;Teorija_grafova"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_ISA -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_ISA">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Internet Software Architecture</rdfs:label>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">1</weeklyOtherClassesFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">2</weeklyAdditionalLessonsFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">2</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">5</courseECTS>
+        <courseSemester rdf:datatype="&xsd;integer">6</courseSemester>
+        <courseOutcome>Student je kompetentan da projektuje viseslojne, distribuirane softverske sisteme...</courseOutcome>
+        <courseStatus>O</courseStatus>
+        <courseCode>SEI41</courseCode>
+        <courseType>SA</courseType>
+        <courseTitle>Internet Softverske Arhitekture</courseTitle>
+        <courseGoal>Osposobljavanje studenata za dizajn i konstrukciju viseslojnih klijent/server sistema zasnovanih na tehnologijama distribuiranih objekata</courseGoal>
+        <isTeachedBy rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <isCourseOf rdf:resource="&ftn;Kurikulum"/>
+        <mandatoryAttendedCourse rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+        <isTeachedBy rdf:resource="&ftn;Stevan_Gostojic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_Internet_Mreze -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_Internet_Mreze">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Internet Network</rdfs:label>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">0</weeklyAdditionalLessonsFund>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <courseSemester rdf:datatype="&xsd;integer">2</courseSemester>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">2</weeklyLectureFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">2</weeklyOtherClassesFund>
+        <courseECTS rdf:datatype="&xsd;integer">4</courseECTS>
+        <courseOutcome>Ovladavanje prakticnim znanjima potrebnim za projektovanje, implementaciju i odrzavanje lokalnih racunarskih mreza baziranih na TCP/IP modelu</courseOutcome>
+        <courseTitle>Internet mreze</courseTitle>
+        <courseStatus>O</courseStatus>
+        <courseGoal>Ovladavanje teorijskim osnovama i tehnologijama TCP/IP mreza</courseGoal>
+        <courseType>NS</courseType>
+        <courseCode>E233</courseCode>
+        <isTeachedBy rdf:resource="&ftn;Goran_Savic"/>
+        <hasCourseMethod rdf:resource="&ftn;Homework"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <isCourseOf rdf:resource="&ftn;Kurikulum"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasToBeAttendedFor rdf:resource="&ftn;SIIT_XWS"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+        <isTeachedBy rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_Matematička_analiza_1 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_Matematička_analiza_1">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Mathematical analysis 1</rdfs:label>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">1</weeklyAdditionalLessonsFund>
+        <courseSemester rdf:datatype="&xsd;integer">2</courseSemester>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">3</weeklyExercisesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">9</courseECTS>
+        <ace_lexicon:PN_sg>matematicka_analiza_1</ace_lexicon:PN_sg>
+        <courseOutcome>Stečena znanja koristi u daljem obrazovanju...</courseOutcome>
+        <courseCode>E212S</courseCode>
+        <courseGoal>Osposobljavanje studenata na apstraktno mišljenje...</courseGoal>
+        <courseType>AO</courseType>
+        <courseStatus>O</courseStatus>
+        <courseTitle>Matematička analiza 1</courseTitle>
+        <hasCourseContent rdf:resource="&ftn;Brojni_redovi"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <hasLiterature rdf:resource="&ftn;MA1_ODJ"/>
+        <hasLiterature rdf:resource="&ftn;MA1_Uvodni_pojmovi"/>
+        <hasCourseContent rdf:resource="&ftn;Metrički_prostori"/>
+        <hasCourseContent rdf:resource="&ftn;Polje_realnih_kompleksnih_brojeva"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <isTeachedBy rdf:resource="&ftn;Slavica_Medić"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_NANS -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_NANS">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Numerical algorithms and numerical software</rdfs:label>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">1</weeklyAdditionalLessonsFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">1</weeklyOtherClassesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">2</weeklyLectureFund>
+        <courseSemester rdf:datatype="&xsd;integer">3</courseSemester>
+        <courseECTS rdf:datatype="&xsd;integer">4</courseECTS>
+        <courseStatus>O</courseStatus>
+        <courseOutcome>Razumevanje osnovnih numerickih metoda,...</courseOutcome>
+        <courseGoal>Ovladavanje osnovnim znanjima iz numericke analize,...</courseGoal>
+        <courseType>NS</courseType>
+        <courseTitle>Numericki algoritmi i numericki softver</courseTitle>
+        <courseCode>E231</courseCode>
+        <isTeachedBy rdf:resource="&ftn;Aleksandar_Kovacevic"/>
+        <isTeachedBy rdf:resource="&ftn;Djordje_Obradovic"/>
+        <isCourseOf rdf:resource="&ftn;Kurikulum"/>
+        <mandatoryAttendedCourse rdf:resource="&ftn;SIIT_Diskretna_matematika"/>
+        <mandatoryAttendedCourse rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+        <isTeachedBy rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_WP -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_WP">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>Web Programming</rdfs:label>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">1</weeklyAdditionalLessonsFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">2</weeklyOtherClassesFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">3</weeklyLectureFund>
+        <courseSemester rdf:datatype="&xsd;integer">5</courseSemester>
+        <courseECTS rdf:datatype="&xsd;integer">7</courseECTS>
+        <courseType>SA</courseType>
+        <courseTitle>Web Programiranje</courseTitle>
+        <courseCode>SE239A</courseCode>
+        <courseGoal>Osposobljavanje studenata za resavanje zadataka iz oblasti Web programiranja</courseGoal>
+        <courseStatus>O</courseStatus>
+        <courseOutcome>Stecena znanja su osnova za pracenje nastave na strucnim predmetima koji slede</courseOutcome>
+        <isTeachedBy rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <hasCourseMethod rdf:resource="&ftn;Konsultacije"/>
+        <isCourseOf rdf:resource="&ftn;Kurikulum"/>
+        <isTeachedBy rdf:resource="&ftn;Milan_Vidakovic"/>
+        <hasEvaluation rdf:resource="&ftn;Obavezan_usmeni_50"/>
+        <hasCourseMethod rdf:resource="&ftn;Predavanja"/>
+        <hasCourseMethod rdf:resource="&ftn;Vežbe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SIIT_XWS -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SIIT_XWS">
+        <rdf:type rdf:resource="&ftn;course"/>
+        <rdfs:label>XML i Web Servisi</rdfs:label>
+        <weeklyExercisesFund rdf:datatype="&xsd;integer">0</weeklyExercisesFund>
+        <weeklyOtherClassesFund rdf:datatype="&xsd;integer">0</weeklyOtherClassesFund>
+        <weeklyResearchWorkFund rdf:datatype="&xsd;integer">0</weeklyResearchWorkFund>
+        <weeklyAdditionalLessonsFund rdf:datatype="&xsd;integer">4</weeklyAdditionalLessonsFund>
+        <weeklyLectureFund rdf:datatype="&xsd;integer">4</weeklyLectureFund>
+        <courseECTS rdf:datatype="&xsd;integer">7</courseECTS>
+        <courseSemester rdf:datatype="&xsd;integer">7</courseSemester>
+        <courseCode>E2E40</courseCode>
+        <courseGoal>Osposobljavanje studenata za konstrukciju web servisa pomocu xml tehnologija</courseGoal>
+        <courseStatus>I</courseStatus>
+        <courseTitle>XML i Web Servisi</courseTitle>
+        <courseType>TM</courseType>
+        <courseOutcome>Student je kompetentan da projektuje sisteme zasnovane na xml dokumentima i projektuje web servis komponente u skladu za vazecim standardima</courseOutcome>
+        <isTeachedBy rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <hasLiterature rdf:resource="&ftn;Dictionary_of_XML_Technologies_and_the_Semantic_Web"/>
+        <isCourseOf rdf:resource="&ftn;Kurikulum"/>
+        <isTeachedBy rdf:resource="&ftn;Stevan_Gostojic"/>
+        <hasLiterature rdf:resource="&ftn;Web_Services_-_Concepts_Architectures_and_Applications"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#SMTP -->
+
+    <owl:NamedIndividual rdf:about="&ftn;SMTP">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>SMTP</rdfs:label>
+        <courseContentValue>SMTP</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Single_sign-on_model_za_web_aplikacije -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Single_sign-on_model_za_web_aplikacije">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Single sign-on model for web applications</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2008</referenceYear>
+        <referenceTitle>Single sign-on model za web aplikacije</referenceTitle>
+        <referencePublisher>Zbornik radova YUInfo 2008</referencePublisher>
+        <referenceAuthor>Goran Sladic</referenceAuthor>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Zaric_Miroslav"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Slavica_Medić -->
 
     <owl:NamedIndividual rdf:about="&ftn;Slavica_Medić">
         <rdf:type rdf:resource="&ftn;teacher"/>
         <rdfs:label>Slavica Medić</rdfs:label>
+        <narrowerScientificOrArtisticField>Matematika</narrowerScientificOrArtisticField>
         <ace_lexicon:PN_sg>Slavica_Medić</ace_lexicon:PN_sg>
         <teacherName>Slavica Medić</teacherName>
-        <teaches rdf:resource="&ftn;Matematička_analiza_1"/>
+        <teaches rdf:resource="&ftn;SIIT_Matematička_analiza_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Stevan_Gostojic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Stevan_Gostojic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Stevan Gostojic</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Stevan Gostojic</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Strukture_podataka -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Strukture_podataka">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Strukture podataka</rdfs:label>
+        <courseContentValue>Strukture podataka</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#TCPIP_networks -->
+
+    <owl:NamedIndividual rdf:about="&ftn;TCPIP_networks">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>TCP/IP networks</rdfs:label>
+        <courseContentValue>TCP/IP networks</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
     </owl:NamedIndividual>
     
 
@@ -2516,13 +3635,435 @@ Case Study: Accreditation in High Education</rdfs:comment>
     
 
 
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Transactions -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Transactions">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Transactions</rdfs:label>
+        <courseContentValue>Transactions</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_ISA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Uvod_u_MATLAB_7 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Uvod_u_MATLAB_7">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Introduction to MATLAB 7</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2005</referenceYear>
+        <referencePublisher>Wiley</referencePublisher>
+        <referenceAuthor>Amos Gilat</referenceAuthor>
+        <referenceTitle>Uvod u MATLAB 7</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_NANS"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Vežbe -->
 
     <owl:NamedIndividual rdf:about="&ftn;Vežbe">
         <rdf:type rdf:resource="&ftn;courseMethod"/>
         <rdfs:label>Exercises</rdfs:label>
         <ace_lexicon:PN_sg>Vežbe</ace_lexicon:PN_sg>
-        <courseMethodValue>Konsultacije</courseMethodValue>
+        <courseMethodValue>Vezbe</courseMethodValue>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_NANS"/>
+        <isCourseMethodOf rdf:resource="&ftn;SIIT_XWS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Web_Services_-_Concepts_Architectures_and_Applications -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Web_Services_-_Concepts_Architectures_and_Applications">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Web Services: Concepts, Architectures and Applications</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2004</referenceYear>
+        <referenceAuthor>H. Kuno</referenceAuthor>
+        <referenceAuthor>G. Alonso</referenceAuthor>
+        <referenceAuthor>V. Machiraju</referenceAuthor>
+        <referenceAuthor>F. Casati</referenceAuthor>
+        <referencePublisher>Springer-Verlag, Berlin</referencePublisher>
+        <referenceTitle>Web Services: Concepts, Architectures and Applications</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_ISA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Zaric_Miroslav -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Zaric_Miroslav">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Miroslav Zaric</rdfs:label>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <teacherName>Miroslav Zaric</teacherName>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Zora_Konjovic -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Zora_Konjovic">
+        <rdf:type rdf:resource="&ftn;teacher"/>
+        <rdfs:label>Zora Konjovic</rdfs:label>
+        <teacherName>Zora Konjovic</teacherName>
+        <narrowerScientificOrArtisticField>Informatika</narrowerScientificOrArtisticField>
+        <isTeachingStaffOf rdf:resource="&ftn;Nastavno_osoblje"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#apstrakcija_i_skrivanje_informacija -->
+
+    <owl:NamedIndividual rdf:about="&ftn;apstrakcija_i_skrivanje_informacija">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Apstractions and information protection</rdfs:label>
+        <courseContentValue>Apstrakcija i skrivanje informacija</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#evolucija_arhitekture_racunara -->
+
+    <owl:NamedIndividual rdf:about="&ftn;evolucija_arhitekture_racunara">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Computer architecture evolution</rdfs:label>
+        <courseContentValue>Evolucija arhitekture racunara</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_AR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#masniska_reprezentacija_brojeva -->
+
+    <owl:NamedIndividual rdf:about="&ftn;masniska_reprezentacija_brojeva">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Digital representation of numbers</rdfs:label>
+        <courseContentValue>Masinska representacija brojeva</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_AR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#matematicki_i_numericki_modeli -->
+
+    <owl:NamedIndividual rdf:about="&ftn;matematicki_i_numericki_modeli">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Mathematical and numerical models</rdfs:label>
+        <courseContentValue>Mathematical and numerical models</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;SIIT_NANS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#matm_logika_i_principi_programiranja -->
+
+    <owl:NamedIndividual rdf:about="&ftn;matm_logika_i_principi_programiranja">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Math logic and principles of programming</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2003</referenceYear>
+        <referenceAuthor>Hotomski D.</referenceAuthor>
+        <referenceTitle>Matematicka logika i principi programiranja</referenceTitle>
+        <referencePublisher>UNS</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Dusan_Malbaski"/>
+        <isLiteratureFor rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#mining_technologies -->
+
+    <owl:NamedIndividual rdf:about="&ftn;mining_technologies">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>Mining technologies from NLP</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2012</referenceYear>
+        <referencePages>105-126</referencePages>
+        <referencePublisher>Computer Speech and Language</referencePublisher>
+        <referenceTitle>Mining methodologies from NLP publications: A case study in automatic terminology recognition</referenceTitle>
+        <referenceAuthor>Nenadic Goran</referenceAuthor>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Aleksandar_Kovacevic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Zora_Konjovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#model_racunara -->
+
+    <owl:NamedIndividual rdf:about="&ftn;model_racunara">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Computer models</rdfs:label>
+        <courseContentValue>Modeli racunara</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_AR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#msc_2006_inf -->
+
+    <owl:NamedIndividual rdf:about="&ftn;msc_2006_inf">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>MSc 2006 INF</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">2006</qualificationYear>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <qualificationField>Informatika</qualificationField>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <isQualificationOf rdf:resource="&ftn;Zaric_Miroslav"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#nasledjivanje -->
+
+    <owl:NamedIndividual rdf:about="&ftn;nasledjivanje">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Inheritance</rdfs:label>
+        <courseContentValue>Nasledjivanje</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#obavezan_domaci_30 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;obavezan_domaci_30">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory homework 30 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">30</evaluationPoints>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <evaluationType>Predispitne</evaluationType>
+        <isEvaluationOf rdf:resource="&ftn;E2_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#obavezan_projekat_30 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;obavezan_projekat_30">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory project 30 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">30</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;E2_AR"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#obavezan_projekat_40 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;obavezan_projekat_40">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory project 40 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">40</evaluationPoints>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <evaluationType>Predispitne</evaluationType>
+        <isEvaluationOf rdf:resource="&ftn;E2_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#obavezna_odbrana_projekta_50 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;obavezna_odbrana_projekta_50">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory project 50 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">50</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_ISA"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_XWS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#obavezne_vezbe_40 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;obavezne_vezbe_40">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory exercise test 40 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">40</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;E2_AR"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_NANS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#obavezne_vezbe_70 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;obavezne_vezbe_70">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory exercise test 70 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">70</evaluationPoints>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <evaluationType>Predispitne</evaluationType>
+        <isEvaluationOf rdf:resource="&ftn;E2_OP"/>
+        <isEvaluationOf rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#objekti_i_obj_prog -->
+
+    <owl:NamedIndividual rdf:about="&ftn;objekti_i_obj_prog">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Objects and object oriented programming</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2007</referenceYear>
+        <referenceTitle>Objekti i objektno programiranje</referenceTitle>
+        <referencePublisher>UNS</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Dusan_Malbaski"/>
+        <isLiteratureFor rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#odabrana_poglavlja_metoda_programiranja -->
+
+    <owl:NamedIndividual rdf:about="&ftn;odabrana_poglavlja_metoda_programiranja">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Selected lectures on programming methods</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2005</referenceYear>
+        <referenceTitle>Odabrana poglavlja metoda programiranja</referenceTitle>
+        <referencePublisher>UNS</referencePublisher>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Dusan_Malbaski"/>
+        <isLiteratureFor rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#phd_1984_inf -->
+
+    <owl:NamedIndividual rdf:about="&ftn;phd_1984_inf">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD 1984 INF BH</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1984</qualificationYear>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationField>Informatika</qualificationField>
+        <qualificationInstitution>ETF u Sarajevu</qualificationInstitution>
+        <isQualificationOf rdf:resource="&ftn;Miroslav_Hajdukovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#phd_1986_inf -->
+
+    <owl:NamedIndividual rdf:about="&ftn;phd_1986_inf">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD 1986 INF</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">1986</qualificationYear>
+        <qualificationField>Informatika</qualificationField>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <isQualificationOf rdf:resource="&ftn;Dusan_Malbaski"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#phd_2003_inf -->
+
+    <owl:NamedIndividual rdf:about="&ftn;phd_2003_inf">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD 2003 INF</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">2003</qualificationYear>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <qualificationField>Informatika</qualificationField>
+        <isQualificationOf rdf:resource="&ftn;Branko_Milosavljevic"/>
+        <isQualificationOf rdf:resource="&ftn;Milan_Vidakovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#phd_2011_inf -->
+
+    <owl:NamedIndividual rdf:about="&ftn;phd_2011_inf">
+        <rdf:type rdf:resource="&ftn;qualification"/>
+        <rdfs:label>PhD 2011 INF</rdfs:label>
+        <qualificationYear rdf:datatype="&xsd;integer">2011</qualificationYear>
+        <qualificationField>Informatika</qualificationField>
+        <qualificationInstitution>FTN u Novom Sadu</qualificationInstitution>
+        <qualificationTitle>Doktorat</qualificationTitle>
+        <isQualificationOf rdf:resource="&ftn;Aleksandar_Kovacevic"/>
+        <isQualificationOf rdf:resource="&ftn;Djordje_Obradovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#polimorfizam -->
+
+    <owl:NamedIndividual rdf:about="&ftn;polimorfizam">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Polymorphism</rdfs:label>
+        <courseContentValue>Polimorfizam</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#preklapanje_operatora -->
+
+    <owl:NamedIndividual rdf:about="&ftn;preklapanje_operatora">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>Operator overloading</rdfs:label>
+        <courseContentValue>Preklapanje operatora</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#programski_jezik_c -->
+
+    <owl:NamedIndividual rdf:about="&ftn;programski_jezik_c">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>C programming language</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">1994</referenceYear>
+        <referencePublisher>Mikro knjiga, Beograd</referencePublisher>
+        <referenceTitle>Programski jezik C sa resenim primerima</referenceTitle>
+        <referenceAuthor>Laslo Kraus</referenceAuthor>
+        <isLiteratureFor rdf:resource="&ftn;E2_PJSP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#programski_jezik_cpp -->
+
+    <owl:NamedIndividual rdf:about="&ftn;programski_jezik_cpp">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>C++ Programming language</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">1994</referenceYear>
+        <referencePublisher>Mikro knjiga, Beograd</referencePublisher>
+        <referenceAuthor>Laslo Kraus</referenceAuthor>
+        <referenceTitle>Programski jezik C++</referenceTitle>
+        <isLiteratureFor rdf:resource="&ftn;E2_OP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#seminarski_rad_20 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;seminarski_rad_20">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory seminary work 20 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">20</evaluationPoints>
+        <mandatory rdf:datatype="&xsd;boolean">false</mandatory>
+        <evaluationType>Predispitne</evaluationType>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_WP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#sistemski_programi -->
+
+    <owl:NamedIndividual rdf:about="&ftn;sistemski_programi">
+        <rdf:type rdf:resource="&ftn;courseContent"/>
+        <rdfs:label>System programs</rdfs:label>
+        <courseContentValue>Sistemski programi</courseContentValue>
+        <isCourseContentOf rdf:resource="&ftn;E2_AR"/>
     </owl:NamedIndividual>
     
 
@@ -2531,12 +4072,72 @@ Case Study: Accreditation in High Education</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="&ftn;standard_N">
         <rdf:type rdf:resource="&ftn;standard"/>
-        <rdfs:label>Quality control  Standard</rdfs:label>
+        <rdfs:label>SIIT Quality control Standard</rdfs:label>
         <standardNumber rdf:datatype="&xsd;integer">11</standardNumber>
         <standardDescription>Provera kvaliteta studijskog programa se sprovodi redovno i sistematično putem samovrednovanja
 i spoljašnjom proverom kvaliteta. Treba istaći višedecenijsku praksu anketiranja studenata.</standardDescription>
         <standardTitle>Kontrola kvaliteta</standardTitle>
         <dms:containsFragment rdf:resource="&ftn;Quality_details"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#vezbe_5 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;vezbe_5">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory exercise attendance 5 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">5</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_NANS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#vezbe_test_50 -->
+
+    <owl:NamedIndividual rdf:about="&ftn;vezbe_test_50">
+        <rdf:type rdf:resource="&ftn;knowledgeEvaluationMethod"/>
+        <rdfs:label>Mandatory exercise test 50 pts</rdfs:label>
+        <evaluationPoints rdf:datatype="&xsd;integer">50</evaluationPoints>
+        <evaluationType rdf:datatype="&xsd;string">Predispitne</evaluationType>
+        <mandatory rdf:datatype="&xsd;boolean">true</mandatory>
+        <isEvaluationOf rdf:resource="&ftn;SIIT_Internet_Mreze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#COLIBROS:COLIBROS_Educational_operating_system -->
+
+    <owl:NamedIndividual rdf:about="&ftn;COLIBROS:COLIBROS_Educational_operating_system">
+        <rdf:type rdf:resource="&ftn;Paper"/>
+        <rdfs:label>COLIBROS: Educational operating system</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2010</referenceYear>
+        <referenceAuthor>Predrag Rakic</referenceAuthor>
+        <referenceISBN>ISSN: 1820-0214</referenceISBN>
+        <referenceTitle>COLIBROS: Educational operating system</referenceTitle>
+        <referencePublisher>Computer Science and Information Systems</referencePublisher>
+        <referenceAuthor>Zarko Zivanov</referenceAuthor>
+        <referencePages>705-719</referencePages>
+        <isRepresentativeReferenceOf rdf:resource="&ftn;Miroslav_Hajdukovic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://informatika.ftn.uns.ac.rs/files/faculty/NikolaNikolic/icist2016/accreditation-document-ontology#Mastering_Enterprise_JavaBeans,Mastering_Enterprise_JavaBeans -->
+
+    <owl:NamedIndividual rdf:about="&ftn;Mastering_Enterprise_JavaBeans,Mastering_Enterprise_JavaBeans">
+        <rdf:type rdf:resource="&ftn;book"/>
+        <rdfs:label>Mastering Enterprise JavaBeans, 3rd Edition</rdfs:label>
+        <referenceYear rdf:datatype="&xsd;integer">2005</referenceYear>
+        <referenceTitle>Mastering Enterprise JavaBeans, 3rd Edition</referenceTitle>
+        <referenceAuthor>E. Roman</referenceAuthor>
+        <referenceAuthor>R. P. Shriganesh</referenceAuthor>
+        <referencePublisher>Wiley and Sons</referencePublisher>
+        <referenceAuthor>G. Brose</referenceAuthor>
+        <isLiteratureFor rdf:resource="&ftn;SIIT_ISA"/>
     </owl:NamedIndividual>
     
 
