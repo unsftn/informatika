@@ -8,9 +8,13 @@ zvanje: assistant
 email: k o c h a 7 8   at   uns.ac.rs
 phone: +381 21 485 2423
 office: Jugodrvo 212
-researchgate: https://www.researchgate.net/profile/Aleksandar_Kovacevic2
-scholar: https://scholar.google.com/citations?user=KylNBRkAAAAJ&hl=en
 photo:
+
+linkedin:  https://rs.linkedin.com/in/goran  
+researchgate: https://www.researchgate.net/profile/Goran_Sladic  
+orcid: http://orcid.org/0000-0002-0691-7392   
+scholar: https://scholar.google.com/citations?user=kB3y49oAAAAJ&hl=en&oi=ao  
+
 ---
 
 Aleksandar Kovačević is an assistant professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2012.
