@@ -10,10 +10,8 @@ phone: +381 21 485 2423
 office: Jugodrvo 212
 photo:
 
-linkedin:  https://rs.linkedin.com/in/goran  
-researchgate: https://www.researchgate.net/profile/Goran_Sladic  
-orcid: http://orcid.org/0000-0002-0691-7392   
-scholar: https://scholar.google.com/citations?user=kB3y49oAAAAJ&hl=en&oi=ao  
+researchgate: https://www.researchgate.net/profile/Aleksandar_Kovacevic2
+scholar: https://scholar.google.com/citations?user=KylNBRkAAAAJ&hl=en
 
 ---
 
