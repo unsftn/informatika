@@ -15,7 +15,7 @@ Goran Savić is an assistant professor within the Department of Computing and Co
 
 He received his B.Sc. and M.Sc. (Dipl. Ing. - Master) degree in 2007 and Ph.D. degree in 2014, both in Computer Science from the University of Novi Sad, Faculty of Technical Sciences.
 
-Since 2008 he is with the Faculty of Technical Science in Novi Sad. He published over 30 papers and participated in more than 15 projects. Goran Sladić serves or has served as a programme committee member for ICIST (International Conference on Information Society and Technology) and YU Info conference. 
+Since 2008 he is with the Faculty of Technical Science in Novi Sad. He published over 30 papers and participated in more than 15 projects. 
 
 His research interests include e-learning, web development and document management.
 
