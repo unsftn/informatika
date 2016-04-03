@@ -68,4 +68,4 @@ ELIDL was evaluated on the group of 16 participants. The following data collecti
 + [Test 1]({{ site.baseurl }}/files/other/elidl/Test_1.pdf)
 + [Test 2]({{ site.baseurl }}/files/other/elidl/Test_2.pdf)
 + [Test 3]({{ site.baseurl }}/files/other/elidl/Test_3.pdf)
-+ [Characteristic questionnaire]({{ site.baseurl }}/files/other/elidl/Characteristic_questionnaire.pdf)
++ [Characteristic questionnaire]({{ site.baseurl }}/files/other/elidl/Characteristics_questionnaire.pdf)
