@@ -30,7 +30,7 @@ He published over 30 papers and participated in more than 15 projects. Aleksanda
 [Data Mining]({{"/SIAP" | prepend: site.baseurl}})   
 [Numerical Algorithms and Numerical Software]({{"/NANSI" | prepend: site.baseurl}})   
 
-###Selected Projects
+### Selected Projects
 
 [Healthcare text mining projects: mining clinical narratives and patient-generated data](http://gnteam.cs.manchester.ac.uk/project/healthcare-text-mining-projects/)
 [Healthcare Text Mining]({{"/projects/#HTM" | prepend: site.baseurl}})
