@@ -39,6 +39,7 @@ He published over 30 papers and participated in more than 15 projects. Aleksanda
 [CliNER](http://gnteam.cs.manchester.ac.uk/resources/cliner/)
 
 ### Publications
+
 ### Journal papers
 
 + Duck, G., Kovačević, A., Robertson, D., Stevens, R., Nenadic, G. 2015. "Ambiguity and variability of database and software names in bioinformatics". Journal of Biomedical Semantics, 6(1), pp.29-, doi: http://dx.doi.org/10.1186/s13326-015-0026-0 ISSN:2041-1480
