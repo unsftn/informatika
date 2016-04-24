@@ -37,6 +37,9 @@ He published over 30 papers and participated in more than 15 projects. Aleksanda
 [Automated summarization and sentiment mining in Serbian language]({{"/projects/#ASSMSL" | prepend: site.baseurl}})  
 [KEYSTONE: Semantic Keyword-based Search on Structured Data Sources]({{"/projects/#KEYSTONE" | prepend: site.baseurl}})
 
+### Software
+[CliNER](http://gnteam.cs.manchester.ac.uk/resources/cliner/)
+
 ### Publications
 
 ### Journal papers
