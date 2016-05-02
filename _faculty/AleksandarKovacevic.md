@@ -21,7 +21,7 @@ He received his B.Sc. in Computer Science from the Faculty of Science, Universit
 
 His research interests are focused on text mining and semi-automated extraction of knowledge from unstructured data. Aleksandar has been working in the area of text mining and natural language processing since 2007. His current research projects focus on developing and applying machine learning and data mining methods towards the extraction of methodological workflows from scientific articles and large-scale text mining of un- and semi-structured health textual resources. He is also interested in natural language processing for Serbian language. In particular in automated summarization, anonymization and sentiment mining.
 
-Aleksandar is a collaborator with the text mining group under the leadership of Dr Goran Nenadic at the University of Manchester [(gnTEAM)](http://gnteam.cs.manchester.ac.uk/).
+Aleksandar is a collaborator with the text mining group under the leadership of Dr Goran Nenadic at the University of Manchester [(gnTEAM)](http://gnteam.cs.manchester.ac.uk/), projects: mining clinical narratives and patient-generated data and extraction of biomedical software and databases from scientific articles. He also collaborates with the [Intelligent Software Systems Laboratory](http://www.fujita.soft.iwate-pu.ac.jp/top.htm) (with Petrovic G. and Fuijta H.) at the Faculty of Software and Information Science, Iwate Prefectural University, Japan, projects: mining of social media and healthcare ontologies.
 
 He published over 30 papers and participated in more than 15 projects. Aleksandar is a programme committee member for the International Conference on Information Society and Technology (ICIST) conference. He is a reviewer for a number of international journals including PLOS ONE, Journal of Biomedical Informatics and Journal of Biomedical Semantics.
 
@@ -31,9 +31,13 @@ He published over 30 papers and participated in more than 15 projects. Aleksanda
 
 ### Selected Projects
 [Mining clinical narratives and patient-generated data](http://gnteam.cs.manchester.ac.uk/project/healthcare-text-mining-projects/)
+
 [Healthcare Text Mining]({{"/projects/#HTM" | prepend: site.baseurl}})
+
 [Automated summarization and sentiment mining in Serbian language]({{"/projects/#ASSMSL" | prepend: site.baseurl}})
+
 [KEYSTONE: Semantic Keyword-based Search on Structured Data Sources]({{"/projects/#KEYSTONE" | prepend: site.baseurl}})
+
 [INCOMING: Interdisciplinary Curricula in Computing to Meet Labor Market Needs]({{"/projects/#INCOMING" | prepend: site.baseurl}})
 
 ### Software
