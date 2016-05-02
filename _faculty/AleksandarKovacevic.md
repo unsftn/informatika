@@ -34,7 +34,6 @@ Introduction to Object Oriented Programming (BSc)
 
 Machine Learning (PhD)
 
-
 ### Selected Projects
 [Mining clinical narratives and patient-generated data](http://gnteam.cs.manchester.ac.uk/project/healthcare-text-mining-projects/)
 
