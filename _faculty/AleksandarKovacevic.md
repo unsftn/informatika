@@ -26,8 +26,11 @@ Aleksandar is a collaborator with the text mining group under the leadership of 
 He published over 30 papers and participated in more than 15 projects. Aleksandar is a programme committee member for the International Conference on Information Society and Technology (ICIST) conference. He is a reviewer for a number of international journals including PLOS ONE, Journal of Biomedical Informatics and Journal of Biomedical Semantics.
 
 ### Courses
-[Data Mining]({{"/SIAP" | prepend: site.baseurl}})   
-[Numerical Algorithms and Numerical Software]({{"/NANSI" | prepend: site.baseurl}})   
+[Data Mining]({{"/SIAP" | prepend: site.baseurl}})(MSc)
+[Numerical Algorithms and Numerical Software]({{"/NANSI" | prepend: site.baseurl}})(BSc)
+Introduction to Object Oriented Programming (BSc)
+Machine Learning (PhD)
+
 
 ### Selected Projects
 [Mining clinical narratives and patient-generated data](http://gnteam.cs.manchester.ac.uk/project/healthcare-text-mining-projects/)
