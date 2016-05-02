@@ -27,8 +27,11 @@ He published over 30 papers and participated in more than 15 projects. Aleksanda
 
 ### Courses
 [Data Mining]({{"/SIAP" | prepend: site.baseurl}})(MSc)
+
 [Numerical Algorithms and Numerical Software]({{"/NANSI" | prepend: site.baseurl}})(BSc)
+
 Introduction to Object Oriented Programming (BSc)
+
 Machine Learning (PhD)
 
 
