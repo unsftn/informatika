@@ -22,7 +22,7 @@ Nikola Nikolić is teaching assistant and PhD candidate of applied computer scie
 •	Web design (BSc) <br />
 
 ### Publications
-•	M33: Nikolić N., Savić G., Molnar R., Gostojić S., Milosavljevic B.: Management of Accreditation Documents in Serbian Higher Education using ontology based on ISO 82045 standards, 6. International Conference on Information Science and Technology (ICIST), Kopaonik, 28. Februar - 2. Mart, 2016, ISBN 978-86-85525-18-6, pp. 148-153
+•	M33: Nikolić N., Savić G., Molnar R., Gostojić S., Milosavljevic B.: Management of Accreditation Documents in Serbian Higher Education using ontology based on ISO 82045 standards, 6. International Conference on Information Science and Technology (ICIST), Kopaonik, 28. Februar - 2. Mart, 2016, ISBN 978-86-85525-18-6, pp. 148-153 <br />
 •	M33: Nikolić N., Savić G., Segedinac M., Gostojić S., Konjović Z.: RDF Stores Performance Test on Servers with Average Specification, 5. International Conference on Information Science and Technology (ICIST), Kopaonik, 8-11 Mart, 2015, pp. 67-72, ISBN 978-86-85525-16-2. <br />
 •	M33: Nikolić N., Savić G., Segedinac M., Konjović Z.: Migration from Sakai to Canvas, 4. International Conference on Information Science and Technology (ICIST), Kopaonik, 9-13 Mart, 2014, pp. 366-370, ISBN 978-86-85525-14-8. <br />
 •	M33: Savić G., Segedinac M., Nikolić N., Konjović Z.: Sakai CLE in Serbian Higher Education, 4. International Conference on Information Science and Technology (ICIST), Kopaonik, 9-13 Mart, 2014, pp. 328-332, ISBN 978-86-85525-14-8. <br />
