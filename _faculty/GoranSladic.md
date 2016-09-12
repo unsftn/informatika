@@ -17,7 +17,7 @@ scholar: https://scholar.google.com/citations?user=kB3y49oAAAAJ&hl=en&oi=ao
 
 ---
 
-Goran Sladić is an assistant professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2011.
+Goran Sladić is an associate professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2016.
 
 He received his B.Sc. (Dipl. Ing.) degree in 2002, M.Sc. (Magister) degree in 2006 and Ph.D. degree in 2011, all in Computer Science from the University of Novi Sad, Faculty of Technical Sciences.
 
