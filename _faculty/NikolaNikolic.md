@@ -9,6 +9,7 @@ email: n i k o l a . n i k o l i c AT u n s . a c . r s
 phone: +381 21 485 2426
 office: PS 4
 photo: NikolaNikolic.jpg
+linkedin: https://www.linkedin.com/in/nikolanikolic
 researchgate: https://www.researchgate.net/profile/Nikola_Nikolic5
 ---
 Nikola Nikolic is teaching assistant and PhD candidate of applied computer science and informatics at Faculty of Technical Sciences, University of Novi Sad. He received the B.Sc. degree at University of Novi Sad in 2011, and the M.Sc. degree at the same university in 2012. Authored and co-authored scientific papers related to software engineering, embedded systems and semantic customization.
