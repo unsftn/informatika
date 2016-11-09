@@ -27,12 +27,12 @@
                       <li class="icon fa-phone">{{ page.phone }}</li>
                       <li class="icon fa-building-o">{{ page.office }}</li>
                       <li><hr></li>
-                      {% if page.personal %}<li class="icon fa-globe"><a href="{{ page.personal }}">Personal Page</a></li>{% endif %}
-                      {% if page.github %}<li class="icon fa-github"><a href="{{ page.github }}">GitHub</a></li>{% endif %}
-                      {% if page.linkedin %}<li class="icon fa-linkedin"><a href="{{ page.linkedin }}">LinkedIn</a></li>{% endif %}
-                      {% if page.researchgate %}<li class="icon fa-university"><a href="{{ page.researchgate }}">ResearchGate</a></li>{% endif %}
-                      {% if page.scholar %}<li class="icon fa-google"><a href="{{ page.scholar }}">Google Scholar</a></li>{% endif %}
-                      {% if page.orcid %}<li class="icon fa-orcid"><a href="{{ page.orcid }}">ORCID</a></li>{% endif %}
+                      {% if page.personal %}<li class="icon fa-globe"><a target="_blank" href="{{ page.personal }}">Personal Page</a></li>{% endif %}
+                      {% if page.github %}<li class="icon fa-github"><a target="_blank" href="{{ page.github }}">GitHub</a></li>{% endif %}
+                      {% if page.linkedin %}<li class="icon fa-linkedin"><a target="_blank" href="{{ page.linkedin }}">LinkedIn</a></li>{% endif %}
+                      {% if page.researchgate %}<li class="icon fa-university"><a target="_blank" ref="{{ page.researchgate }}">ResearchGate</a></li>{% endif %}
+                      {% if page.scholar %}<li class="icon fa-google"><a target="_blank" href="{{ page.scholar }}">Google Scholar</a></li>{% endif %}
+                      {% if page.orcid %}<li class="icon fa-orcid"><a target="_blank" href="{{ page.orcid }}">ORCID</a></li>{% endif %}
                     </ul>
                   </section>
                 </div>
