@@ -5,10 +5,14 @@ collection: faculty
 path: MiloradFilipovic
 name: MiloradFilipovic
 zvanje: TA
-email: mfili@uns.ac.rs
+email: mfili[AT]]uns[DOT]ac[DOT]rs
 phone: +381 21 485 xxxx
 office: PC1
 photo: MiloradFilipovic.jpg
+linkedin: https://www.linkedin.com/in/milorad-filipovi%C4%87-47188882
+researchgate: https://www.researchgate.net/profile/Milorad_Filipovic
+github:
+personal:  
 ---
 
 Received master degree in computer science at University of Novi Sad in 2011. Currently working as teaching assistant and PhD student at Chair of informatics . Authored and co-authored scientific papers related to Model-Driven Engineering, Agile Software Development and Web-based software systems.

@@ -26,10 +26,12 @@
                       <li class="icon fa-at">{{ page.email }}</li>
                       <li class="icon fa-phone">{{ page.phone }}</li>
                       <li class="icon fa-building-o">{{ page.office }}</li>
+                      <li class="icon fa-globe"><a href="{{ page.personal }}">Personal Page</a></li>
+                      <li class="icon fa-github"><a href="{{ page.github }}">GitHub</a></li>
                       <li class="icon fa-linkedin"><a href="{{ page.linkedin }}">LinkedIn</a></li>
-                      <li class="icon fa-researchgate"><a href="{{ page.researchgate }}">ResearchGate</a></li>
-                      <li class="icon fa-scholar"><a href="{{ page.scholar }}">Google Scholar</a></li>
-                      <li class="icon fa-orcid"><a href="{{ page.orcid }}">ORCID</a></li>
+                      <li class="icon fa-university"><a href="{{ page.researchgate }}">ResearchGate</a></li>
+                      <li class="icon fa-google"><a href="{{ page.scholar }}">Google Scholar</a></li>
+                      {% if page.orcid %}<li class="icon fa-orcid"><a href="{{ page.orcid }}">ORCID</a></li>{% endif %}
                     </ul>
                   </section>
                 </div>
