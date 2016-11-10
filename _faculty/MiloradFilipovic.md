@@ -5,7 +5,7 @@ collection: faculty
 path: MiloradFilipovic
 name: MiloradFilipovic
 zvanje: TA
-email: mfili[AT]]uns[DOT]ac[DOT]rs
+email: mfili[AT]uns[DOT]ac[DOT]rs
 phone: +381 21 485 xxxx
 office: PC1
 photo: MiloradFilipovic.jpg
