@@ -1,6 +1,6 @@
 ---
 layout: faculty
-title: Nikola Nikolic
+title: Nikola Nikolić
 collection: faculty
 path: NikolaNikolic
 name: NikolaNikolic
