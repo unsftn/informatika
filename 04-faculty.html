@@ -50,6 +50,14 @@ permalink: /faculty/
       {% endif %}
     {% endfor %}
     </p>
+    <h3>Professors of Professional Studies</h3>
+    <p>
+    {% for fac in faculty %}
+      {% if fac.zvanje == "seniorlecturer" %}
+      <a href="{{site.baseurl}}{{fac.url}}">{{fac.title}}</a><br/>
+      {% endif %}
+    {% endfor %}
+    </p>
     <h3>Lecturers</h3>
     <p>
     {% for fac in faculty %}

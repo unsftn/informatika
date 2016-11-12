@@ -4,10 +4,10 @@ title: Željko Marčićević
 collection: faculty
 path: ZeljkoMarcicevic
 name: ZeljkoMarcicevic
-zvanje: lecturer
+zvanje: seniorlecturer
 email: marcic@uns.ac.rs
-phone: +381 21 485 2055
-office: Kula 3xx
+phone: +381 21 485 2207
+office: Kula 306
 photo: 
 ---
 
