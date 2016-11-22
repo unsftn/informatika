@@ -58,8 +58,8 @@ Our past and current projects include legal document and business process manage
 - [Stevan Gostojić]({{ site.baseurl }}/StevanGostojic)
 - [Marko Marković]({{ site.baseurl }}/MarkoMarkovic)
 
-### Software repos
+### Repositories
 
-- [Legislation](https://informatika.ftn.uns.ac.rs/legal/svn/acts/trunk/)
-- [Legal Norms](https://informatika.ftn.uns.ac.rs/legal/svn/norms/trunk/)
-- [Judicial Complaints](https://informatika.ftn.uns.ac.rs/legal/svn/complaints/trunk/)
+- [Legislation](https://github.com/legal-informatics/legal-acts)
+- [Legal Norms](https://github.com/legal-informatics/legal-norms)
+- [Judicial Complaints](https://github.com/legal-informatics/judicial-complaints)
