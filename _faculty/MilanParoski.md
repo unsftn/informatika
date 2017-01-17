@@ -6,10 +6,15 @@ path: MilanParoski
 name: MilanParoski
 zvanje: assistant
 email: milan.paroski@uns.ac.rs
-phone: .
+phone: +381.64.837.8501
 office: .
 photo: MilanParoski.jpg
 ---
+
+**Predavanja i vežbe iz dva predmeta:**
+1. Metodologije i sistemi za upravljanje IT resursima
+2. Tehnologije i sistemi eUprave
+
 
 **Diplomske studije:** Fakultet tehničkih nauka, smer merna i računarska tehnika: 1982-1987.
 
