@@ -6,7 +6,7 @@ path: NovakBoskov
 name: NovakBoskov
 zvanje: TA
 email: gnovak.boskov@gmail.com
-phone: +381 21 485 2422
+phone: +381 65 634 72 15
 office: Park City
 photo: NovakBoskov.jpg
 ---
