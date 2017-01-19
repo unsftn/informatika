@@ -8,11 +8,24 @@ zvanje: TA
 email: gnovak.boskov@gmail.com
 phone: +381 21 485 2422
 office: Park City
-photo: 
+photo: NovakBoskov.jpg
 ---
 
-Bio: TODO
+[Novak Boškov](https://novakboskov.github.io/) received a MsC degree
+at University of Novi Sad in 2016. He holds the teaching assistant
+position at University of Novi Sad, Faculty of Technical Sciences. He
+spends his days preaching on functional programming and talking Lisp
+fairy tales.
 
-### Selected Publications
-
-TODO
+### Current occupation
+    - Functional programming
+    - Program correctness
+    - Meta programming
+    - Type systems
+    - Domain Specific Languages
+    - Lisp
+    - Algorithms
+    - (persistent) data structures
+    - Parsers
+    - Compilers
+    - Software optimizations

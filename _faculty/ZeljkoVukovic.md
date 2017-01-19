@@ -12,9 +12,9 @@ photo: ZeljkoVukovic.jpg
 ---
 
 
-Željko Vuković received a MsC degree at University of Novi Sad in 2013. 
-He holds the teaching assistant position at University of Novi Sad, Faculty of 
-Technical Sciences. His fields of interest include Enterprise Integration and Model-driven Engineering. He is a software defined radio hobbist. 
+Željko Vuković received a MsC degree at University of Novi Sad in 2013.
+He holds the teaching assistant position at University of Novi Sad, Faculty of
+Technical Sciences. His fields of interest include Enterprise Integration and Model-driven Engineering. He is a software defined radio hobbist.
 
 1. Vuković Ž., Milanović N., Vaderna R., Dejanović I., Milosavljević G., Malbaša V.: Semantic-aided automation of interface mapping in enterprise integration with conflict detection, Information Systems and e-Business Management, 2016, Vol. 14, ISSN 1617-9846
 1. Vuković, Ž.; Milanović N.; Bauhoff G. "Prototype of a Framework for Ontology-aided semantic conflict resolution in enterprise integration", ICIST 2015 - International Conference on Internet Society Technology and Management
