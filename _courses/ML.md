@@ -1,11 +1,11 @@
-﻿---
+---
 layout: course
 title: Machine Learning
 collection: courses
 path: ML
 name: ML
 curriculum: [SIIT]
-code:
+code: SIxxxx
 people: ["Jelena Slivka", "Aleksandar Kovačević", "Dragan Vidaković"]
 canvas: .
 info:

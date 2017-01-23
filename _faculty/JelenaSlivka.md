@@ -8,7 +8,7 @@ zvanje: assistant
 email: s l i v k a j e   at   uns.ac.rs
 phone: .
 office: Jugodrvo 212
-photo: JelenaSlivka.jpg
+photo: JelenaSlivka.JPG
 
 github: https://github.com/slivkaje/
 linkedin:  https://www.linkedin.com/in/jelena-slivka-a9b80a6  
