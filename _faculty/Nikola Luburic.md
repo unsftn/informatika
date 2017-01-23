@@ -6,7 +6,7 @@ path: Nikola Luburic
 name: Nikola Luburic
 zvanje: TA
 email: nikola.luburic AT uns.ac.rs
-phone: 
+phone: -
 office: Jugodrvo 211
 photo: NikolaLuburic.jpg
 
