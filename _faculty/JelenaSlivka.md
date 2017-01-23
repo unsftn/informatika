@@ -1,4 +1,4 @@
-﻿---
+---
 layout: faculty
 title: Jelena Slivka
 collection: faculty
