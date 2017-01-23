@@ -6,7 +6,7 @@ path: JelenaSlivka
 name: JelenaSlivka
 zvanje: assistant
 email: s l i v k a j e   at   uns.ac.rs
-phone: +381214852423
+phone: .
 office: Jugodrvo 212
 photo: JelenaSlivka.jpg
 
