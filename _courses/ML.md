@@ -34,25 +34,20 @@ By the end of the course, the student can:
 Main topics of the course:
 
 1. Supervised Learning
-
- * Linear Regression
- * Regularization, Overfitting, and Model Selection
- * Non-parametric approach (Nearest Neighbor and Kernel Regression)
- * Maximum Likelihood method
- * Logistic Regression
- * Perceptron
- * Naive Bayes
- * SVM
- * Ensemble Learning
- * Practical advice for applying Machine Learning algorithms
-
+ 1. Linear Regression
+ 2. Regularization, Overfitting, and Model Selection
+ 3. Non-parametric approach (Nearest Neighbor and Kernel Regression)
+ 4. Maximum Likelihood method
+ 5. Logistic Regression
+ 6. Perceptron
+ 7. Naive Bayes
+ 8. SVM
+ 9. Ensemble Learning
+ 10. Practical advice for applying Machine Learning algorithms
 2. Unsupervised Learning
-
- * Clustering
- * Dimensionality Reduction
- 
+ 1. Clustering
+ 2. Dimensionality Reduction
 3. Learning Theory
-
- * Union and Chernoff/Hoeffding bounds
- * Bias/Variance tradeoffs
- * VC dimension
+ 1. Union and Chernoff/Hoeffding bounds
+ 2. Bias/Variance tradeoffs
+ 3. VC dimension
