@@ -24,5 +24,5 @@ His primary area of research is information security, while other interests incl
 
 ### Courses
 
-    [Internet Software Architectures ]({{"/ISA" | prepend: site.baseurl}})
-    [Security in E-business Systems ]({{"/BSEP" | prepend: site.baseurl}})
+[Security in E-business Systems ]({{"/BSEP" | prepend: site.baseurl}})   
+[Internet Software Architectures]({{"/ISA" | prepend: site.baseurl}})
