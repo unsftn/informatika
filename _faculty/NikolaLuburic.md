@@ -2,11 +2,11 @@
 layout: faculty
 title: Nikola Luburić
 collection: faculty
-path: Nikola Luburic
-name: Nikola Luburic
+path: NikolaLuburic
+name: NikolaLuburic
 zvanje: TA
 email: nikola.luburic AT uns.ac.rs
-phone: 
+phone: .
 office: Jugodrvo 211
 photo: NikolaLuburic.jpg
 
