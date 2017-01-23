@@ -1,4 +1,4 @@
----
+Ôªø---
 layout: faculty
 title: Jelena Slivka
 collection: faculty
@@ -35,7 +35,7 @@ Her research interests include data mining and machine learning.
 
 ### Selected Publications
 
-1. Slivka, J., SladiÊ, G., Branko, M., KovaËeviÊ, A.,  RSSalg software: a tool for flexible experimenting with co-training based semi-supervised algorithms, Knowledge-Based Systems, DOI 10.1016/j.knosys.2017.01.024, http://www.sciencedirect.com/science/article/pii/S0950705117300357  
-2. Slivka, J., KovaËeviÊ, A, KonjoviÊ, Z,  Combining co-training with ensemble learning for application on single-view natural language datasets, Acta Polytechnica Hungarica, Vol. 10, No 2, pp. 133-152, 2013. ISSN 1785-8860
-3. Slivka, J., Ping, Z., KovaËeviÊ, A, KonjoviÊ, Z., ObradoviÊ, Z., Semi-Supervised Learning on Single-View Datasets by Integration of Multiple Co-trained Classifiers, Proceedings of the 11th International Conference on Machine Learning and Applications (ICMLA), Boca Raton: The institute of Electrical and Electronic Engineers, Inc., 12-15 December, 2012., pp. 458-464, ISBN 978-0-7695-4913-2
-4. Slivka, J., Nikolic, M., Ristovski, K., Radosavljevic, V. and Obradovic, Z., 2014. Distributed Gaussian Conditional Random Fields Based Regression for Large Evolving Graphs. In Proc. 14th SIAM Intíl Conf. Data Mining, Workshop on Mining Networks and Graphs
+1. Slivka, J., Sladiƒá, G., Branko, M., Kovaƒçeviƒá, A.,  RSSalg software: a tool for flexible experimenting with co-training based semi-supervised algorithms, Knowledge-Based Systems, DOI 10.1016/j.knosys.2017.01.024, http://www.sciencedirect.com/science/article/pii/S0950705117300357  
+2. Slivka, J., Kovaƒçeviƒá, A, Konjoviƒá, Z,  Combining co-training with ensemble learning for application on single-view natural language datasets, Acta Polytechnica Hungarica, Vol. 10, No 2, pp. 133-152, 2013. ISSN 1785-8860
+3. Slivka, J., Ping, Z., Kovaƒçeviƒá, A, Konjoviƒá, Z., Obradoviƒá, Z., Semi-Supervised Learning on Single-View Datasets by Integration of Multiple Co-trained Classifiers, Proceedings of the 11th International Conference on Machine Learning and Applications (ICMLA), Boca Raton: The institute of Electrical and Electronic Engineers, Inc., 12-15 December, 2012., pp. 458-464, ISBN 978-0-7695-4913-2
+4. Slivka, J., Nikolic, M., Ristovski, K., Radosavljevic, V. and Obradovic, Z., 2014. Distributed Gaussian Conditional Random Fields Based Regression for Large Evolving Graphs. In Proc. 14th SIAM Int‚Äôl Conf. Data Mining, Workshop on Mining Networks and Graphs
