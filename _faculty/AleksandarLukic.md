@@ -5,15 +5,20 @@ collection: faculty
 path: AleksandarLukic
 name: AleksandarLukic
 zvanje: TA
-email: 93lukic@live.com
-email: 93lukic@live.com
+email: lukic.aleksandar@uns.ac.rs
 phone: +381 21 485 2422
 office: Park City
 photo: 
 ---
 
-Bio: TODO
+Bio: Aleksandar Lukić received a B.Sc. degree at University of Novi Sad in 2016. He holds the teaching associate position at University of Novi Sad, Faculty of Technical Sciences.
 
-### Selected Publications
+### Current occupation
+- agent systems
+- distributed systems
+- recommender systems
 
-TODO
+### Interested in
+- machine learning
+- data mining
+- model-driven engineering
