@@ -5,14 +5,25 @@ collection: faculty
 path: RenataVaderna
 name: RenataVaderna
 zvanje: TA
-email: xxx@uns.ac.rs
-phone: +381 21 485 xxxx
-office: TMD xxx
-photo: 
+email: vrenata@uns.ac.rs
+phone: /
+office: /
+#photo: 
+
+github: https://github.com/renatav
+linkedin: https://www.linkedin.com/in/renata-vaderna-75441557/
+researchgate: https://www.researchgate.net/profile/Renata_Vaderna
 ---
 
-Bio: TODO
+Renata Vaderna is a teaching assistant and PhD candidate at Faculty of Techinal Sciences, University of Novi Sad.
+She received her bachelor's degree in 2012 and master's degree in 2013.
 
-### Selected Publications
+### Current research
+ - Graph analysis and drawing
+ - Domain-specific languages
 
-TODO
+### Courses
+ - Business informatics
+ - Domain-specific languages
+ - Business process management
+
