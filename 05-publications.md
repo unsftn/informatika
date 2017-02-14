@@ -9,67 +9,75 @@ permalink: /publications/
 
 
 
-* Milan Pandurov, Srđan Milaković, Nikola Lukić, Goran Savić, Milan Segedinac, Zora Konjović: Software Framework for REST Client Android Applications: Canvas LMS Case Study, 5th International Conference on Information Society and Technology (ICIST 2015), 2015, pp. 32-37, Informaciono društvo Srbije
+* Nikola Nikolić, Goran Savić, Robert Molnar, Stevan Gostojić, Branko Milosavljević: Management of Accreditation Documents in Serbian Higher Education using Ontology Based on ISO 82045 Standards, 6th International Conference on Information Society and Technology (ICIST 2016), 2016, pp. 148-153, Society for Information Systems and Computer Networks
 
-* Goran Savić, Milan Segedinac, Goran Sladić, Stevan Gostojić, Zora Konjović: Upravljanje nastavnim objektima zasnovano na ontologiji za opis dokumenata, Info M, 2015, pp. 18-24, Fakultet organizacionih nauka
+* Goran Sladić, Stevan Gostojić, Branko Milosavljević, Zora Konjović, Gordana Milosavljević: Computer Aided Anonymization and Redaction of Judicial Documents, Computer Science and Information Systems (ComSIS), 2016, pp. 217-236, ComSIS Consortium
 
-* Rajko Bulatović, Milan Paroški, Ðorđe Obradović, Zora Konjović: Inteligentno planiranje inspekcijskog nadzora baziranog na dinamickom stepenu rizika, INFOFest 2015, 2015, pp. 177-186, Ministarstvo za informaciono društvo i telekomunikacije, Crna Gora
+* Jelena Slivka, Aleksandar Kovačević: Co-training based algorithm for gender detection from emotional speech, Intelligent Systems and Informatics (SISY), 2016 IEEE 14th International Symposium on, 2016, pp. 257--262, Society for Information Systems and Computer Networks
 
-* Igor Cverdelj-Fogaraši, Goran Sladić, Stevan Gostojić, Milan Segedinac, Branko Milosavljević: A Meta-metadata Ontology Based on ebRIM Specification, 5th International Conference on Information Society and Technology (ICIST 2015), 2015, pp. 213-218, Society for Information Systems and Computer Networks
+* Nikola Luburić, Goran Savić, Gordana Milosavljević, Milan Segedinac, Jelena Slivka: A Code Generator for Building  Front-End Tier of REST-Based Rich Client Web Applications, 6th International Conference on Information Society and Technology ICIST 2016, 2016, pp. 28--33, Society for Information Systems and Computer Networks
 
-* Miloš Simić, Željko Bal, Renata Vaderna, Igor Dejanović: PyTabs: A DSL for simplified music notation, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 439-443, Information Society of Serbia
+* Nikola Luburić, Milan Stojkov, Goran Savić, Goran Sladić, Branko Milosavljević: Crypto-tutor: An educational tool for learning modern cryptography, Intelligent Systems and Informatics (SISY), 2016 IEEE 14th International Symposium on, 2016, pp. 205--210, Society for Information Systems and Computer Networks
 
-* Marko Jocić, Đorđe Obradović, Zora Konjović: Measuring influence of Facebook pages, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 43-48, Society for Information Systems and Computer Networks
+* Milorad Filipović, Goran Sladić, Branko Milosavljević, Gordana Milosavljević: Applying SMT algorithms to code analysis, International conference on Applied Internet and Information Technologies - AIIT, 2016, pp. 163--170, “St Kliment Ohridski” University - Bitola, Republic of Macedonia
 
-* Dragan Ivanović, Fu Hui-Zhen, Ho Yuh-Shan: Publications from Serbia in the Science Citation Index Expanded: a bibliometric analysis, Scientometrics, 2015, pp. 145-160, Springer
+* Goran Savić, Milan Segedinac, Goran Sladić, Stevan Gostojić, Zora Konjović: A Machine-Readable Description of Generic Instructional Strategies in e-Courses, Computer Applications in Engineering Education, 2016, pp. 665-675, Wiley Periodicals
 
-* Valentin Penca, Siniša Nikolić, Dragan Ivanović: Scheme for mapping scientific research data from EPrints to CERIF format, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 295-300, Society for Information Systems and Computer Networks
+* Goran Savić, Milan Segedinac: Softverska infrastruktura za upravljanje kurikulumom u elektronskoj nastavi, Edicija "Tehničke nauke - monografije", 2016, pp. , Fakultet tehničkih nauka
 
-* Dragan Ivanović, Miloš Jovanović, Frank Fritsche: Scientific Cooperation in the Republics of Former Yugoslavia Before, During and After the Yugoslav Wars, 15th International Society of Scientometrics and Informetrics Conference (ISSI 2015), 2015, pp. 784-789, Bogazici University Printhouse
+* Igor Dejanović, Gordana Milosavljević, Renata Vaderna: Arpeggio: A flexible PEG parser for Python, Knowledge-Based Systems, 2016, pp. 71--74, Elsevier
 
-* Željko Vuković, Nikola Milanović, Dušan Okanović: Sistem integracija primenom Apache Camel platforme, YUInfo 2014, 2014, pp. 417-421, Društvo za informacione sisteme i računarske mreže
+* Igor Dejanović, Renata Vaderna, Gordana Milosavljević, Željko Vuković: Implementacija jezika specifičnih za domen upotrebom textX alata, Info M - Časopis za informacione tehnologije i multimedijalne sisteme, 2016, pp. 4--10, Fakultet organizacionih nauka
 
-* Okanović Dušan, Vidaković Milan, Željko Vuković, Dejan Mitrović, Mirjana Ivanović: Editor for Agent-Oriented Programming Language ALAS, 4rd International Conference on Information Society Technology and Management (ICIST 2014), 2014, pp. 216-220, Informaciono društvo Srbije
+* Igor Dejanović: Softverski alati za dizajniranje i implementaciju jezika specifičnih za domen, Edicija "Tehničke nauke - monografije", 2016, pp. , Fakultet tehničkih nauka
 
-* Željko Vuković, Nikola Milanović, Renata Vaderna, Igor Dejanović, Gordana Milosavljević: SAIL: A Domain-Specific Language for Semantic-Aided Automation of Interface Mapping in Enterprise Integration, On the Move to Meaningful Internet Systems: OTM 2015 Workshops, 2015, pp. 97-106, Springer
+* Renata Vaderna, Gordana Milosavljević, Igor Dejanović: Laying out Graph Using Graph Analysis and Drawing Library - GRAD, Proceedings of the 25h International Computer Science Conference ERK 2016, 2016, pp. 51--54, IEEE Slovenija
 
-* Željko Vuković, Nikola Milanović, Gregor Baugoff: Prototype of a Framework for Ontology-aided semantic conflict resolution in enterprise integration, 4rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 257-260, Informaciono društvo Srbije
+* Renata Vaderna, Igor Dejanović, Gordana Milosavljević: GRAD: A New Graph Drawing and Analysis Library, Proceedings of the 2016 Federated Conference on Computer Science and Information Systems, 2016, pp. 1597--1602, IEEE
 
-* Dejan Mitrović, Mirjana Ivanović, Milan Vidaković, Zoran Budimac: Reliable interaction in multiagent systems, 9'th International Symposium on Intelligent Distributed Computing (IDC), 2015, pp. 93-99, Springer International Publishing
+* Milan Kosanović, Igor Dejanović, Gordana Milosavljević: Applang -- A DSL for specification of mobile applications for android platform based on textX, AIP Conference Proceedings, 2016, pp. 240003, American Institute of Physics
 
-* Dejan Sredojević, Milan Vidaković, Dušan Okanović, Dejan Mitrović, Mirjana Ivanović: Conversion of the Agent-Oriented Domain-Specific Language ALAS into JavaScript, 5'th Symposium on Computer Languages, Implementations, and Tools (SCLIT), 2015, pp. , 
+* Lazar Nikolić, Gordana Milosavljević, Igor Dejanović: Framework for Web application development based on Java technologies and AngularJS, 6th International Conference on Information Society and Technology ICIST 2016, 2016, pp. 185--190, Society for Information Systems and Computer Networks
 
-* Dejan Mitrović, Mirjana Ivanović, Milan Vidaković, Zoran Budimac: A scalable distributed architecture for web-based software agents, 7'th International Conference on Computational Collective Intelligence (ICCCI), 2015, pp. 67-76, Springer International Publishing
+* Renata Vaderna, Željko Vuković, Gordana Milosavljević, Igor Dejanović: ReingIS - alat za brz razvoj i reinženjering poslovnih informacionih sistema, , 2016, pp. ,
 
-* Dejan Sredojević, Milan Vidaković, Dušan Okanović: Integration of Agent Domain-Specific Language ALAS into Extensible Java-Based Framework XJAF, 34'th International Conference on Organizational Science Development INTERNATIONALIZATION AND COOPERATION, 2015, pp. 1037-1043, Moderna organizacija v okviru Univerze v Mariboru
+* Alen Suljkanović, Dušan Majstorović, Gordana Milosavljević, Igor Dejanović: MDA approach in designing real-time embedded systems, 2016 Zooming Innovation in Consumer Electronics International Conference (ZINC), 2016, pp. 4--7, IEEE
 
-* Dejan Sredojević, Dušan Okanović, Milan Vidaković, Dejan Mitrović, Mirjana Ivanović: Domain specific agent-oriented programming language based on the Xtext framework, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 461-467, Informaciono društvo Srbije
+* Renata Vaderna, Željko Vuković, Gordana Milosavljević, Igor Dejanović: ReingIS: A Toolset for Rapid Development and Reengineering of Business Information Systems, 6th International Conference on Information Society and Technology ICIST 2016, 2016, pp. 34--39, Society for Information Systems and Computer Networks
 
-* Dejan Stefanović, Milan Vidaković, Bojan Lackanović, Dragan Ždrnja, Nikola Teslić: Comparing complex trees stored in database, 2015 IEEE International Conference on Consumer Electronics (ICCE), 2015, pp. 432-434, IEEE
+* Željko Vuković, Nikola Milanović, Renata Vaderna, Igor Dejanović, Gordana Milosavljević, Vuk Malbaša: Semantic-aided automation of interface mapping in enterprise integration with conflict detection, Information Systems and e-Business Management, 2016, pp. 1--18, Springer
 
-* Alen Suljkanović, Gordana Milosavljević, Dušan Majstorović, Igor Dejanović: Implementacija generičke DSP komponente u sklopu Typhoon HIL softvera za modelovanje šema energetskih sklopova, Info M - Časopis za informacione tehnologije i multimedijalne sisteme, 2015, pp. 43-49, Fakultet organizacionih nauka
+* Marko Marković, Stevan Gostojić, Goran Sladić, Milan Stojkov, Branko Milosavljević: Survey of Open Data in Judicial Systems, 6th International Conference on Information Society and Technology ICIST 2016, 2016, pp. 64--69, Society for Information Systems and Computer Networks
 
-* Mirjana Dejanović, Igor Dejanović: Software for Reaction-Time Measurement and its Application for the Evaluation of Patient's Recovery after the Stroke, ICIT 2015 The 7th International Conference on Information Technology, 2015, pp. 182-185, Al-Zaytoonah University of Jordan
+* Marijana Rackov, Sebastijan Kaplar, Milorad Filipović, Gordana Milosavljević: Java code generation based on OCL rules, 6th International Conference on Information Society Technology and Management (ICIST), 2016, pp. 191--196, Society for Information Systems and Computer Networks
 
-* Milorad Filipović, Sebastijan Kaplar, Renata Vaderna, Željko Ivković, Gordana Milosavljević, Igor Dejanović: Aspect-oriented engines for Kroki models execution, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 502-507, Information Society of Serbia
+* Dragan Ivanović, Miloš Jovanović, Frank Fritsche: Analysis of scientific productivity and cooperation in the republics of former Yugoslavia before, during and after the Yugoslav wars, Scientometrics, 2016, pp. 499--519, Springer
 
-* Renata Vaderna, Igor Dejanović, Gordana Milosavljević: Graph layout algorithms and libraries: overview and improvements, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 55-60, Information Society of Serbia
+* Gordana Rudić, Bojana Dimić Surla, Dragan Ivanović: Cataloguing government documents using the MARC 21: A case study of materials from the AP Vojvodina government sessions, Journal of Librarianship and Information Science, 2016, pp. 363-372, SAGE Publications
 
-* Renata Vaderna, Željko Vuković, Dušan Okanović, Igor Dejanović: A Domain-Specific Language for Service Level Agreement Specification, ICIT 2015 The 7th International Conference on Information Technology, 2015, pp. 693-697, Al-Zaytoonah University of Jordan
+* Dragan Ivanović, Yuh-Shan Ho: Highly cited articles in the Information Science and Library Science category in Social Science Citation Index: A bibliometric analysis, Journal of Librarianship and Information Science, 2016, pp. 36-46, SAGE Publications
 
-* Geraint Duck, Aleksandar Kovačević, David L. Robertson, Robert Stevens, Goran Nenadić: Ambiguity and variability of database and software names in bioinformatics, Journal of Biomedical Semantics, 2015, pp. 29, Springer
+* Lidija Ivanović, Dragan Ivanović: Non-English PhD dissertations and associated English journal papers, 19th International Symposium on Electronic Theses and Dissertations (ETD 2016):" Data and Dissertations", 2016, pp. 1-10, HAL archives-ouvertes
 
-* Azad Dehghan, Aleksandar Kovačević, George Karystianis, John A. Keane, Goran Nenadić: Combining knowledge- and data-driven methods for de-identification of clinical narratives, Journal of Biomedical Informatics, 2015, pp. 1-1, Elsevier
+* Nikola Luburić, Dragan Ivanović: Comparing Apache Solr and Elasticsearch search servers, 6th International Conference on Information Society and Technology (ICIST 2016), 2016, pp. 287-291, Society of information systems and computer networks
 
-* George Karystianis, Azad Dehghan, Aleksandar Kovačević, John A. Keane, Goran Nenadić: Using local lexicalized rules to identify heart disease risk factors in clinical notes, Journal of Biomedical Informatics, 2015, pp. 1-1, Elsevier
+* Silvija Baro, Dragan Ivanović: Applying SEO techniques to improve access to a research project website, 6th International Conference on Information Society and Technology (ICIST 2016), 2016, pp. 292-296, Society of information systems and computer networks
 
-* Darko Petrušić, Konjović Zora, Milan Segedinac: Semantic modelling and ontology integration of the open government systems, Tehnički vjesnik/Technical Gazette, 2015, pp. 1-1, Faculty of Electrical Engineering in Osijek
+* Jovan Snajderov, Dragan Ivanović: Implementation of books digital repository searching using Hibernate search software library, 6th International Conference on Information Society and Technology (ICIST 2016), 2016, pp. 297-301, Society of information systems and computer networks
 
-* Sebastijan Kaplar, Milorad Filipović, Gordana Milosavljević, Goran Sladić: Kroki Administration Subsystem Based on RBAC Standard and Aspects, 5th International Conference on Information Society Technology and Management (ICIST), 2015, pp. 61-66, Information Society of Serbia
+* Siniša Nikolić, Zora Konjović, Valentin Penca, Dragan Ivanović, Dušan Surla: A CERIF Compatible CRIS-UNS Model Extension for Assessment of Conference Papers, Acta Polytechnica Hungarica, 2015, pp. 129--148, Obuda University
 
-* Miroslav Zarić, Zoran Miškov, Goran Sladić: A Flexible, Process-Aware Contract Management System, 5th International Conference on Information Society Technology and Management (ICIST), 2015, pp. 313-318, Information Society of Serbia
+* Valentin Penca, Siniša Nikolić, Dragan Ivanović: Mapping scheme from Greenstone to CERIF format, Proceedings  of the 6th International Conference on Information Society and Technology (ICIST 2016), 2016, pp. 331--336, Society for Information Systems and Computer Networks
 
-* Robert Molnar, Stevan Gostojić, Goran Sladić, Goran Savić, Zora Konjović: Enabling Customization of Document-Centric Systems Using Document Management Ontology, 5th International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 267-271, Society for Information Systems and Computer Networks
+* Ana Perišić, Marko Lazić, Branko Perišić: The Extensible Orchestration Framework approach to collaborative design in architectural, urban and construction engineering, Automation in Construction, 2016, pp. 210-225, Elsevier
 
-* Nikola Nikolić, Goran Savić, Milan Segedinac, Stevan Gostojić, Zora Konjović: RDF Stores Performance Test on Servers with Average Specification, 5rd International Conference on Information Society Technology and Management (ICIST 2015), 2015, pp. 67-72, Informaciono društvo Srbije
+* Mirjana Maksimović, Vladimir Vujović, Branko Perišić: Do It Yourself solution of Internet of Things Healthcare System: Measuring body parameters and environmental parameters affecting health, Journal of Information Systems Engineering & Management, 2016, pp. 25-39, Lectito BV, Netherlands
+
+* Ana Perišić, Marko Lazić, Branko Perišić: The Common Ontology for Service Infrastructure Development over Cooperative Domains - The Foundation of Architectural Design, Urban Planning and Construction Engineering Data Repository Model, Transactions on AUTOMATIC CONTROL and COMPUTER SCIENCE, 2016, pp. 57-65, Editura POLITEHNICA
+
+* Igor Zečević, Branko Perišić, Petar Bjeljac, Danijel Venus: Role of Pivot Metamodel in Automatic Generation of Metamodel Extensions, 6th International Conference on Information Society and Technology ICIST 2016, 2016, pp. 337-341, Society for Information Systems and Computer Networks
+
+* Vladimir Maruna, Tom Mercer, Igor Zečević, Branko Perišić, Petar Bjeljac: The Business Process Transformation Framework Implementation through Metamodel Extension, 6th International Conference on Information Society and Technology ICIST 2016, 2016, pp. 11-16, Society for Information Systems and Computer Networks
+
+
 
