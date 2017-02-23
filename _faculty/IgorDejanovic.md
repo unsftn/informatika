@@ -89,7 +89,7 @@ Languages, Software Configuration Management.
 
  * [textX](https://github.com/igordejanovic/textX/) - A meta-language for building Domain-Specific Languages in Python
  * [Arpeggio](https://github.com/igordejanovic/Arpeggio/) - A parser interpreter based on PEG grammars written in Python
- * [parglare](https://https://github.com/igordejanovic/parglare) - A pure Python Scannerless (G)LR parser
+ * [parglare](https://github.com/igordejanovic/parglare) - A pure Python Scannerless (G)LR parser
  * [pyFlies](https://github.com/igordejanovic/pyFlies/) - A DSL for cognitive experiments modeling
  * [django-adminext](https://bitbucket.org/igord/django-adminext) - Django admin extensions focused on easier data entry and navigation
  * [django-multiautocomplete](https://bitbucket.org/igord/django-multiautocomplete) - Widget for multiple autocompletions
