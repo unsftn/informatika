@@ -26,6 +26,8 @@ Languages, Software Configuration Management.
 
 ### Selected Publications
 
+ * **I. Dejanović**, R. Vaderna, G. Milosavljević, Ž. Vuković: [TextX: A Python tool for Domain-Specific Languages implementation](http://www.sciencedirect.com/science/article/pii/S0950705116304178), Knowledge-Based Systems, Volume 115, 2017, pp. 1–4, doi:10.1016/j.knosys.2016.10.023
+
  * **I. Dejanović**, G. Milosavljević, R. Vaderna: [Arpeggio: A flexible PEG parser for Python](http://www.sciencedirect.com/science/article/pii/S0950705115004761), Knowledge-Based Systems, Volume 95, 1 March 2016, pp. 71–74, doi:10.1016/j.knosys.2015.12.004
 
  * **Dejanović, I.** & Milosavljević, G.: *Performance Evaluation of the Arpeggio Parser*, 4rd International Conference on Information Society Technology and Management (ICIST 2014), 2014, 1, 229-234
