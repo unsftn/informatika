@@ -3,7 +3,7 @@ layout: course
 title: Security in E-Business Systems
 collection: courses
 path: BSEPSIIT
-name: BSEPSIIT
+name: BSEP
 curriculum: [SIIT]
 code:
 people: ["Goran Sladić", "Nikola Luburić"]
