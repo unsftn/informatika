@@ -2,14 +2,17 @@
 layout: course
 title: Security in E-Business Systems
 collection: courses
-path: BSEP
-name: BSEP
-curriculum: [E2]
+path: BSEPSIIT
+name: BSEPSIIT
+curriculum: [SIIT]
 code:
 people: ["Goran Sladić", "Nikola Luburić"]
 canvas: https://enastava.io/courses/8
 info:
 ---
+
+Radi registracije na enastava svi studenti treba da se upišu u Google sheet naveden na [ovaj](https://docs.google.com/spreadsheets/d/1eMX2czCYv_COph0x4tqFxIJsmrRwIyA8cbBBV7iLMlU/edit?usp=sharing) link.
+
 
 The course in Security in e-business systems is given in the 8th semester, 4th year of undergraduate studies.
 
