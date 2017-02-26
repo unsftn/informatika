@@ -5,14 +5,17 @@ collection: faculty
 path: AleksandarKaplar
 name: AleksandarKaplar
 zvanje: TA
-email: xxx@uns.ac.rs
+email: aleksandar.kaplar AT uns.ac.rs
 phone: +381 21 485 xxxx
-office: TMD xxx
-photo: 
+office: Jugodrvo 108
+photo: AleksandarKaplar.jpg
 ---
 
-Bio: TODO
+MSc Aleksandar Kaplar is a teaching assistant and a PhD student at Faculty of Technical Sciences, University of Novi Sad.
+His fields of interest include: Artificial General Intelligence, Machine Learning, Text Mining, Intelligent Agents and Knowledge Based AI.
 
-### Selected Publications
 
-TODO
+### Current research
+
+	-Healthcare Text Mining
+	-Clinical Decision Support Systems
