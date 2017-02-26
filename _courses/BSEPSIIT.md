@@ -11,7 +11,7 @@ canvas: https://enastava.io/courses/8
 info:
 ---
 
-Radi registracije na enastava svi studenti treba da se upišu u Google sheet naveden na [ovaj](https://docs.google.com/spreadsheets/d/1eMX2czCYv_COph0x4tqFxIJsmrRwIyA8cbBBV7iLMlU/edit?usp=sharing) link.
+Radi registracije na enastava svi studenti treba da se upišu u Google sheet naveden na [ovom](https://docs.google.com/spreadsheets/d/1eMX2czCYv_COph0x4tqFxIJsmrRwIyA8cbBBV7iLMlU/edit?usp=sharing) linku.
 
 
 The course in Security in e-business systems is given in the 8th semester, 4th year of undergraduate studies.
