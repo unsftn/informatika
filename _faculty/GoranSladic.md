@@ -32,7 +32,8 @@ He is ACM member since 2007.
 ### Courses
 
 [E-payment Systems]({{"/SEP" | prepend: site.baseurl}})   
-[Security in E-business Systems ]({{"/BSEP" | prepend: site.baseurl}})   
+[Security in E-business Systems E2]({{"/BSEP" | prepend: site.baseurl}})   
+[Security in E-business Systems SIIT]({{"/BSEPSIIT" | prepend: site.baseurl}})   
 [Information Security]({{"/IB" | prepend: site.baseurl}})   
 
 Thesis (bachelor and master) guidelines for students can be found [here]({{"/thesis/" | prepend: site.baseurl}})
