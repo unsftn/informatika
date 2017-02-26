@@ -17,4 +17,4 @@ info:
 This page presents Information Security.
 
 
-Radi registracije na enastava svi studenti treba da se upišu u Google sheet naveden na ovoj adresi https://docs.google.com/spreadsheets/d/1UUCuwiIoCA2LEunKYaDnkrdmGW9zAM6yYDUkQMsvCOw/edit?usp=sharing
+Radi registracije na enastava svi studenti treba da se upišu u Google sheet naveden na [ovaj](https://docs.google.com/spreadsheets/d/1UUCuwiIoCA2LEunKYaDnkrdmGW9zAM6yYDUkQMsvCOw/edit?usp=sharing) link.
