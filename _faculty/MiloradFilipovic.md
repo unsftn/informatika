@@ -7,7 +7,7 @@ name: MiloradFilipovic
 zvanje: TA
 email: mfili[AT]uns[DOT]ac[DOT]rs
 phone: +381 21 485 xxxx
-office: PC1
+office: JUG108
 photo: MiloradFilipovic.jpg
 linkedin: https://www.linkedin.com/in/milorad-filipovi%C4%87-47188882
 researchgate: https://www.researchgate.net/profile/Milorad_Filipovic
@@ -35,6 +35,7 @@ Received master degree in computer science at University of Novi Sad in 2011. Cu
 #### Computing and Control
 
 * Legal informatics
+* [Web Programming](http://informatika.ftn.uns.ac.rs/WP/)
 
 #### Software and Information Technologies
 
