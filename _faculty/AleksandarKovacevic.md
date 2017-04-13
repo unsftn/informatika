@@ -4,7 +4,7 @@ title: Aleksandar Kovačević
 collection: faculty
 path: Aleksandar Kovacevic
 name: Aleksandar Kovacevic
-zvanje: assistant
+zvanje: associate
 email: k o c h a 7 8   at   uns.ac.rs
 phone: +381 21 485 2423
 office: Jugodrvo 212
