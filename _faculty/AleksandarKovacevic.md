@@ -15,13 +15,13 @@ scholar: https://scholar.google.com/citations?user=KylNBRkAAAAJ&hl=en
 
 ---
 
-Aleksandar Kovačević is an assistant professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2012.
+Aleksandar Kovačević is an associate professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2012.
 
 He received his B.Sc. in Computer Science from the Faculty of Science, University of Novi Sad and M.Sc. and Ph.D. degrees in Computer Science from the Faculty of Technical Sciences, University of Novi Sad.
 
 His research interests are focused on text mining and semi-automated extraction of knowledge from unstructured data. Aleksandar has been working in the area of text mining and natural language processing since 2007. His current research projects focus on developing and applying machine learning and data mining methods towards the extraction of methodological workflows from scientific articles and large-scale text mining of un- and semi-structured health textual resources. He is also interested in natural language processing for Serbian language. In particular in automated summarization, anonymization and sentiment mining.
 
-Aleksandar is a collaborator with the text mining group under the leadership of Dr Goran Nenadic at the University of Manchester [(gnTEAM)](http://gnteam.cs.manchester.ac.uk/), projects: mining clinical narratives and patient-generated data and extraction of biomedical software and databases from scientific articles. He also collaborates with the [Intelligent Software Systems Laboratory](http://www.fujita.soft.iwate-pu.ac.jp/top.htm) (with Petrovic G. and Fuijta H.) at the Faculty of Software and Information Science, Iwate Prefectural University, Japan, projects: mining of social media and healthcare ontologies.
+Aleksandar is visiting Lecturer at the University of Manchester, School of Computer Science, since 2016. He is a collaborator with the text mining group under the leadership of Dr Goran Nenadic [(gnTEAM)](http://gnteam.cs.manchester.ac.uk/), projects: mining clinical narratives and patient-generated data and extraction of biomedical software and databases from scientific articles. He also collaborates with the [Intelligent Software Systems Laboratory](http://www.fujita.soft.iwate-pu.ac.jp/top.htm) (with Petrovic G. and Fuijta H.) at the Faculty of Software and Information Science, Iwate Prefectural University, Japan, projects: mining of social media and healthcare ontologies.
 
 He published over 30 papers and participated in more than 15 projects. Aleksandar is a programme committee member for the International Conference on Information Society and Technology (ICIST) conference. He is a reviewer for a number of international journals including PLOS ONE, Journal of Biomedical Informatics and Journal of Biomedical Semantics.
 
@@ -47,6 +47,7 @@ Machine Learning (PhD)
 
 ### Software
 [CliNER](http://gnteam.cs.manchester.ac.uk/resources/cliner/)
+[CliDEID](https://github.com/kovacevica/CliDEID)
 
 ### Publications
 
