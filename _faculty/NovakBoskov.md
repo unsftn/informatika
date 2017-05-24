@@ -5,10 +5,14 @@ collection: faculty
 path: NovakBoskov
 name: NovakBoskov
 zvanje: TA
-email: gnovak.boskov@gmail.com
+email: novak.boskov@uns.ac.rs
 phone: +381 65 634 72 15
-office: Park City
+office: Jugodrvo 108
 photo: NovakBoskov.jpg
+
+linkedin: https://www.linkedin.com/in/novak-bo%C5%A1kov-b5a2b74a/
+researchgate: https://www.researchgate.net/profile/Novak_Boskov
+scholar: https://scholar.google.com/citations?user=Hans8C4AAAAJ&hl=en
 ---
 
 [Novak Boškov](https://novakboskov.github.io/) received a MsC degree
