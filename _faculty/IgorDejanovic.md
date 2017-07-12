@@ -4,7 +4,7 @@ title: Igor Dejanović
 collection: faculty
 path: IgorDejanovic
 name: IgorDejanovic
-zvanje: assistant
+zvanje: associate
 email: igord@uns.ac.rs
 phone: +381 21 485 xxxx
 office: ---
@@ -16,10 +16,10 @@ orcid: http://orcid.org/0000-0002-0414-1455
 scholar: https://scholar.google.com/citations?user=SqLKTIkAAAAJ&hl=en
 ---
 
-Igor Dejanović received a PhD degree at University of Novi Sad in 2012.  He
-holds an assistant professor position at the Faculty of Technical Sciences,
-University of Novi Sad. He has authored or co-authored many scientific papers.
-He is an active member of the open-source community.
+Igor Dejanović received a PhD degree at University of Novi Sad in 2012. He holds
+an associate professor position at the Faculty of Technical Sciences, University
+of Novi Sad. He has authored or co-authored many scientific papers. He is an
+active member of the open-source community.
 
 His areas of work and interest are Model-Driven Engineering, Domain-Specific
 Languages, Software Configuration Management.
