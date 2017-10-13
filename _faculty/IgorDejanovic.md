@@ -21,8 +21,32 @@ an associate professor position at the Faculty of Technical Sciences, University
 of Novi Sad. He has authored or co-authored many scientific papers. He is an
 active member of the open-source community.
 
-His areas of work and interest are Model-Driven Engineering, Domain-Specific
-Languages, Software Configuration Management.
+His areas of work and interest are Domain-Specific Languages, Model-Driven
+Engineering, Software Configuration Management.
+
+
+### **Informacije za studente** 
+
+Informacije o tekućim terminima usmenih ispita i konsultacija dostupne na [google grupi](https://groups.google.com/forum/#!forum/dejanovic-ispiti).
+
+
+### Courses/Nastava
+ * [Domain-Specific Languages/Jezici specifični za domen](/JSD), FTN - Novi Sad, 2013-
+ * [Software Configuration Management/Upravljanje konfiguracijom softvera](/UKS), FTN - Novi Sad, 2012-
+ * [Software patterns and components/Softverski obrasci i komponente](/SOK), FTN - Novi Sad, 2012-
+ * Uvod u razvoj softvera, FTN - Odeljenje u Inđiji, 2012-
+ * Osnove informacionih sistema, FTN - Odeljenje u Inđiji, 2013-
+
+
+### FLOSS projects
+
+ * [textX](https://github.com/igordejanovic/textX/) - A meta-language for building Domain-Specific Languages in Python
+ * [Arpeggio](https://github.com/igordejanovic/Arpeggio/) - A parser interpreter based on PEG grammars written in Python
+ * [parglare](https://github.com/igordejanovic/parglare) - A pure Python Scannerless (G)LR parser
+ * [pyFlies](https://github.com/igordejanovic/pyFlies/) - A DSL for cognitive experiments modeling
+ * [django-adminext](https://bitbucket.org/igord/django-adminext) - Django admin extensions focused on easier data entry and navigation
+ * [django-multiautocomplete](https://bitbucket.org/igord/django-multiautocomplete) - Widget for multiple autocompletions
+
 
 ### Selected Publications
 
@@ -85,15 +109,6 @@ Languages, Software Configuration Management.
 * Mirjana Dejanović, Igor Dejanović. "React! an extensible software application for creating, performing and analyzing results of psychophysiological experiments". International Journal of Psychophysiology, 77(3):301 - 301, 2010. ISSN: 0167-8760, DOI: 10.1016/j.ijpsycho.2010.06.193.
 
 
-### FLOSS projects
-
- * [textX](https://github.com/igordejanovic/textX/) - A meta-language for building Domain-Specific Languages in Python
- * [Arpeggio](https://github.com/igordejanovic/Arpeggio/) - A parser interpreter based on PEG grammars written in Python
- * [parglare](https://github.com/igordejanovic/parglare) - A pure Python Scannerless (G)LR parser
- * [pyFlies](https://github.com/igordejanovic/pyFlies/) - A DSL for cognitive experiments modeling
- * [django-adminext](https://bitbucket.org/igord/django-adminext) - Django admin extensions focused on easier data entry and navigation
- * [django-multiautocomplete](https://bitbucket.org/igord/django-multiautocomplete) - Widget for multiple autocompletions
-
 ### Science and commercial projects
 
  * *Renewable energy virtual laboratory - REVLAB*, IPA, Contract no. HUSRB/1203/214/240, 2013-2014
@@ -108,19 +123,13 @@ Languages, Software Configuration Management.
 
 ### Izbori u zvanja
 
- * 16.5.2012 -  -- docent
- * 17.01.2012. - 15.5.2012 -- asistent sa doktoratom
- * 22.12.2008. – 16.01.2012 -- asistent
+ * 16.05.2017. - 15.05.2022. -- vanredni profesor
+ * 16.05.2012. - 15.05.2017. -- docent
+ * 17.01.2012. - 15.05.2012. -- asistent sa doktoratom
+ * 22.12.2008. - 16.01.2012. -- asistent
  * 29.12.2004. - 21.12.2008. -- asistent pripravnik
  * 16.10.2000. - 28.12.2004. -- stručni saradnik
 
-
-### Courses/Nastava
- * [Domain-Specific Languages/Jezici specifični za domen](/JSD), FTN - Novi Sad, 2013-
- * [Software Configuration Management/Upravljanje konfiguracijom softvera](/UKS), FTN - Novi Sad, 2012-
- * [Software patterns and components/Softverski obrasci i komponente](/SOK), FTN - Novi Sad, 2012-
- * Uvod u razvoj softvera, FTN - Odeljenje u Inđiji, 2012-
- * Osnove informacionih sistema, FTN - Odeljenje u Inđiji, 2013-
 
 ### Old courses
  * Osnovi računarstva, FTN - Novi Sad
