@@ -14,6 +14,6 @@ info:
 
 ### Course Materials
 
-Slides from the lectures can be found [here](http://igordejanovic.net/courses/sok/).
+Slides from the lectures can be found [here](http://igordejanovic.net/courses/sok.html).
 
 Additional materials are on the canvas page.

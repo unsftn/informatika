@@ -13,7 +13,7 @@ info:
 
 ### Course Materials
 
-Slides from the lectures can be found [here](http://igordejanovic.net/courses/jsd/).
+Slides from the lectures can be found [here](http://www.igordejanovic.net/courses/jsd.html).
 
 Additional materials are on the canvas page.
 
