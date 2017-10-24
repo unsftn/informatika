@@ -63,7 +63,7 @@ Stevan Gostojić is associate professor of applied computer science and informat
 18. Gostojic, S. (2012), "Slobodan softver u obrazovanju inženjera i naučnoistraživačkom radu", Slobodan softver u nastavi, December 1-2nd, 2012, Novi Sad, Serbia. (in Serbian)
 19. Arsovski, S., Konjovic, Z., Milosavljevic, B., Gostojic, S. (2010), "Editori za dokumente prave regulative bazirani na otvorenim standardima i otvorenim izvorima", YU INFO 2010, March, 3-6th, 2010, Kopaonik, Serbia. (in Serbian)
 20. Gostojic, S., Sladic, G., Vidakovic, M. (2009), "Arhiviranje dokumenata u Alfresco sistemu", YU INFO 2009, March 8-11th, 2009, Kopaonik, Serbia. (in Serbian)
-21. Sladic, G., Milosavljevic, B., Gostojic, S. (2009), "Digitalno potpisivanje dokumenata u Alfresco sistemu", YU INFO 2009, March 8-11th, 2009, Kopaonik, Serbia. (in Serbian) (0/2 citations)
+21. Sladic, G., Milosavljevic, B., Gostojic, S. (2009), "Digitalno potpisivanje dokumenata u Alfresco sistemu", YU INFO 2009, March 8-11th, 2009, Kopaonik, Serbia. (in Serbian)
 22. Gostojic, S., Milosavljevic, B., Konjovic, Z., Sladic, G. (2011), "Upravljanje pravnim aktima", Informacioni sistemi državnih organa Republike Srbije (IS DOS 2011), October 25th, 2011, Belgrade, Serbia. (in Serbian)
 
 #### Theses & Dissertations
