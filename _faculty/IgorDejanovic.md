@@ -29,6 +29,8 @@ Engineering, Software Configuration Management.
 
 Informacije o tekućim terminima usmenih ispita i konsultacija dostupne na [google grupi](https://groups.google.com/forum/#!forum/dejanovic-ispiti).
 
+Informacije o master temama možete pronaći [ovde](http://www.igordejanovic.net/studenti/master_teme.html).
+
 
 ### Courses/Nastava
  * [Domain-Specific Languages/Jezici specifični za domen](/JSD), FTN - Novi Sad, 2013-
