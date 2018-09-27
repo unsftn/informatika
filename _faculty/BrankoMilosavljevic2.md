@@ -1,14 +1,8 @@
 ---
-layout: faculty
+layout: default
 title: Obaveštenja
-collection: faculty
 path: BrankoMilosavljevic/indeks
 name: BrankoMilosavljevic
-zvanje: full
-email: mbranko@uns.ac.rs
-phone: +381 21 485 2422
-office: JD-213
-photo: BrankoMilosavljevic.jpg
 ---
 
 ### Potpis/ocena u indeksu
