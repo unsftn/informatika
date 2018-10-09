@@ -15,9 +15,13 @@ Group members have academic and professional experience with legal and regulator
 
 ### People
 [Branko Milosavljević]({{ site.baseurl }}/BrankoMilosavljevic), professor
+
 [Goran Sladić]({{ site.baseurl }}/GoranSladic), associate professor
+
 [Aleksandar Kovačević]({{ site.baseurl }}/AleksandarKovacevic), associate professor
+
 [Stevan Gostojić]({{ site.baseurl }}/StevanGostojic), associate professor
+
 [Marko Marković]({{ site.baseurl }}/MarkoMarkovic), teaching and research assistant
 
 ### Courses
@@ -71,4 +75,4 @@ Group members have academic and professional experience with legal and regulator
 ### Software
 
 1. Cverdelj-Fogaraši, I., Sladić, G., Gostojić, S. and Milosavljević, B. (2017). Digitalna arhiva sudskih predmeta, Novi Sad: Fakultet tehničkih nauka. (in Serbian)
-1. [Gostojić, S., Milosavljević, B. and Konjović, Z. (2014). Sistem za pronalaženje i pregledanje pravnih akata. Novi Sad: Fakultet tehničkih nauka. (in Serbian)] [https://github.com/legal-informatics/lawyer]
+1. [Gostojić, S., Milosavljević, B. and Konjović, Z. (2014). Sistem za pronalaženje i pregledanje pravnih akata. Novi Sad: Fakultet tehničkih nauka. (in Serbian)](https://github.com/legal-informatics/lawyer)
