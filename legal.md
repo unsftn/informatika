@@ -14,15 +14,11 @@ Our goal is to bring together information technology and law teachers and resear
 Group members have academic and professional experience with legal and regulatory technology (e.g. formal representation of legal knowledge and reasoning, text mining and NLP, data mining, legal document and business process management, legal information retrieval and browsing, and legal document drafting), e-government (e.g. design and implementation of information systems in legislative, judicial and executive institutions at national, regional and local levels), information security (e.g. implementation of information security management standards), digital forensics (hired by courts of law in criminal and civil proceedings and by private companies), and open source software, open data and open access advocacy (e.g. open source software in education, open government data, open access to research information).
 
 ### People
-[Branko Milosavljević]({{ site.baseurl }}/BrankoMilosavljevic), professor
-
-[Goran Sladić]({{ site.baseurl }}/GoranSladic), associate professor
-
-[Aleksandar Kovačević]({{ site.baseurl }}/AleksandarKovacevic), associate professor
-
-[Stevan Gostojić]({{ site.baseurl }}/StevanGostojic), associate professor
-
-[Marko Marković]({{ site.baseurl }}/MarkoMarkovic), teaching and research assistant
+1. [Branko Milosavljević]({{ site.baseurl }}/BrankoMilosavljevic), professor
+1. [Goran Sladić]({{ site.baseurl }}/GoranSladic), associate professor
+1. [Aleksandar Kovačević]({{ site.baseurl }}/AleksandarKovacevic), associate professor
+1. [Stevan Gostojić]({{ site.baseurl }}/StevanGostojic), associate professor
+1. [Marko Marković]({{ site.baseurl }}/MarkoMarkovic), teaching and research assistant
 
 ### Courses
 1. Legal Informatics (MSc)
