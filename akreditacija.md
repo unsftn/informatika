@@ -5,7 +5,7 @@ permalink: /akreditacija/
 nomenu: true
 ---
 # Timestamp
-27.10.2018. 11:41
+29.10.2018. 17:00
  
 # Računarstvo i automatika
 
