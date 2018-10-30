@@ -6,6 +6,12 @@ nomenu: true
 ---
 ### Timestamp
 30.10.2018. 12:00
+
+### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
+
+# Osnovne strukovne studije
+[SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf) 
+
 ### Računarstvo i automatika
 
 # Osnovne akademske studije
