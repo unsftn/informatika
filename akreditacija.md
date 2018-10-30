@@ -6,7 +6,6 @@ nomenu: true
 ---
 ### Timestamp
 30.10.2018. 11:00
- 
 ### Računarstvo i automatika
 
 # Osnovne akademske studije
