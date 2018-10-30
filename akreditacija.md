@@ -5,7 +5,7 @@ permalink: /akreditacija/
 nomenu: true
 ---
 ### Timestamp
-30.10.2018. 11:00
+30.10.2018. 12:00
 ### Računarstvo i automatika
 
 # Osnovne akademske studije
