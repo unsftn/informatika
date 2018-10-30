@@ -4,12 +4,12 @@ title: Akreditacioni fajlovi
 permalink: /akreditacija/
 nomenu: true
 ---
-# Timestamp
+### Timestamp
 30.10.2018. 11:00
  
-# Računarstvo i automatika
+### Računarstvo i automatika
 
-### Osnovne akademske studije
+# Osnovne akademske studije
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-Dokumentacija za akreditaciju.pdf) 
 
 [OAS-Opterećenje nastavnika.pdf](/files/akreditacija/OAS-Opterećenje nastavnika.pdf)
@@ -18,7 +18,7 @@ nomenu: true
 
 [OAS-Predmeti u drugim programima.pdf](/files/akreditacija/OAS-Predmeti u drugim programima.pdf)
 
-### Master akademske studije
+# Master akademske studije
 [MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS-Dokumentacija za akreditaciju.pdf)
 
 [MAS-Opterećenje nastavnika.pdf](/files/akreditacija/MAS-Opterećenje nastavnika.pdf)
@@ -27,7 +27,7 @@ nomenu: true
 
 [MAS-Predmeti u drugim programima.pdf](/files/akreditacija/MAS-Predmeti u drugim programima.pdf)
 
-### Doktorske akademske studije
+# Doktorske akademske studije
 [DAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/DAS-Dokumentacija za akreditaciju.pdf)
 
 [DAS-Opterećenje nastavnika.pdf](/files/akreditacija/DAS-Opterećenje nastavnika.pdf)
