@@ -12,6 +12,14 @@ nomenu: true
 # Osnovne strukovne studije
 [SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf) 
 
+### SOFTVERSKO INŽENJERSTVO I INFORMACIONE TEHNOLOGIJE
+
+# Osnovne akademske studije
+[OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/SIiIT OAS - trenutni.pdf) 
+
+# Master akademske studije
+[MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS SIiIT - trenutno.pdf)
+
 ### Računarstvo i automatika
 
 # Osnovne akademske studije
@@ -36,4 +44,5 @@ nomenu: true
 [DAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/DAS-Dokumentacija za akreditaciju.pdf)
 
 [DAS-Opterećenje nastavnika.pdf](/files/akreditacija/DAS-Opterećenje nastavnika.pdf)
+
 
