@@ -6,6 +6,20 @@ nomenu: true
 ---
 ### Timestamp
 07.11.2018. 19:00
+
+### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
+
+# Osnovne strukovne studije
+[SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf) 
+
+### SOFTVERSKO INŽENJERSTVO I INFORMACIONE TEHNOLOGIJE
+
+# Osnovne akademske studije
+[OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/SIiIT OAS - trenutni.pdf) 
+
+# Master akademske studije
+[MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS SIiIT - trenutno.pdf)
+
 ### Računarstvo i automatika
 
 # Osnovne akademske studije
