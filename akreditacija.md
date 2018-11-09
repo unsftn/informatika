@@ -5,7 +5,7 @@ permalink: /akreditacija/
 nomenu: true
 ---
 ### Timestamp
-07.11.2018. 19:00
+09.11.2018. 13:00
 
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 
