@@ -10,8 +10,10 @@ nomenu: true
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 
 # Osnovne strukovne studije
-[SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf) 
+[SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf)
+
 [SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf) 
+
 [SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf) 
 
 ### SOFTVERSKO INŽENJERSTVO I INFORMACIONE TEHNOLOGIJE
