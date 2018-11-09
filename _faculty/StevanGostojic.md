@@ -21,6 +21,7 @@ Stevan Gostojić is associate professor of applied computer science and informat
 
 1. XML and Web Services (BSc)
 1. Mobile App Development (BSc)
+1. Knowledge Engineering (BSc)
 1. Legal Informatics (MSc)
 1. Mobile App Development (MSc)
 1. Social Networks (MSc)
