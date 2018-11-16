@@ -8,10 +8,9 @@ nomenu: true
 16.11.2018. 11:00
 
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
-SIT - Timestamp
-16.11.2018. 11:00
 
-# Osnovne strukovne studije
+# Osnovne strukovne studije 
+Timestamp 16.11.2018. 11:00
 [SIT - Kontrola dokumentacije.pdf](/files/akreditacija/SIT - SIT - Kontrola dokumentacije.pdf)
 
 [SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf)
