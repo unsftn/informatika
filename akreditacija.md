@@ -5,7 +5,7 @@ permalink: /akreditacija/
 nomenu: true
 ---
 ### Timestamp
-26.11.2018. 11:00
+16.11.2018. 11:00
 
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 SIT - Timestamp
