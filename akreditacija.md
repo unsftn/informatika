@@ -8,8 +8,7 @@ nomenu: true
 26.11.2018. 11:00
 
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
-
-### SIT - Timestamp
+SIT - Timestamp
 16.11.2018. 11:00
 
 # Osnovne strukovne studije
