@@ -5,11 +5,16 @@ permalink: /akreditacija/
 nomenu: true
 ---
 ### Timestamp
-09.11.2018. 13:00
+26.11.2018. 11:00
 
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 
+### SIT - Timestamp
+16.11.2018. 11:00
+
 # Osnovne strukovne studije
+[SIT - Kontrola dokumentacije.pdf](/files/akreditacija/SIT - SIT - Kontrola dokumentacije.pdf)
+
 [SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf)
 
 [SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf) 
