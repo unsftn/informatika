@@ -4,8 +4,6 @@ title: Akreditacioni fajlovi
 permalink: /akreditacija/
 nomenu: true
 ---
-### Timestamp
-16.11.2018. 11:00
 
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 
@@ -28,14 +26,15 @@ Timestamp 16.11.2018. 11:00
 # Master akademske studije
 [MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS SIiIT - trenutno.pdf)
 
-### Računarstvo i automatika
+### RAČUNARSTVO I AUTOMATIKA
+Timestamp: 19.11.2018. 10:40
 
 # Osnovne akademske studije
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-Dokumentacija za akreditaciju.pdf) 
 
-[OAS-Opterećenje nastavnika.pdf](/files/akreditacija/OAS-Opterećenje nastavnika.pdf)
+[OAS-Karton opterećenja svih nastavnika.pdf](/files/akreditacija/OAS-Karton opterećenja svih nastavnika.pdf)
 
-[OAS-Opterećenje saradnika.pdf](/files/akreditacija/OAS-Opterećenje saradnika.pdf)
+[OAS-Karton opterećenja svih saradnika.pdf](/files/akreditacija/OAS-Karton opterećenja svih saradnika.pdf)
 
 [OAS-Predmeti u drugim programima.pdf](/files/akreditacija/OAS-Predmeti u drugim programima.pdf)
 
@@ -52,4 +51,6 @@ Timestamp 16.11.2018. 11:00
 [DAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/DAS-Dokumentacija za akreditaciju.pdf)
 
 [DAS-Opterećenje nastavnika.pdf](/files/akreditacija/DAS-Opterećenje nastavnika.pdf)
+
+[DAS-Predmeti u drugim programima.pdf](/files/akreditacija/DAS-Predmeti u drugim programima.pdf)
 
