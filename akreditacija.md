@@ -21,10 +21,10 @@ Timestamp 16.11.2018. 11:00
 ### SOFTVERSKO INŽENJERSTVO I INFORMACIONE TEHNOLOGIJE
 
 # Osnovne akademske studije
-[OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/SIiIT OAS - trenutni.pdf) 
+[OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-SIiIT.pdf) 
 
 # Master akademske studije
-[MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS SIiIT - trenutno.pdf)
+[MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS-SIiIT.pdf)
 
 ### RAČUNARSTVO I AUTOMATIKA
 Timestamp: 19.11.2018. 10:40
