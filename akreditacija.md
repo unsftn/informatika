@@ -27,7 +27,7 @@ Timestamp 16.11.2018. 11:00
 [MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS-SIiIT.pdf)
 
 ### RAČUNARSTVO I AUTOMATIKA
-Timestamp: 19.11.2018. 10:40
+Timestamp: 28.11.2018. 18:45
 
 # Osnovne akademske studije
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-Dokumentacija za akreditaciju.pdf) 
