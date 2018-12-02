@@ -22,10 +22,12 @@ Timestamp 29.11.2018. 15:00
 
 # Osnovne akademske studije
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/SIiIT_OAS.pdf) 
+
 [OAS-Struktura studijskog programa.pdf](/files/akreditacija/Struktura_OAS_SIiIT.pdf)
 
 # Master akademske studije
 [MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS_SIiIT.pdf)
+
 [MAS-Struktura studijskog programa.pdf](/files/akreditacija/Struktura_SP_MAS_SIiIT.pdf)
 
 ### RAČUNARSTVO I AUTOMATIKA
