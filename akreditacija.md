@@ -8,15 +8,15 @@ nomenu: true
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 
 # Osnovne strukovne studije 
-Timestamp 29.11.2018. 15:00 
+Timestamp 24.12.2018. 13:00 
 
-[SIT - Kontrola dokumentacije.pdf](/files/akreditacija/SIT - Kontrola dokumentacije.pdf)
+[SIT - Kontrola dokumentacije.pdf](/files/akreditacija/SIT - Kontrola dokumentacije.pdf) 
 
-[SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf)
+[SIT - Dokumentacija za akreditaciju studijskog programa.pdf](/files/akreditacija/SIT - Dokumentacija za akreditaciju studijskog programa.pdf) 
 
-[SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf) 
+[SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf)  
 
-[SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf) 
+[SIT - opterecenje nastavnika.pdf](/files/akreditacija/SIT - opterecenje nastavnika.pdf)  
 
 ### SOFTVERSKO INŽENJERSTVO I INFORMACIONE TEHNOLOGIJE
 
