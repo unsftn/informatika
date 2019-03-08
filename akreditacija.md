@@ -8,7 +8,7 @@ nomenu: true
 ### SOFTVERSKE I INFORMACIONE TEHNOLOGIJE
 
 # Osnovne strukovne studije 
-Timestamp 24.12.2018. 13:00 
+Timestamp 08.03.2019. 13:00 
 
 [SIT - Kontrola dokumentacije.pdf](/files/akreditacija/SIT - Kontrola dokumentacije.pdf) 
 
