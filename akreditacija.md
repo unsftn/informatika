@@ -36,7 +36,7 @@ Timestamp: 28.11.2018. 18:45
 # Osnovne akademske studije
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-Dokumentacija za akreditaciju.pdf) 
 
-[OAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/OAS- Opterećenje svih nastavnika.pdf)
+[OAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/OAS- Opterećenje svih nastavnika.pdf) 
 
 [OAS-Karton opterećenja svih saradnika.pdf](/files/akreditacija/OAS-Karton opterećenja svih saradnika.pdf)
 
