@@ -36,7 +36,7 @@ Timestamp: 28.11.2018. 18:45
 # Osnovne akademske studije
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-Dokumentacija za akreditaciju.pdf) 
 
-[OAS-Karton opterećenja svih nastavnika.pdf](/files/akreditacija/OAS-Karton opterećenja svih nastavnika.pdf)
+[OAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/OAS- Opterećenje svih nastavnika.pdf)
 
 [OAS-Karton opterećenja svih saradnika.pdf](/files/akreditacija/OAS-Karton opterećenja svih saradnika.pdf)
 
@@ -45,7 +45,7 @@ Timestamp: 28.11.2018. 18:45
 # Master akademske studije
 [MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS-Dokumentacija za akreditaciju.pdf)
 
-[MAS-Opterećenje nastavnika.pdf](/files/akreditacija/MAS-Opterećenje nastavnika.pdf)
+[MAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/MAS- Opterećenje svih nastavnika.pdf)
 
 [MAS-Opterećenje saradnika.pdf](/files/akreditacija/MAS-Opterećenje saradnika.pdf)
 
@@ -54,7 +54,7 @@ Timestamp: 28.11.2018. 18:45
 # Doktorske akademske studije
 [DAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/DAS-Dokumentacija za akreditaciju.pdf)
 
-[DAS-Opterećenje nastavnika.pdf](/files/akreditacija/DAS-Opterećenje nastavnika.pdf)
+[DAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/DAS- Opterećenje svih nastavnika.pdf)
 
 [DAS-Predmeti u drugim programima.pdf](/files/akreditacija/DAS-Predmeti u drugim programima.pdf)
 
