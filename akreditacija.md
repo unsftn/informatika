@@ -31,9 +31,12 @@ Timestamp 08.03.2019. 13:00
 [MAS-Struktura studijskog programa.pdf](/files/akreditacija/Struktura_SP_MAS_SIiIT.pdf)
 
 ### RAČUNARSTVO I AUTOMATIKA
-Timestamp: 28.11.2018. 18:45
+Timestamp: 2.4.2019. 11:30
 
 # Osnovne akademske studije
+
+[OAS-Struktura.pdf](/files/akreditacija/OAS-Struktura.pdf) 
+
 [OAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/OAS-Dokumentacija za akreditaciju.pdf) 
 
 [OAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/OAS- Opterećenje svih nastavnika.pdf) 
@@ -43,6 +46,9 @@ Timestamp: 28.11.2018. 18:45
 [OAS-Predmeti u drugim programima.pdf](/files/akreditacija/OAS-Predmeti u drugim programima.pdf)
 
 # Master akademske studije
+
+[MAS-Struktura.pdf](/files/akreditacija/MAS-Struktura.pdf) 
+
 [MAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/MAS-Dokumentacija za akreditaciju.pdf)
 
 [MAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/MAS- Opterećenje svih nastavnika.pdf)
@@ -52,6 +58,8 @@ Timestamp: 28.11.2018. 18:45
 [MAS-Predmeti u drugim programima.pdf](/files/akreditacija/MAS-Predmeti u drugim programima.pdf)
 
 # Doktorske akademske studije
+[DAS-Struktura.pdf](/files/akreditacija/DAS-Struktura.pdf) 
+
 [DAS-Dokumentacija za akreditaciju.pdf](/files/akreditacija/DAS-Dokumentacija za akreditaciju.pdf)
 
 [DAS- Opterećenje svih nastavnika.pdf](/files/akreditacija/DAS- Opterećenje svih nastavnika.pdf)
