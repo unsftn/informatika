@@ -7,7 +7,7 @@ name: Goran Sladic
 zvanje: associate
 email: s l a d i c g   at   uns.ac.rs
 phone: +381 21 485 2422
-office: TMD 120
+office: NTP 406
 photo: GoranSladic.jpg
 
 linkedin:  https://rs.linkedin.com/in/goran  
@@ -26,6 +26,8 @@ Since 2002 he is with the Faculty of Technical Science in Novi Sad.He published 
 His research interests include information security, document management systems, semantic web, XML technologies and context-aware computing.
 
 He is ACM member since 2007.
+
+Currently he is Head of Chair of Informatics.
 
 
 
