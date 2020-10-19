@@ -26,16 +26,14 @@ Stevan Gostojić is also an IT consultant, mostly in the area of digital governa
 He is the head of Digital Forensics Laboratory at Faculty of Technical Sciences and a court-appointed IT expert witness in his own capacity.
 
 ### Courses
-
-1. XML and Web Services (BSc)
-1. Mobile App Development (BSc)
-1. Knowledge Engineering (BSc)
-1. Legal Informatics (MSc)
-1. Introduction to Digital Forensics (MSc)
-1. Mobile App Development (MSc)
-1. Social Networks (MSc)
-1. Selected Topics in e-Government (PhD)
-1. Selected Topics in Distributed/Mobile Systems (PhD)
+1. XML and Web Services (B.Sc.)
+1. Mobile App Development (B.Sc.)
+1. Knowledge Engineering (B.Sc.)
+1. Legal Informatics (M.Sc.)
+1. Introduction to Digital Forensics (M.Sc.)
+1. Selected Topics in Legal Informatics (Ph.D.)
+1. Selected Topics in e-Government (Ph.D.)
+1. Selected Topics in Distributed/Mobile Systems (Ph.D.)
 
 ### Publications
 
