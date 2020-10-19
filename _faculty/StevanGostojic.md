@@ -6,8 +6,8 @@ path: StevanGostojic
 name: StevanGostojic
 zvanje: associate
 email: gostojic@uns.ac.rs
-phone: n/a
-office: JUG-214
+phone: +381 21 4854565
+office: NTP-331
 photo: StevanGostojic.jpg
 linkedin: https://www.linkedin.com/in/gostojic
 researchgate: https://www.researchgate.net/profile/Stevan_Gostojic
@@ -15,29 +15,41 @@ scholar: https://scholar.google.com.br/citations?user=K2lVPowAAAAJ
 orcid: http://orcid.org/0000-0002-4458-3565
 ---
 
-Stevan Gostojić is associate professor of applied computer science and informatics at Faculty of Technical Sciences, University of Novi Sad. He has a Ph.D. in electrical engineering and computer science from the same university. His research interests are: legal informatics, e-government and information society services; knowledge engineering, linked data and semantic web; document engineering, document management and business process management; and open data, open knowledge and open government.
+Stevan Gostojić is associate professor of applied computer science and informatics at Faculty of Technical Sciences, University of Novi Sad.
+
+His professional interests include legal and regulatory tech, digital forensics, digital governance, artificial intelligence, and open data.
+
+Stevan Gostojić teaches several courses including XML and Web Services (B.Sc.), Knowledge Engineering (B.Sc.), Mobile App Development (B.Sc.), Introduction to Digital Forensics (M.Sc.), Legal Informatics (M.Sc.), Selected Topics in e-Government (Ph.D.), and Selected Topics in Mobile Systems (Ph.D.) to computer science and software engineering students, supervises B.Sc., M.Sc., and Ph.D. theses and dissertations, and participates in several capacity building and research projects in the fields of legal and regulatory tech, digital forensics, information security, knowledge representation and automated reasoning, and citizen science.
+
+Stevan Gostojić is also an IT consultant, mostly in the area of digital governance, working on projects for clients ranging from local, through regional and national, to international organizations.
+
+He is the head of Digital Forensics Laboratory at Faculty of Technical Sciences and a court-appointed IT expert witness in his own capacity.
 
 ### Courses
-
-1. XML and Web Services (BSc)
-1. Mobile App Development (BSc)
-1. Knowledge Engineering (BSc)
-1. Legal Informatics (MSc)
-1. Mobile App Development (MSc)
-1. Social Networks (MSc)
-1. Selected Topics in e-Government (PhD)
-1. Selected Topics in Distributed/Mobile Systems (PhD)
+1. XML and Web Services (B.Sc.)
+1. Mobile App Development (B.Sc.)
+1. Knowledge Engineering (B.Sc.)
+1. Legal Informatics (M.Sc.)
+1. Introduction to Digital Forensics (M.Sc.)
+1. Selected Topics in Legal Informatics (Ph.D.)
+1. Selected Topics in e-Government (Ph.D.)
+1. Selected Topics in Distributed/Mobile Systems (Ph.D.)
 
 ### Publications
 
 #### Monographs
 1. Gostojić, S. (2017). Stvaranje i primena pravnih akata tehnikama semantičkog veba. Novi Sad: Fakultet tehničkih nauka, pp. 244, ISBN 978-86-7892-940-3. (in Serbian)
 
-#### Journals
-1. Marković, M., Gostojić, S. (2018). Open Judicial Data: A Comparative Analysis. Social Science Computer Review. https://doi.org/10.1177/0894439318770744
+#### Chapters
+1. Gostojić, S.. (2020). From Legal Documents to Legal Data. In Adams Bhatti, S., Chishti, S., Datoo, A., and Indjic, D. (Eds.). The LegalTech Book. Hoboken, NJ, USA: John Wiley & Sons. pp. 67-69. ISBN: 978-1119574279
+1. Gostojić , S., Marković, M. (2019). Open Judicial Data in the Balkans. In Elena, S. (Ed.). Open Justice: An Innovation-Driven Agenda for Inclusive Societies. Buenos Aires, Argentina: Ministry of Justice and Human Rights of the Argentine Republic. pp. 273–285. ISBN: 978-987-4196-87-3
+
+#### Journal Articles
+1. Marković, M., Gostojić, S. (2020). Open Judicial Data: A Comparative Analysis. Social Science Computer Review, 38(3), pp. 295-314. https://doi.org/10.1177/0894439318770744
 1. Sladić, G., Cverdelj-Fogaraši, I., Gostojić, S., Savić, G., Segedinac, M. and Zarić, M. (2017). Multilayer Document Model for Semantic Document Management Services. Journal of Documentation, 73(5), pp. 803–824. DOI: 10.1108/JD-07-2016-0095.
 1. Cverdelj-Fogaraši, I., Sladić, G., Gostojić, S., Segedinac, M. and Milosavljević, B. (2017). Semantic Integration of Enterprise Information Systems Using Meta-Metadata Ontology. Information Systems and e-Business Management (ISeBI), 15(2), pp. 257–304. DOI: 10.1007/s10257-015-0303-6. IF(2015)=0.953.
 1. Savić, G., Segedinac, M., Sladić, G., Gostojić, S. and Konjović, Z. (2016). A Machine-Readable Description of Generic Instructional Strategies in e-Courses. Computer Applications in Engineering Education, 24(5), pp. 665–675. DOI: 10.1002/cae.21738.
+1. Marković, M. and Gostojić, S. (2020) A knowledge-based document assembly method to support semantic interoperability of enterprise information systems. Enterprise Information Systems. XXX(XXX), pp. XXX-XXX. DOI: 10.1080/17517575.2020.1793389
 1. Milosavljević, G., Sladić, G., Milosavljević, B., Zarić, M., Gostojić, S., Slivka, J.: (2018).  Context-sensitive Constraints for Access Control of Business Processes. Computer Science and Information Systems, 15(1), pp 1–30. DOI: 10.2298/CSIS160628037M 
 /s10257-015-0303-6. IF(2015)=0.953.
 1. Sladić, G., Gostojić, S., Milosavljević, B., Konjović, Z., Milosavljević, G. (2015), "Computer Aided Anonymization and Redaction of Judicial Documents", Computer Science and Information Systems (ComSIS) (in print)
@@ -49,6 +61,10 @@ Stevan Gostojić is associate professor of applied computer science and informat
 
 #### Conference Proceedings
 1. Gostojić, S., Sladić, G., Milosavljević, B., Zarić, M., Konjović, Z. (2015), "Semantic Driven Document and Workflow Management", International Conference on Applied Internet and Information Technologies (ICAIIT 2014), October 24th, 2014, Zrenjanin, Serbia, pp. 229-234.
+1. Marković, M. and Gostojić, S. (2020) Knowledge-Based Legal Document Assembly. In: arXiv preprint arXiv:2009.06611, The 1st Workshop on Models of Legal Reasoning (MLR 2020) Co-located with KR 2020, September 12-18, 2020 - Rhodes, Greece.
+1. Gostojić, S., Ledeničan, B., Gršić, N. (2020). Digitizing Parliaments: A Case Study of Serbia. In: Charalabidis, Yannis; Cunha, Maria Alexandra; Sarantis, Demetrios (Еds.). Proceedings of the 13th International Conference on Theory and Practice of Electronic Governance (ICEGOV2020). 1-3 April 2020, Athens, Greece. New York: ACM Press, 2020. ISBN: 978-1-4503-7674-7.
+1. Trpovski, I., Stojanović, N., Orčić, T., Marković, M., Kovačević, A. and Gostojić, S. (2019). Retrieving Court Decisions Using Text Mining Techniques and Tools. In: Proceedings of The International Conference on Applied Internet and Information Technologies (AIIT 2019). Zrenjanin: October 3-4, 2019, pp. 150–153.
+1. Gostojić, S., Marković, M. (2019). Legal Document Management: An Integrated Approach. In: Stanišić, M. (Ed.) Proceedings of The International Scientific Conference Sinteza 2019, pp. 374-380.
 1. Vidaković, D., Gostojić, S., Kovačević, A. (2018). Serbian Legislation as a Network.  In: Konjović, Z., Zdravković, M., Trajanović, M. (Eds.) ICIST 2018 Proceedings Vol.1, pp.105-108
 1. Suljkanović, A., Gostojić, S., Dejanović, I. and Kaplar, S. (2017). Analysis of Current Languages for Developing Distributed Systems. In: Proceedings of The 7th International Conference on Information Society, Technology and Management (ICIST 2017). Kopaonik: March 12th - March 15th, 2017, pp. 382–385.
 1. Marković, M., Gostojić, S., Sladić, G., Stojkov and M., Milosavljević, B. (2016). Survey of Open Data in Judicial Systems. In: Proceedings of The 6th International Conference on Information Society, Technology and Management (ICIST 2016). Kopaonik: February 28th - March 2nd, 2016, pp. 64–69.
@@ -65,6 +81,7 @@ Stevan Gostojić is associate professor of applied computer science and informat
 1. Sladic, G., Gostojic, S., Milosavljevic, B., Konjovic, Z. (2011), "Handling Structured Data in the Alfresco system", 1st International Conference on Information Society, Technology and Management (ICIST 2011), March 6-9th, 2011, Kopaonik, Serbia.
 1. Gostojic, S., Sladic, G., Milosavljevic, B. (2011), "Importing Document Hierarchy in the Alfresco System", 1st International Conference on Information Society, Technology and Management (ICIST 2011), March 6-9th, 2011, Kopaonik, Serbia.
 1. Gostojic, S., Konjovic, Z., Milosavljevic, B. (2010), "Modeling MetaLex/CEN Compliant Legal Acts", IEEE International Symposium on Intelligent Systems and Informatics (SISY 2010), September 10-11th, 2010, Subotica, Serbia.
+1. Gostojić, S. (2019). Značaj otvorenih podataka. In Marković, N. (Ed.) Naučno-stručni skup "Informatika 2019". pp. 4–7. (in Serbian)
 1. Gostojic, S. (2016). Otvoreni podaci u obrazovanju. In: Slobodan softver u nastavi. Novi Sad: January 30th, 2016, Sremski Karlovci, Serbia. (in Serbian)
 1. Gostojic, S. (2012), "Slobodan softver u obrazovanju inženjera i naučnoistraživačkom radu", Slobodan softver u nastavi, December 1-2nd, 2012, Novi Sad, Serbia. (in Serbian)
 1. Arsovski, S., Konjovic, Z., Milosavljevic, B., Gostojic, S. (2010), "Editori za dokumente prave regulative bazirani na otvorenim standardima i otvorenim izvorima", YU INFO 2010, March, 3-6th, 2010, Kopaonik, Serbia. (in Serbian)
@@ -76,7 +93,8 @@ Stevan Gostojić is associate professor of applied computer science and informat
 1. Gostojić, S. (2012), "Kreiranje i koriscenje digitalnih dokumenata pravne regulative", Ph.D. dissertation, Fakultet tehničkih nauka, Novi Sad, Serbia. (in Serbian)
 1. Gostojic, S. (2006), "Detekcija na bazi satelitskih snimaka", M.Sc. thesis, Fakultet tehničkih nauka, Novi Sad, Serbia. (in Serbian)
 
-#### Software
+#### Technical Reports
+1. Marković, M. and Gostojić, S. (2019). Sistem za interaktivno sastavljanje optužnih akata. Novi Sad: Fakultet tehničkih nauka. (in Serbian)
 1. Cverdelj-Fogaraši, I., Sladić, G., Gostojić, S. and Milosavljević, B. (2018). Digitalna arhiva sudskih predmeta, Novi Sad: Fakultet tehničkih nauka.
 1. Gostojić, S., Milosavljević, B. and Konjović, Z. (2014). Sistem za pronalaženje i pregledanje pravnih akata. Novi Sad: Fakultet tehničkih nauka.
 1. Konjović, Z., Milosavljević, B., Sladić, G. and Gostojić, S. (2014). Sistem za upravljanje elektronskim dokumentima. Novi Sad: Fakultet tehničkih nauka.
