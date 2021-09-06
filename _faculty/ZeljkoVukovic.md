@@ -4,16 +4,16 @@ title: Željko Vuković
 collection: faculty
 path: ZeljkoVukovic
 name: ZeljkoVukovic
-zvanje: TA
+zvanje: assistant
 email: zeljkov@uns.ac.rs
 phone: /
-office: /
+office: NTP 327
 photo: ZeljkoVukovic.jpg
 ---
 
 
-Željko Vuković received a MsC degree at University of Novi Sad in 2013.
-He holds the teaching assistant position at University of Novi Sad, Faculty of
+Željko Vuković received a MsC degree at University of Novi Sad in 2013 and a PhD degree in 2019.
+He holds the assistant proffesor position at University of Novi Sad, Faculty of
 Technical Sciences. His fields of interest include Enterprise Integration and Model-driven Engineering. He is a software defined radio hobbist.
 
 1. Vuković Ž., Milanović N., Vaderna R., Dejanović I., Milosavljević G., Malbaša V.: Semantic-aided automation of interface mapping in enterprise integration with conflict detection, Information Systems and e-Business Management, 2016, Vol. 14, ISSN 1617-9846
