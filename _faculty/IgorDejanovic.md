@@ -6,11 +6,11 @@ path: IgorDejanovic
 name: IgorDejanovic
 zvanje: associate
 email: igord@uns.ac.rs
-phone: +381 21 485 xxxx
-office: ---
+phone: +381 21 485-4562
+office: NTP-327
 photo: IgorDejanovic.jpg
 
-linkedin:  https://www.linkedin.com/in/igor-dejanovic-62bb921
+linkedin:  https://www.linkedin.com/in/igor-dejanovi%C4%87-62bb921/
 researchgate: https://www.researchgate.net/profile/Igor_Dejanovic
 orcid: http://orcid.org/0000-0002-0414-1455
 scholar: https://scholar.google.com/citations?user=SqLKTIkAAAAJ&hl=en
