@@ -4,7 +4,7 @@ title: Goran Sladić
 collection: faculty
 path: Goran Sladic
 name: Goran Sladic
-zvanje: associate
+zvanje: full
 email: s l a d i c g   at   uns.ac.rs
 phone: +381 21 485 2422
 office: NTP 406
@@ -17,7 +17,7 @@ scholar: https://scholar.google.com/citations?user=kB3y49oAAAAJ&hl=en&oi=ao
 
 ---
 
-Goran Sladić is an associate professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2016.
+Goran Sladić is an  professor within the Department of Computing and Control, Faculty of Technical Sciences, University of Novi Sad since 2016.
 
 He received his B.Sc. (Dipl. Ing.) degree in 2002, M.Sc. (Magister) degree in 2006 and Ph.D. degree in 2011, all in Computer Science from the University of Novi Sad, Faculty of Technical Sciences.
 
