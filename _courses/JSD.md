@@ -1,19 +1,17 @@
 ---
 layout: course
-title: Domain-Specific Languages
+title: Jezici specifični za domen (Domain-Specific Languages)
 collection: courses
 path: JSD
 name: JSD
 curriculum: [E2, SIIT]
 code: SIxxxx
-people: ["Igor Dejanović", "Renata Vaderna"]
-canvas: https://enastava.io/courses/208
+people: ["Igor Dejanović"]
 info:
 ---
 
-### Course Materials
+### Materijali sa predavanja
 
-Slides from the lectures can be found [here](http://www.igordejanovic.net/courses/jsd.html).
+Materijali sa predavanja se nalaze [ovde](https://www.igordejanovic.net/courses/jsd.html).
 
-Additional materials are on the canvas page.
 
