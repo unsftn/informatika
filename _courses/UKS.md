@@ -7,7 +7,6 @@ name: UKS
 curriculum: [E2, SIIT]
 code: SIxxxx
 people: ["Igor Dejanović", "Vladimir Inđić"]
-canvas: https://enastava.io/courses/209
 info:
 ---
 
