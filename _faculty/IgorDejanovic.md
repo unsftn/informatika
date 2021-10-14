@@ -33,19 +33,18 @@ Informacije o temama za završne master i bečelor radove možete pronaći [ovde
 
 
 ### Courses/Nastava
- * [Domain-Specific Languages/Jezici specifični za domen](/JSD), FTN - Novi Sad, 2013-
- * [Software Configuration Management/Upravljanje konfiguracijom softvera](/UKS), FTN - Novi Sad, 2012-
- * [Software patterns and components/Softverski obrasci i komponente](/SOK), FTN - Novi Sad, 2012-
- * Uvod u razvoj softvera, FTN - Odeljenje u Inđiji, 2012-
- * Osnove informacionih sistema, FTN - Odeljenje u Inđiji, 2013-
+ * [Jezici specifični za domen (Domain-Specific Languages)](/JSD), FTN - Novi Sad, 2013-
+ * [Upravljanje konfiguracijom softvera (Software Configuration Management)](/UKS), FTN - Novi Sad, 2012-
+ * [Softverski obrasci i komponente (Software patterns and components)](/SOK), FTN - Novi Sad, 2012-
+ * [Napredne tehnike programiranja (Advanced programming techniques)](/NTP), FTN - Novi Sad, 2017-
 
 
 ### FLOSS projects
 
- * [textX](https://github.com/igordejanovic/textX/) - A meta-language for building Domain-Specific Languages in Python
- * [Arpeggio](https://github.com/igordejanovic/Arpeggio/) - A parser interpreter based on PEG grammars written in Python
+ * [textX](https://github.com/textX/textX/) - A meta-language for building Domain-Specific Languages in Python
+ * [Arpeggio](https://github.com/textX/Arpeggio/) - A parser interpreter based on PEG grammars written in Python
  * [parglare](https://github.com/igordejanovic/parglare) - A pure Python Scannerless (G)LR parser
- * [pyFlies](https://github.com/igordejanovic/pyFlies/) - A DSL for cognitive experiments modeling
+ * [pyFlies](https://github.com/pyFlies/) - A DSL for cognitive experiments modeling
  * [django-adminext](https://bitbucket.org/igord/django-adminext) - Django admin extensions focused on easier data entry and navigation
  * [django-multiautocomplete](https://bitbucket.org/igord/django-multiautocomplete) - Widget for multiple autocompletions
 
@@ -133,7 +132,9 @@ Informacije o temama za završne master i bečelor radove možete pronaći [ovde
  * 16.10.2000. - 28.12.2004. -- stručni saradnik
 
 
-### Old courses
+### Učešće u nastavi
+ * Uvod u razvoj softvera, FTN
+ * Osnove informacionih sistema, FTN
  * Osnovi računarstva, FTN - Novi Sad
  * Hardverska organizacija računara, FTN - Novi Sad
  * Osnovi informacionih sistema i softverskog inženjerstva, FTN - Novi Sad
