@@ -1,19 +1,17 @@
 ---
 layout: course
-title: Software Patterns and Components
+title: Softverski obrasci i komponente (Software Patterns and Components)
 collection: courses
 path: SOK
 name: SOK
-curriculum: [E2, SIIT]
+curriculum: [SIIT]
 code: SIxxxx
-people: ["Igor Dejanović", "Željko Ivković", "Miloš Simić"]
-canvas: https://enastava.io/courses/193
+people: ["Igor Dejanović", "Vladimir Inđić"]
 info:
 ---
 
+### Materijali sa predavanja
 
-### Course Materials
+Materijali sa predavanja se nalaze [ovde](https://www.igordejanovic.net/courses/sok.html).
 
-Slides from the lectures can be found [here](http://igordejanovic.net/courses/sok.html).
-
-Additional materials are on the canvas page.
+Materijali za vežbe se nalaze na Canvas-u.
