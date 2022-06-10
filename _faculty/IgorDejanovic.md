@@ -4,7 +4,7 @@ title: Igor Dejanović
 collection: faculty
 path: IgorDejanovic
 name: IgorDejanovic
-zvanje: associate
+zvanje: full
 email: igord@uns.ac.rs
 phone: +381 21 485-4562
 office: NTP-327
@@ -17,9 +17,9 @@ scholar: https://scholar.google.com/citations?user=SqLKTIkAAAAJ&hl=en
 ---
 
 Igor Dejanović received a PhD degree at University of Novi Sad in 2012. He holds
-an associate professor position at the Faculty of Technical Sciences, University
-of Novi Sad. He has authored or co-authored many scientific papers. He is an
-active member of the open-source community.
+a full professor position at the Faculty of Technical Sciences, University of
+Novi Sad. He has authored or co-authored many scientific papers. He is an active
+member of the open-source community.
 
 His areas of work and interest are Domain-Specific Languages, Model-Driven
 Engineering, Software Configuration Management.
@@ -50,6 +50,12 @@ Informacije o temama za završne master i bečelor radove možete pronaći [ovde
 
 
 ### Selected Publications
+
+* Igor Dejanović, Mirjana Dejanović, Jovana Vidaković, Siniša Nikolić, PyFlies: A Domain-Specific Language for Designing Experiments in Psychology, Applied Sciences, issn:2076-3417, vol.11, no.17, p.27 pages, DOI:10.3390/app11177823, 2021.
+
+* Igor Dejanović, Parglare: A LR/GLR parser for Python, Science of Computer Programming, issn:0167-6423, vol.214, p.15 pages, DOI:10.1016/j.scico.2021.102734, 2022.
+
+* Milorad Filipović, Željko Vuković, Igor Dejanović, Gordana Milosavljević, Rapid Requirements Elicitation of Enterprise Applications Based on Executable Mockups, Applied Sciences, issn:2076-3417, vol.11, no.16, p.29 pages, DOI:10.3390/app11167684, 2021.
 
 * I. Dejanović, R. Vaderna, G. Milosavljević, Ž. Vuković, "TextX: A Python tool for Domain-Specific Languages implementation", Knowledge-Based Systems, pp. 1–4, DOI: 10.1016/j.knosys.2016.10.023, 2017.
 
@@ -124,6 +130,7 @@ Informacije o temama za završne master i bečelor radove možete pronaći [ovde
 
 ### Izbori u zvanja
 
+ * 16.05.2022. -             -- redovni profesor
  * 16.05.2017. - 15.05.2022. -- vanredni profesor
  * 16.05.2012. - 15.05.2017. -- docent
  * 17.01.2012. - 15.05.2012. -- asistent sa doktoratom
